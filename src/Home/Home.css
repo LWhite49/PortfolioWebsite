@@ -1,0 +1,15 @@
+.Home {
+	display: relative;
+}
+
+.Home-Intro-Text {
+	color: #619b8a;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+}
+
+.Personal-Image {
+	border: solid 6px #619b8a;
+	border-radius: 70% 60% 80% 50%;
+	width: 380px;
+}
