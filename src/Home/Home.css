@@ -1,15 +1,65 @@
 .Home {
 	display: relative;
 }
-
-.Home-Intro-Text {
-	color: #619b8a;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-		sans-serif;
+.Home-Intro-Text-Wrap {
+	position: absolute;
+	top: 32vh;
+	left: 14vw;
+	background-color: #ebf2e4;
+	padding: 10px;
+	text-align: left;
+}
+.Home-Hook {
+	opacity: default;
+	margin: 0px 0px 6px 0px;
+	color: #134600;
+	font-size: 52pt;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: 1px 1px 2px #78d253;
+}
+.Home-Intro-Text,
+.Home-Intro-Personal-Name {
+	opacity: 1;
+	margin: 38px 0px 10px 120px;
+	max-width: 720px;
+	color: #78d253;
+	font-size: 29pt;
+	line-height: 48px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: 2px 2px 0px hsl(180, 18%, 12%);
+}
+.Home-Intro-Personal-Name {
+	margin-left: 60px;
+	color: #08a973;
+	font-size: 42pt;
+}
+.Personal-Image-Container {
+	position: absolute;
+	top: 33vh;
+	right: 440px;
+}
+.Personal-Image {
+	box-shadow: #192424 2px 6px 10px 2px;
+	border: solid 6px #08a973;
+	border-radius: 70% 60% 80% 55%;
+	width: 400px;
 }
 
-.Personal-Image {
-	border: solid 6px #619b8a;
-	border-radius: 70% 60% 80% 55%;
-	width: 420px;
+.Cherries-3D {
+	position: absolute;
+	top: -26px;
+	left: -184px;
+	width: 140px;
+	pointer-events: none;
+}
+.Frut-Aero-Arrow {
+	position: absolute;
+	top: 210px;
+	left: -80px;
+	transform: scaleY(-1.8);
+	transform: scaleX(-1.8);
+	rotate: 236deg;
+	z-index: 1;
+	width: 140px;
+	pointer-events: none;
 }

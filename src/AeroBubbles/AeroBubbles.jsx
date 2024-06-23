@@ -56,23 +56,24 @@ export const AeroBubbles = () => {
 				},
 				particles: {
 					color: {
-						value: "#348500",
+						value: "#08A973",
 					},
 					links: {
-						color: "#2b7deb",
-						distance: 200,
+						color: "#EF3D3D",
+						distance: 220,
 						enable: true,
-						opacity: 0.5,
+						opacity: 0.6,
 						width: 2,
 					},
 					move: {
-						direction: "none",
+						direction: "nones",
+						angle: 90,
 						enable: true,
 						outModes: {
 							default: "bounce",
 						},
 						random: true,
-						speed: 3,
+						speed: 2,
 						straight: false,
 					},
 					number: {
@@ -80,16 +81,16 @@ export const AeroBubbles = () => {
 							enable: true,
 							area: 1200,
 						},
-						value: 70,
+						value: 90,
 					},
 					opacity: {
-						value: 0.5,
+						value: 0.8,
 					},
 					shape: {
 						type: "circle",
 					},
 					size: {
-						value: { min: 1, max: 3 },
+						value: { min: 1, max: 4 },
 					},
 				},
 				detectRetina: true,
