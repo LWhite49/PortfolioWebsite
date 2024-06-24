@@ -4,7 +4,7 @@
 .Home-Intro-Text-Wrap {
 	position: absolute;
 	top: 24vh;
-	left: 20vw;
+	left: 24vw;
 	background-color: #ebf2e4;
 	padding: 10px;
 	text-align: left;
@@ -35,7 +35,7 @@
 	font-size: 42pt;
 }
 .Home-Intro-Text-Last {
-	margin: 38px 0px 10px 190px;
+	margin: 38px 0px 10px 180px;
 	width: 460px;
 	color: #75ffca;
 	font-size: 28pt;
@@ -48,7 +48,7 @@
 .Personal-Image {
 	position: absolute;
 	top: 60px;
-	left: 980px;
+	left: 910px;
 	box-shadow: #192424 2px 6px 10px 2px;
 	border: solid 6px #08a973;
 	border-radius: 70% 60% 80% 55%;
@@ -57,19 +57,59 @@
 
 .Cherries-3D {
 	position: absolute;
-	top: -20px;
-	left: -200px;
+	top: -10px;
+	left: -220px;
 	width: 140px;
 	pointer-events: none;
 }
 .Frut-Aero-Arrow {
 	position: absolute;
-	top: 280px;
-	left: -120px;
-	transform: scaleY(-1.8);
-	transform: scaleX(-2);
-	rotate: 230deg;
+	top: 340px;
+	left: -96px;
+	transform: scaleY(-1.4);
+	transform: scaleX(-2.4);
+	rotate: 236deg;
 	z-index: 1;
 	width: 220px;
 	pointer-events: none;
+}
+.Home-Contact-Icons {
+	display: flex;
+	position: relative;
+	top: 50px;
+	right: -310px;
+	gap: 30px;
+	border: #75ffca 4px solid;
+	border-radius: 20px;
+	background-color: #08a973;
+	padding: 2px 16px 2px 10px;
+	width: fit-content;
+}
+.Grapes-3D {
+	position: absolute;
+	top: -18px;
+	left: -108px;
+	margin-right: 0px;
+	width: 90px;
+}
+.Email-Svg {
+	transition: transform 0.15s;
+	padding: 0px;
+	width: 70px;
+}
+.LinkedIn-Svg {
+	transition: transform 0.15s;
+	padding: 0px;
+	width: 50px;
+}
+.Github-Svg {
+	transition: transform 0.15s;
+	padding: 0px;
+	width: 50px;
+}
+.Email-Svg:hover,
+.LinkedIn-Svg:hover,
+.Github-Svg:hover {
+	transform: scale(1.1);
+	cursor: pointer;
 }

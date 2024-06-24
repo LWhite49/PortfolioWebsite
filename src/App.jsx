@@ -20,14 +20,16 @@ function App() {
 	}, []);
 	return (
 		<AppContext.Provider value={{ windowWidth }}>
-			<Router>
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/education" element={<Education />} />
-					<Route path="/projects" element={<Projects />} />
-					<Route path="/techstack" element={<Techstack />} />
-				</Routes>
-			</Router>
+			<div className="App">
+				<Router>
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/education" element={<Education />} />
+						<Route path="/projects" element={<Projects />} />
+						<Route path="/techstack" element={<Techstack />} />
+					</Routes>
+				</Router>
+			</div>
 		</AppContext.Provider>
 	);
 }

@@ -3,7 +3,10 @@ import LWImg from "../assets/LWImg.jpg";
 import { AeroBubbles } from "../AeroBubbles/AeroBubbles.jsx";
 import FrutArrowCurve from "../assets/FrutigerAeroArrow.png";
 import Cherries3D from "../assets/Cherries.gif";
-
+import Grapes3D from "../assets/Grapesgif.gif";
+import EmailSvg from "../assets/EmailSvg.svg";
+import LinkedInSvg from "../assets/LinkedInSvg.svg";
+import GithubSvg from "../assets/GithubSvg.svg";
 export const Home = () => {
 	return (
 		<div className="Home">
@@ -20,7 +23,7 @@ export const Home = () => {
 					at the University of South Florida{" "}
 				</h1>
 				<h1 className="Home-Intro-Text-Last">
-					This is my undergraduate developer portfolio
+					This is my undergraduate developer portfolio!
 				</h1>
 				<img
 					className="Cherries-3D"
@@ -29,6 +32,45 @@ export const Home = () => {
 				/>
 				<img className="Personal-Image" src={LWImg} alt="LWImg" />
 				<img className="Frut-Aero-Arrow" src={FrutArrowCurve} />
+				<div className="Home-Contact-Icons">
+					<img className="Grapes-3D" src={Grapes3D} alt="Grapes3D" />
+					<img
+						className="Email-Svg"
+						src={EmailSvg}
+						alt="EmailSvg"
+						onClick={() => {
+							window.open(
+								"mailto:lwhite4965@outlook.com",
+								"_blank",
+								"noopener,noreferrer"
+							);
+						}}
+					/>
+					<img
+						onClick={() => {
+							window.open(
+								"https://www.linkedin.com/in/lwhite49",
+								"_blank",
+								"noopener,noreferrer"
+							);
+						}}
+						className="LinkedIn-Svg"
+						src={LinkedInSvg}
+						alt="LinkedInSvg"
+					/>
+					<img
+						onClick={() => {
+							window.open(
+								"https://github.com/LWhite49",
+								"_blank",
+								"noopener,noreferrer"
+							);
+						}}
+						className="Github-Svg"
+						src={GithubSvg}
+						alt="GithubSvg"
+					/>
+				</div>
 			</div>
 			<AeroBubbles />
 		</div>
