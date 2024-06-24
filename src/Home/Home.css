@@ -40,11 +40,7 @@
 	color: #75ffca;
 	font-size: 28pt;
 }
-.Personal-Image-Container {
-	position: absolute;
-	top: 33vh;
-	right: 440px;
-}
+
 .Personal-Image {
 	position: absolute;
 	top: 60px;
@@ -112,4 +108,69 @@
 .Github-Svg:hover {
 	transform: scale(1.1);
 	cursor: pointer;
+}
+
+/* Width Scaling */
+
+@media (max-width: 2000px) {
+	.Home-Intro-Text-Wrap {
+		top: 14vh;
+		left: 18vw;
+	}
+	.Cherries-3D {
+		top: 2px;
+		left: -110px;
+		width: 100px;
+	}
+	.Home-Hook {
+		font-size: 44pt;
+	}
+	.Home-Intro-Personal-Name {
+		margin-top: 20px;
+		margin-left: 48px;
+		font-size: 32pt;
+	}
+	.Home-Intro-Text {
+		margin-top: 20px;
+		margin-left: 96px;
+		max-width: 540px;
+		font-size: 22pt;
+		line-height: 40px;
+	}
+	.Home-Intro-Text-Last {
+		margin-top: 20px;
+		margin-left: 146px;
+		font-size: 20pt;
+		line-height: 36px;
+	}
+	.Grapes-3D {
+		top: -26px;
+		left: -90px;
+		width: 80px;
+	}
+	.Frut-Aero-Arrow {
+		top: 280px;
+		left: -50px;
+		transform: scaleY(-1.4);
+		transform: scaleX(-2.4);
+		rotate: 236deg;
+		width: 180px;
+	}
+	.Home-Contact-Icons {
+		left: 268px;
+		gap: 20px;
+	}
+	.Email-Svg {
+		width: 50px;
+	}
+	.LinkedIn-Svg {
+		width: 40px;
+	}
+	.Github-Svg {
+		width: 40px;
+	}
+	.Personal-Image {
+		left: 720px;
+		width: 300px;
+	}
 }
