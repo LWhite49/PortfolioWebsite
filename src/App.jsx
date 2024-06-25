@@ -18,8 +18,12 @@ function App() {
 		window.addEventListener("resize", handleResize);
 		return () => window.removeEventListener("resize", handleResize);
 	}, []);
+
+	// Create state that stores whether the navigation menu is displayed
+	const [isMenuDisplayed, setIsMenuDisplayed] = useState(false);
+
 	return (
-		<AppContext.Provider value={{ windowWidth }}>
+		<AppContext.Provider value={{ windowWidth, isMenuDisplayed }}>
 			<div className="App">
 				<Router>
 					<Routes>
@@ -29,6 +33,17 @@ function App() {
 						<Route path="/techstack" element={<Techstack />} />
 					</Routes>
 				</Router>
+				<button
+					className="Navbar-Expand-Button"
+					onMouseEnter={() => {
+						setIsMenuDisplayed(true);
+					}}
+					onMouseLeave={() => {
+						setIsMenuDisplayed(false);
+					}}>
+					<hr className="Top-Menu-Line"></hr>
+					<hr className="Bottom-Menu-Line"></hr>
+				</button>
 			</div>
 		</AppContext.Provider>
 	);
