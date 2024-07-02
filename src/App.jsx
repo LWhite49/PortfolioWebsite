@@ -22,6 +22,7 @@ function App() {
 	// Create state that stores whether the navigation menu is displayed
 	const [isMenuDisplayed, setIsMenuDisplayed] = useState(false);
 
+	//
 	return (
 		<AppContext.Provider value={{ windowWidth, isMenuDisplayed }}>
 			<div className="App">
