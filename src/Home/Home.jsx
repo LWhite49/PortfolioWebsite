@@ -11,6 +11,7 @@ import GithubSvg from "../assets/GithubSvg.svg";
 
 // Memoize AeroBubbles component
 const MemoizedAeroBubbles = memo(AeroBubbles);
+
 export const Home = () => {
 	return (
 		<div className="Home">
