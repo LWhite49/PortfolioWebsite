@@ -1,3 +1,6 @@
+.Invis {
+	display: none;
+}
 .Contact-Svg-Top:hover {
 	scale: 1.1;
 	padding: 2px;
@@ -6,7 +9,7 @@
 	display: flex;
 	position: absolute;
 	top: 50px;
-	right: 0px;
+	right: 10px;
 	flex-direction: column;
 	gap: 4px;
 	z-index: 100;
@@ -21,6 +24,7 @@
 	margin: 0px;
 	margin-bottom: 8px;
 	width: 36px;
+	pointer-events: none;
 }
 .Bottom-Menu-Line {
 	position: relative;
@@ -29,6 +33,7 @@
 	transition-property: all;
 	margin: 0px;
 	width: 28px;
+	pointer-events: none;
 }
 .Navbar-Expand-Button:hover .Top-Menu-Line {
 	rotate: -310deg;
@@ -40,35 +45,63 @@
 	width: 36px;
 	color: #78d253;
 }
-.Navbar-Container {
+@keyframes NavbarSlideIn {
+	0% {
+		transform: translateX(130px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+@keyframes NavbarSlideOut {
+	0% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translateX(130px);
+	}
+}
+.Navbar-Container,
+.Navbar-Invis {
 	display: flex;
 	position: absolute;
 	top: 30px;
 	right: 0px;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: center;
+	align-items: start;
 	z-index: 10;
-	background-color: #ebf2e4;
+	background-color: rgba(90%, 35%, 92%, 0);
 	padding: 1rem;
-	padding-right: 10px;
+	padding-right: 14px;
 	padding-bottom: 20px;
 	padding-left: 20px;
 	height: 300px;
 }
+.Navbar-Invis {
+	display: inline;
+	animation: NavbarSlideOut 0.3s;
+	pointer-events: none;
+}
+.Navbar-Container {
+	animation: NavbarSlideIn 0.3s;
+}
+
 .Navbar-Link {
 	color: #78d253;
+	font-weight: 600;
 	font-size: 24px;
 }
 .Navbar-Link-Active {
 	color: #d27d53;
+	font-weight: 600;
 	font-size: 24px;
 }
 .Navbar-Link:hover {
 	color: #3fab14;
 }
 .Navbar-Link-Active:hover {
-	color: #be6031;
+	color: #d27d53;
 }
 #root {
 	margin: 0 auto;

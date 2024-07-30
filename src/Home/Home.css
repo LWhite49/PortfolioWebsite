@@ -6,6 +6,7 @@
 	top: 24vh;
 	left: 24vw;
 	background-color: #ebf2e4;
+	background-color: rgba(0, 0, 0, 0);
 	padding: 10px;
 	text-align: left;
 }
