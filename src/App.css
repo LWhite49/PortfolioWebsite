@@ -55,10 +55,10 @@
 }
 @keyframes NavbarSlideOut {
 	0% {
-		transform: translateX(0px);
+		left: -40px;
 	}
 	100% {
-		transform: translateX(130px);
+		left: 90px;
 	}
 }
 .Navbar-Container,
@@ -71,7 +71,7 @@
 	justify-content: space-between;
 	align-items: start;
 	z-index: 10;
-	background-color: rgba(90%, 35%, 92%, 0);
+	background-color: rgba(246, 212, 212, 0);
 	padding: 1rem;
 	padding-right: 14px;
 	padding-bottom: 20px;
@@ -79,23 +79,24 @@
 	height: 300px;
 }
 .Navbar-Invis {
-	display: inline;
+	left: 120px;
 	animation: NavbarSlideOut 0.3s;
 	pointer-events: none;
 }
 .Navbar-Container {
 	animation: NavbarSlideIn 0.3s;
 }
-
 .Navbar-Link {
 	color: #78d253;
 	font-weight: 600;
 	font-size: 24px;
+	text-shadow: rgb(238, 182, 78) 1px 1px 1px;
 }
 .Navbar-Link-Active {
 	color: #d27d53;
 	font-weight: 600;
 	font-size: 24px;
+	text-shadow: rgb(238, 182, 78) 1px 1px 1px;
 }
 .Navbar-Link:hover {
 	color: #3fab14;
