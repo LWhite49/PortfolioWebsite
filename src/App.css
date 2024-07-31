@@ -17,18 +17,20 @@ html {
 	flex-direction: column;
 	gap: 4px;
 	z-index: 100;
-	background-color: #ebf2e4;
-}
-.Navbar-Expand-Button:hover {
 	border: none;
+	background-color: rgba(0, 0, 0, 0);
 }
+
 .Top-Menu-Line {
 	transition-duration: 0.4s;
 	transition-property: all;
 	margin: 0px;
 	margin-bottom: 8px;
+	border-style: solid;
+	border-color: black;
 	width: 36px;
 	pointer-events: none;
+	color: black;
 }
 .Bottom-Menu-Line {
 	position: relative;
@@ -36,16 +38,21 @@ html {
 	transition-duration: 0.4s;
 	transition-property: all;
 	margin: 0px;
+	border-style: solid;
+	border-color: black;
 	width: 28px;
 	pointer-events: none;
+	color: black;
 }
 .Navbar-Expand-Button:hover .Top-Menu-Line {
 	rotate: -310deg;
+	border-color: #78d253;
 	color: #78d253;
 }
 .Navbar-Expand-Button:hover .Bottom-Menu-Line {
 	transform: translate(5px, -15px);
 	rotate: 310deg;
+	border-color: #78d253;
 	width: 36px;
 	color: #78d253;
 }

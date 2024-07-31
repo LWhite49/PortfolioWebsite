@@ -1,12 +1,15 @@
 import "./App.css";
-import { useState, useEffect, createContext } from "react";
+import { useState, useEffect, createContext, memo } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Home } from "./Home/Home";
 import { Education } from "./Education/Education";
 import { Projects } from "./Projects/Projects";
 import { Techstack } from "./Techstack/Techstack";
+import { AeroBubbles } from "./AeroBubbles/AeroBubbles.jsx";
 
 export const AppContext = createContext();
+
+const MemoizedAeroBubbles = memo(AeroBubbles);
 
 function UnroutedApp() {
 	// Create a windowWidth state
@@ -24,7 +27,8 @@ function UnroutedApp() {
 	}, []);
 
 	return (
-		<AppContext.Provider value={{ windowWidth, isMenuDisplayed }}>
+		<AppContext.Provider
+			value={{ windowWidth, isMenuDisplayed, MemoizedAeroBubbles }}>
 			<div className="App">
 				<Routes>
 					<Route path="/" element={<Home />} />

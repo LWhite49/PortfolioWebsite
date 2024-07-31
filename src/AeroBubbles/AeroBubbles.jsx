@@ -1,12 +1,17 @@
 import "./AeroBubbles.css";
 import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
+import PropTypes from "prop-types";
 // import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
-export const AeroBubbles = () => {
+export const AeroBubbles = ({
+	background = "#ebf2e4",
+	node = "#08A973",
+	links = "#EF3D3D",
+}) => {
 	const [init, setInit] = useState(false);
 
 	// this should be run only once per application lifetime
@@ -29,72 +34,80 @@ export const AeroBubbles = () => {
 	};
 
 	return init ? (
-		<Particles
-			className="AeroBubbles"
-			id="tsparticles"
-			particlesLoaded={particlesLoaded}
-			options={{
-				background: {
-					color: {
-						value: "#ebf2e4",
-					},
-				},
-				fpsLimit: 120,
-				interactivity: {
-					events: {
-						resize: true,
-					},
-					modes: {
-						push: {
-							quantity: 4,
-						},
-						repulse: {
-							distance: 40,
-							duration: 0.4,
+		init ? (
+			<Particles
+				className="AeroBubbles"
+				id="tsparticles"
+				particlesLoaded={particlesLoaded}
+				options={{
+					background: {
+						color: {
+							value: background,
 						},
 					},
-				},
-				particles: {
-					color: {
-						value: "#08A973",
-					},
-					links: {
-						color: "#EF3D3D",
-						distance: 220,
-						enable: true,
-						opacity: 0.6,
-						width: 2,
-					},
-					move: {
-						direction: "nones",
-						angle: 90,
-						enable: true,
-						outModes: {
-							default: "bounce",
+					fpsLimit: 120,
+					interactivity: {
+						events: {
+							resize: true,
 						},
-						random: true,
-						speed: 2,
-						straight: false,
+						modes: {
+							push: {
+								quantity: 4,
+							},
+							repulse: {
+								distance: 40,
+								duration: 0.4,
+							},
+						},
 					},
-					number: {
-						density: {
+					particles: {
+						color: {
+							value: node,
+						},
+						links: {
+							color: links,
+							distance: 220,
 							enable: true,
-							area: 1200,
+							opacity: 0.6,
+							width: 2,
 						},
-						value: 90,
+						move: {
+							direction: "nones",
+							angle: 90,
+							enable: true,
+							outModes: {
+								default: "bounce",
+							},
+							random: true,
+							speed: 2,
+							straight: false,
+						},
+						number: {
+							density: {
+								enable: true,
+								area: 1200,
+							},
+							value: 90,
+						},
+						opacity: {
+							value: 0.8,
+						},
+						shape: {
+							type: "circle",
+						},
+						size: {
+							value: { min: 1, max: 4 },
+						},
 					},
-					opacity: {
-						value: 0.8,
-					},
-					shape: {
-						type: "circle",
-					},
-					size: {
-						value: { min: 1, max: 4 },
-					},
-				},
-				detectRetina: true,
-			}}
-		/>
+					detectRetina: true,
+				}}
+			/>
+		) : null
 	) : null;
+};
+
+AeroBubbles.propTypes = {
+	background: PropTypes.string,
+	node: PropTypes.string,
+	links: PropTypes.string,
 };

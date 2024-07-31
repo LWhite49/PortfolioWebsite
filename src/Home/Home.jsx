@@ -2,8 +2,6 @@ import "./Home.css";
 import { useContext } from "react";
 import { AppContext } from "../App.jsx";
 import LWImg from "../assets/LWImg.jpg";
-import { memo } from "react";
-import { AeroBubbles } from "../AeroBubbles/AeroBubbles.jsx";
 import FrutArrowCurve from "../assets/FrutigerAeroArrow.png";
 import AltArrowCurve from "../assets/AeroArrow2.png";
 import Cherries3D from "../assets/Cherries.gif";
@@ -12,10 +10,8 @@ import EmailSvg from "../assets/EmailSvg.svg";
 import LinkedInSvg from "../assets/LinkedInSvg.svg";
 import GithubSvg from "../assets/GithubSvg.svg";
 
-const MemoizedAeroBubbles = memo(AeroBubbles);
-
 export const Home = () => {
-	const { isMenuDisplayed } = useContext(AppContext);
+	const { isMenuDisplayed, MemoizedAeroBubbles } = useContext(AppContext);
 	return (
 		<div className="Home">
 			<div className="Home-Intro-Text-Wrap">
@@ -86,7 +82,11 @@ export const Home = () => {
 				}
 				src={AltArrowCurve}
 			/>
-			<MemoizedAeroBubbles />
+			<MemoizedAeroBubbles
+				background="#ebf2e4"
+				node="#08A973"
+				links="#EF3D3D"
+			/>
 		</div>
 	);
 };
