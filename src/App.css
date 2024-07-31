@@ -108,26 +108,7 @@ html {
 .Navbar-Link-Active:hover {
 	color: #d27d53;
 }
-.fade-enter {
-	transform: scale(0.75);
-	opacity: 0;
-	transition: opacity 300ms ease-in, transform 300ms ease-in;
-}
-.fade-enter-active {
-	transform: scale(1);
-	opacity: 1;
-	transition: opacity 300ms ease-in, transform 300ms ease-in;
-}
-.fade-exit {
-	transform: scale(1);
-	opacity: 1;
-	transition: opacity 300ms ease-in, transform 300ms ease-in;
-}
-.fade-exit-active {
-	transform: scale(0.75);
-	opacity: 0;
-	transition: opacity 300ms ease-in, transform 300ms ease-in;
-}
+
 #root {
 	margin: 0 auto;
 	padding: 2rem;

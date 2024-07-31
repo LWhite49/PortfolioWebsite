@@ -1,13 +1,6 @@
 import "./App.css";
 import { useState, useEffect, createContext } from "react";
-import {
-	BrowserRouter as Router,
-	Routes,
-	Route,
-	Link,
-	useLocation,
-} from "react-router-dom";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Home } from "./Home/Home";
 import { Education } from "./Education/Education";
 import { Projects } from "./Projects/Projects";
@@ -16,9 +9,6 @@ import { Techstack } from "./Techstack/Techstack";
 export const AppContext = createContext();
 
 function UnroutedApp() {
-	// Create a location object
-	const location = useLocation();
-
 	// Create a windowWidth state
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -36,30 +26,13 @@ function UnroutedApp() {
 	return (
 		<AppContext.Provider value={{ windowWidth, isMenuDisplayed }}>
 			<div className="App">
-				<CSSTransition
-					key={location.key}
-					classNames="fade"
-					timeout={300}>
-					<TransitionGroup>
-						<>
-							<Routes>
-								<Route path="/" element={<Home />} />
-								<Route
-									path="/education"
-									element={<Education />}
-								/>
-								<Route
-									path="/projects"
-									element={<Projects />}
-								/>
-								<Route
-									path="/techstack"
-									element={<Techstack />}
-								/>
-							</Routes>
-						</>
-					</TransitionGroup>
-				</CSSTransition>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/education" element={<Education />} />
+					<Route path="/projects" element={<Projects />} />
+					<Route path="/techstack" element={<Techstack />} />
+				</Routes>
+
 				<button
 					className="Navbar-Expand-Button"
 					onMouseEnter={() => {

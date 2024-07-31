@@ -110,6 +110,59 @@
 	transform: scale(1.1);
 	cursor: pointer;
 }
+@keyframes RotateIn {
+	0% {
+		top: 40px;
+		right: 160px;
+		transform: scaleX(1);
+		rotate: -125deg;
+		opacity: 0;
+	}
+	100% {
+		top: 60px;
+		right: 110px;
+		transform: scaleX(1.4);
+		rotate: -44deg;
+		opacity: 1;
+	}
+}
+@keyframes RotateOut {
+	0% {
+		top: 60px;
+		right: 110px;
+		transform: scaleX(1.4);
+		rotate: -44deg;
+		opacity: 1;
+	}
+	100% {
+		top: 40px;
+		right: 160px;
+		transform: scaleX(1);
+		rotate: -125deg;
+		opacity: 0;
+	}
+}
+.Alt-Aero-Arrow,
+.Alt-Aero-Arrow-Invis {
+	position: absolute;
+	top: 60px;
+	right: 110px;
+	transform: scaleX(1.4);
+	rotate: -44deg;
+	opacity: 1;
+	z-index: 1;
+	animation: RotateIn 0.3s;
+	width: 90px;
+	pointer-events: none;
+}
+.Alt-Aero-Arrow-Invis {
+	top: 40px;
+	right: 160px;
+	transform: scaleX(1);
+	rotate: -125deg;
+	opacity: 0;
+	animation: RotateOut 0.3s;
+}
 
 /* Width Scaling */
 
