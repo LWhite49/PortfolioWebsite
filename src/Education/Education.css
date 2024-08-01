@@ -2,3 +2,91 @@
 	width: 100vw;
 	height: 100vh;
 }
+@keyframes SpinningBorder {
+	0% {
+		box-shadow: black 2px 2px 4px 6px;
+	}
+	25% {
+		box-shadow: #197556 -2px 2px 4px 6px;
+	}
+	50% {
+		box-shadow: #08a973 6px 8px 4px 6px;
+	}
+	75% {
+		box-shadow: #197556 -2px 2px 4px 6px;
+	}
+	100% {
+		box-shadow: black 2px 2px 4px 6px;
+	}
+}
+.Education-Content-Main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-48%, -48%);
+
+	box-shadow: black 2px 2px 4px 6px;
+	border: solid 6px white;
+	border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
+	background-color: #d0c695;
+	width: 76vw;
+	height: 76vh;
+}
+
+.Education-Content-Main:hover,
+.ICPC-Logo:hover,
+.ICPC-Tag:hover,
+.USF-Logo:hover,
+.USF-Bull:hover {
+	animation: SpinningBorder 3.5s infinite;
+}
+.USF-Bull {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	box-shadow: black -1px 0px 2px 6px;
+	border: solid 6px white;
+	border-radius: 50% 40% 50% 40%;
+	width: max(240px, 14vw);
+}
+.ICPC-Logo {
+	position: absolute;
+	bottom: 20px;
+	left: 150px;
+	z-index: 10;
+	box-shadow: black -1px 0px 2px 6px;
+	border: solid 6px white;
+	border-radius: 40% 50% 40% 50%;
+	width: max(240px, 14vw);
+}
+.ICPC-Tag {
+	position: absolute;
+	bottom: 240px;
+	left: 10px;
+	box-shadow: black -1px 0px 2px 6px;
+	border: solid 6px white;
+	border-radius: 40% 50% 40% 50%;
+	width: max(210px, 12vw);
+}
+.USF-Logo {
+	position: absolute;
+	right: 20px;
+	bottom: 30px;
+	box-shadow: black -1px 0px 2px 6px;
+	border: solid 6px white;
+	border-radius: 50%;
+	width: max(240px, 14vw);
+}
+.Education-Header-Wrapper {
+	display: flex;
+	position: absolute;
+	top: 16px;
+	left: 34%;
+	gap: 20px;
+}
+.Strawberry {
+	width: 100px;
+}
+.Education-Header {
+	font-size: 2.5em;
+}
