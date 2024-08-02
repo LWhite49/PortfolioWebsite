@@ -38,36 +38,53 @@ export const Education = () => {
 				<div className="Education-Bullets">
 					<p className="Education-GPA">
 						{" "}
-						<span className="Education-Bullet">&bull;</span> Junior
-						GPA: 3.91 ={">"} Class of 2026
+						<span className="Education-Bullet">&bull;</span>{" "}
+						<span className="Education-Bullet-Emph">
+							Junior GPA: 3.91
+						</span>{" "}
+						={">"} Class of 2026
 					</p>
 					<p className="Education-Major">
 						{" "}
 						<span className="Education-Bullet">&bull;</span>{" "}
-						Computer Science and Computer Engineering
+						Computer Science{" "}
+						<span className="Education-Bullet-Emph">and</span>{" "}
+						Computer Engineering
 					</p>
 					<p className="Education-Honors">
 						{" "}
 						<span className="Education-Bullet">&bull;</span>{" "}
-						National Merit Scholar + Judy Genshaft Honors Student
+						<span className="Education-Bullet-Emph">
+							National Merit Scholar
+						</span>{" "}
+						+ Judy Genshaft Honors Student
 					</p>
 					<p className="Education-Hackathon">
 						{" "}
 						<span className="Education-Bullet">&bull;</span>{" "}
-						Frequent Webdev Hackathons with USF Google Developer
-						Student Club
+						Frequent Webdev Hackathons with{" "}
+						<span className="Education-Bullet-Emph">
+							USF Google Student Developer Club
+						</span>{" "}
 					</p>
 					<p className="Education-Programming">
 						{" "}
 						<span className="Education-Bullet">&bull;</span> Member
-						of USF Competitive Programming Student Organization
+						of{" "}
+						<span className="Education-Bullet-Emph">
+							USF Competetive Programming Student Organization
+						</span>{" "}
 						using Python / C++
 					</p>
 					<p className="Education-ICPC">
 						{" "}
 						<span className="Education-Bullet">&bull;</span>{" "}
-						Competed on USF International Collegiate Programming
-						Team in Regional Contest
+						Competed with{" "}
+						<span className="Education-Bullet-Emph">
+							USF International Collegiate Programming Contest
+							Team
+						</span>{" "}
+						in Regional Contest
 					</p>
 				</div>
 			</div>

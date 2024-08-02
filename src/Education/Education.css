@@ -2,35 +2,83 @@
 	width: 100vw;
 	height: 100vh;
 }
-@keyframes SpinningBorder {
+
+@keyframes AmbientJiggle {
 	0% {
-		box-shadow: black 2px 2px 4px 6px;
+		transform: translate(-48%, -48%) translateX(0px) translateY(0px)
+			rotate(0deg);
 	}
 	25% {
-		box-shadow: #197556 -2px 2px 4px 6px;
+		transform: translate(-48%, -48%) translateX(1px) translateY(1px)
+			rotate(0.5deg);
 	}
 	50% {
-		box-shadow: #08a973 6px 8px 4px 6px;
+		transform: translate(-48%, -48%) translateX(2px) translateY(2px)
+			rotate(1deg);
 	}
 	75% {
-		box-shadow: #197556 -2px 2px 4px 6px;
+		transform: translate(-48%, -48%) translateX(1px) translateY(1px)
+			rotate(0.5deg);
 	}
 	100% {
-		box-shadow: black 2px 2px 4px 6px;
+		transform: translate(-48%, -48%) translateX(0px) translateY(0px)
+			rotate(0deg);
+	}
+}
+@keyframes BullSlideIn {
+	0% {
+		top: -100px;
+		left: -100px;
+		transform: rotate(60deg) scale(0.7);
+	}
+	100% {
+		top: 40px;
+		left: 40px;
+		transform: rotate(0deg) scale(1);
 	}
 }
 
-.Education-Content-Main:hover,
-.ICPC-Logo:hover,
-.ICPC-Tag:hover,
-.USF-Logo:hover,
-.USF-Bull:hover {
-	animation: SpinningBorder 3.5s infinite;
+@keyframes ICPCTagSlideIn {
+	0% {
+		bottom: -100px;
+		left: -100px;
+		transform: rotate(60deg) scale(0.7);
+	}
+	100% {
+		bottom: 240px;
+		left: 10px;
+		transform: rotate(0deg) scale(1);
+	}
 }
+
+@keyframes ICPCLogoSlideIn {
+	0% {
+		bottom: -100px;
+		left: -100px;
+		transform: rotate(100deg) scale(0.7);
+	}
+	100% {
+		bottom: 20px;
+		left: 150px;
+		transform: rotate(0deg) scale(1);
+	}
+}
+
+@keyframes USFLogoSpin {
+	0% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 .USF-Bull {
 	position: absolute;
 	top: 40px;
 	left: 40px;
+	animation: BullSlideIn 0.5s;
+	animation-iteration-count: 1;
 	box-shadow: black -1px 0px 2px 6px;
 	border: solid 6px white;
 	border-radius: 50% 40% 50% 40%;
@@ -41,6 +89,7 @@
 	bottom: 20px;
 	left: 150px;
 	z-index: 10;
+	animation: ICPCLogoSlideIn 0.5s ease-in;
 	box-shadow: black -1px 0px 2px 6px;
 	border: solid 6px white;
 	border-radius: 40% 50% 40% 50%;
@@ -50,6 +99,7 @@
 	position: absolute;
 	bottom: 240px;
 	left: 10px;
+	animation: ICPCTagSlideIn 0.5s;
 	box-shadow: black -1px 0px 2px 6px;
 	border: solid 6px white;
 	border-radius: 40% 50% 40% 50%;
@@ -59,6 +109,7 @@
 	position: absolute;
 	right: 20px;
 	bottom: 30px;
+	animation: USFLogoSpin 0.5s;
 	box-shadow: black -1px 0px 2px 6px;
 	border: solid 6px white;
 	border-radius: 50%;
@@ -73,6 +124,8 @@
 	align-items: start;
 	gap: 10px;
 	transform: translate(-48%, -48%);
+	animation: AmbientJiggle 7s infinite;
+
 	box-shadow: black 2px 2px 4px 6px;
 	border: solid 6px white;
 	border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
@@ -130,6 +183,11 @@
 }
 .Education-Bullet {
 	color: black;
+}
+.Education-Bullet-Emph {
+	color: #ffffff;
+	font-size: 26pt;
+	text-shadow: 2px 2px 2px #08a973;
 }
 .Education-GPA {
 	position: relative;
