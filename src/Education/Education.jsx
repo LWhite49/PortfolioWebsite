@@ -34,7 +34,44 @@ export const Education = () => {
 					University of South Florida
 				</h1>
 			</div>
-			<div className="Education-Content-Main"></div>
+			<div className="Education-Content-Main">
+				<div className="Education-Bullets">
+					<p className="Education-GPA">
+						{" "}
+						<span className="Education-Bullet">&bull;</span> Junior
+						GPA: 3.91 ={">"} Class of 2026
+					</p>
+					<p className="Education-Major">
+						{" "}
+						<span className="Education-Bullet">&bull;</span>{" "}
+						Computer Science and Computer Engineering
+					</p>
+					<p className="Education-Honors">
+						{" "}
+						<span className="Education-Bullet">&bull;</span>{" "}
+						National Merit Scholar + Judy Genshaft Honors Student
+					</p>
+					<p className="Education-Hackathon">
+						{" "}
+						<span className="Education-Bullet">&bull;</span>{" "}
+						Frequent Webdev Hackathons with USF Google Developer
+						Student Club
+					</p>
+					<p className="Education-Programming">
+						{" "}
+						<span className="Education-Bullet">&bull;</span> Member
+						of USF Competitive Programming Student Organization
+						using Python / C++
+					</p>
+					<p className="Education-ICPC">
+						{" "}
+						<span className="Education-Bullet">&bull;</span>{" "}
+						Competed on USF International Collegiate Programming
+						Team in Regional Contest
+					</p>
+				</div>
+			</div>
+
 			<img
 				className="USF-Bull"
 				data-tooltip-id="usf-bull"
@@ -81,7 +118,7 @@ export const Education = () => {
 				effect="solid"
 				place="bottom-end"
 				style={tooltipStype}
-				content="USF Seal"
+				content="USF: Emblem"
 			/>
 		</div>
 	);
