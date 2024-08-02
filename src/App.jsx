@@ -15,16 +15,32 @@ function UnroutedApp() {
 	// Create a windowWidth state
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-	// Create a navigation menu display state
-	const [isMenuDisplayed, setIsMenuDisplayed] = useState(false);
-	const [currSubpage, setCurrSubpage] = useState("Home");
-
 	// useEffect that sets an event listener on the window object to listen for the resize event
 	useEffect(() => {
 		const handleResize = () => setWindowWidth(window.innerWidth);
 		window.addEventListener("resize", handleResize);
 		return () => window.removeEventListener("resize", handleResize);
 	}, []);
+
+	// Create a navigation menu display state
+	const [isMenuDisplayed, setIsMenuDisplayed] = useState(false);
+
+	// Create a state for current subpage used for conditional rendering of navbar
+	const [currSubpage, setCurrSubpage] = useState(() => {
+		if (
+			localStorage.getItem("subPage") &&
+			Date.now() - localStorage.getItem("lastLoad") < 60000
+		) {
+			return localStorage.getItem("subPage");
+		}
+		return "Home";
+	});
+
+	// Create a useEffect that stores the subpage in local storage when it changes, and updates lastLoad on page closing
+	useEffect(() => {
+		localStorage.setItem("subPage", currSubpage);
+		localStorage.setItem("lastLoad", Date.now());
+	}, [currSubpage]);
 
 	return (
 		<AppContext.Provider
