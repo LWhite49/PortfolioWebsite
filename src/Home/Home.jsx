@@ -1,6 +1,7 @@
 import "./Home.css";
 import { useContext } from "react";
 import { AppContext } from "../App.jsx";
+import { Tooltip } from "react-tooltip";
 import LWImg from "../assets/LWImg.jpg";
 import FrutArrowCurve from "../assets/FrutigerAeroArrow.png";
 import AltArrowCurve from "../assets/AeroArrow2.png";
@@ -11,6 +12,15 @@ import LinkedInSvg from "../assets/LinkedInSvg.svg";
 import GithubSvg from "../assets/GithubSvg.svg";
 
 export const Home = () => {
+	// Create style object for Tooltips
+	const tooltipStype = {
+		backgroundColor: "rgba(0, 0, 0, 0.7)",
+		color: "#75ffca",
+		borderColor: "black",
+		borderRadius: "10px",
+		borderStyle: "solid",
+		borderWidth: "2px",
+	};
 	const { isMenuDisplayed, MemoizedAeroBubbles } = useContext(AppContext);
 	return (
 		<div className="Home">
@@ -40,6 +50,7 @@ export const Home = () => {
 					<img className="Grapes-3D" src={Grapes3D} alt="Grapes3D" />
 					<img
 						className="Email-Svg"
+						data-tooltip-id="email"
 						src={EmailSvg}
 						alt="EmailSvg"
 						onClick={() => {
@@ -50,6 +61,13 @@ export const Home = () => {
 							);
 						}}
 					/>
+					<Tooltip
+						id="email"
+						place="top"
+						effect="solid"
+						content="Email: lwhite4965@outlook.com"
+						style={tooltipStype}
+					/>
 					<img
 						onClick={() => {
 							window.open(
@@ -59,8 +77,16 @@ export const Home = () => {
 							);
 						}}
 						className="LinkedIn-Svg"
+						data-tooltip-id="linkedin"
 						src={LinkedInSvg}
 						alt="LinkedInSvg"
+					/>
+					<Tooltip
+						id="linkedin"
+						place="top"
+						effect="solid"
+						content="LinkedIn: lwhite49"
+						style={tooltipStype}
 					/>
 					<img
 						onClick={() => {
@@ -71,8 +97,16 @@ export const Home = () => {
 							);
 						}}
 						className="Github-Svg"
+						data-tooltip-id="github"
 						src={GithubSvg}
 						alt="GithubSvg"
+					/>
+					<Tooltip
+						id="github"
+						place="top"
+						effect="solid"
+						content="Github: LWhite49"
+						style={tooltipStype}
 					/>
 				</div>
 			</div>
