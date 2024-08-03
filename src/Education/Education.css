@@ -73,6 +73,19 @@
 	}
 }
 
+@keyframes TitleSlideIn {
+	0% {
+		top: -140px;
+		left: 28vw;
+		transform: rotate(60deg) scale(0.7);
+	}
+	100% {
+		top: 26px;
+		left: 28vw;
+		transform: rotate(0deg) scale(1);
+	}
+}
+
 .USF-Bull {
 	position: absolute;
 	top: 40px;
@@ -140,6 +153,7 @@
 	top: 26px;
 	left: 28vw;
 	gap: 20px;
+	animation: TitleSlideIn 0.5s;
 }
 .Strawberry {
 	width: 100px;

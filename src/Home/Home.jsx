@@ -2,7 +2,7 @@ import "./Home.css";
 import { useContext } from "react";
 import { AppContext } from "../App.jsx";
 import { Tooltip } from "react-tooltip";
-import LWImg from "../assets/LWImg.jpg";
+import LWImg from "../assets/LWImg.avif";
 import FrutArrowCurve from "../assets/FrutigerAeroArrow.png";
 import AltArrowCurve from "../assets/AeroArrow2.png";
 import Cherries3D from "../assets/Cherries.gif";

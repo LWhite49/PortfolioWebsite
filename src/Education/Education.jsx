@@ -1,8 +1,8 @@
 import "./Education.css";
-import USFBull from "../assets/USFBull.jpg";
-import ICPCLogo from "../assets/ICPC-Group.jpg";
-import ICPCTag from "../assets/ICPC-Tag.jpg";
-import USFLogo from "../assets/USF-Logo.png";
+import USFBull from "../assets/USFBull.avif";
+import ICPCLogo from "../assets/ICPC-Group.avif";
+import ICPCTag from "../assets/ICPC-Tag.avif";
+import USFLogo from "../assets/USF-Logo.avif";
 import Strawberry from "../assets/Strawberry.gif";
 import { Tooltip } from "react-tooltip";
 import { AppContext } from "../App.jsx";
@@ -84,7 +84,7 @@ export const Education = () => {
 							USF International Collegiate Programming Contest
 							Team
 						</span>{" "}
-						in Regional Contest
+						in Regionals
 					</p>
 				</div>
 			</div>
