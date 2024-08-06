@@ -1,0 +1,51 @@
+.Project-Display {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	border: 4px double black;
+	border-radius: 20px;
+	background-color: rgb(139, 8, 247);
+	padding: 0px;
+}
+.First-Column {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: start;
+	padding: 0px;
+	width: 500px;
+}
+.Project-Name {
+	margin: 0px;
+	padding: 10px 20px 0px 20px;
+	width: 500px;
+	color: rgb(221, 169, 221);
+	font-size: 38pt;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+	text-align: start;
+	text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+.Bullet-Point {
+	margin: 0px;
+	width: 500px;
+
+	color: rgb(255, 255, 255);
+	font-size: 20pt;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+	text-align: start;
+	text-indent: 26px;
+	text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+.Completed-At {
+	margin: 0px;
+	padding: 10px 20px;
+	width: 500px;
+	color: rgb(255, 255, 255);
+	font-size: 20pt;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+	text-align: start;
+	text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
