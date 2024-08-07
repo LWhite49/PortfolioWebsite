@@ -4,13 +4,12 @@ import leftArrow from "../assets/leftArrow.svg";
 import rightArrow from "../assets/rightArrow.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useContext, useRef } from "react";
-import { AppContext } from "../App.jsx";
+import { useRef } from "react";
 import Banana from "../assets/Banana.gif";
 import { ProjectDisplay } from "./Project-Display/Project-Display.jsx";
 
 export const Projects = () => {
-	const { MemoizedAeroBubbles } = useContext(AppContext);
+	// const { MemoizedAeroBubbles } = useContext(AppContext);
 
 	const slider = useRef(null);
 	const sliderSettings = {
@@ -21,8 +20,9 @@ export const Projects = () => {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 10000,
+		autoplaySpeed: 12000,
 		draggable: false,
+		pauseOnHover: true,
 	};
 	return (
 		<div className="Projects">
@@ -31,11 +31,7 @@ export const Projects = () => {
 
 				<h1 className="Projects-Header">Project Hall</h1>
 			</div>
-			<MemoizedAeroBubbles
-				background="#B47EAB"
-				node="#000000"
-				links="#000000"
-			/>
+
 			<div className="Slider-Wrap">
 				<button
 					className="Slider-Prev"
@@ -47,8 +43,8 @@ export const Projects = () => {
 						projectName="Outfit Generator"
 						completedAt="Ongoing"
 						bulletPoints={[
-							"Complex Database Management",
-							"Responsive Design with React",
+							"Fullstack Application that generates second-hand outfits based on user preferences by utilizing Mach",
+							"",
 						]}
 					/>
 					<ProjectDisplay

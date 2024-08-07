@@ -6,12 +6,14 @@ export const ProjectDisplay = ({ projectName, completedAt, bulletPoints }) => {
 		<div className="Project-Display">
 			<div className="First-Column">
 				<p className="Project-Name">{projectName}</p>
-				{bulletPoints.map((bulletPoint, index) => (
-					<p key={index} className="Bullet-Point">
-						&bull;
-						{bulletPoint}
-					</p>
-				))}
+				<div className="Feature-Wrapper">
+					{bulletPoints.map((bulletPoint, index) => (
+						<p key={index} className="Bullet-Point">
+							<span className="Bullet">&bull;</span>
+							{bulletPoint}
+						</p>
+					))}
+				</div>
 				<p className="Completed-At">Completed: {completedAt}</p>
 			</div>
 		</div>

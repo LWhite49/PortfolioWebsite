@@ -1,5 +1,5 @@
 import "./AeroBubbles.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import PropTypes from "prop-types";
 // import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
@@ -13,6 +13,7 @@ export const AeroBubbles = ({
 	links = "#EF3D3D",
 }) => {
 	const [init, setInit] = useState(false);
+	const particlesRef = useRef(null);
 
 	// this should be run only once per application lifetime
 	useEffect(() => {
@@ -29,6 +30,10 @@ export const AeroBubbles = ({
 		});
 	}, []);
 
+	const particlesInit = (main) => {
+		particlesRef.current = main;
+	};
+
 	const particlesLoaded = (container) => {
 		console.log(container);
 	};
@@ -37,8 +42,9 @@ export const AeroBubbles = ({
 		init ? (
 			<Particles
 				className="AeroBubbles"
-				id="tsparticles"
+				id="persistent-particles"
 				particlesLoaded={particlesLoaded}
+				init={particlesInit}
 				options={{
 					background: {
 						color: {
@@ -61,15 +67,16 @@ export const AeroBubbles = ({
 						},
 					},
 					particles: {
+						id: "persistent-particles",
 						color: {
 							value: node,
 						},
 						links: {
 							color: links,
-							distance: 220,
+							distance: 300,
 							enable: true,
 							opacity: 0.6,
-							width: 2,
+							width: 3,
 						},
 						move: {
 							direction: "nones",
@@ -79,7 +86,7 @@ export const AeroBubbles = ({
 								default: "bounce",
 							},
 							random: true,
-							speed: 2,
+							speed: 1,
 							straight: false,
 						},
 						number: {

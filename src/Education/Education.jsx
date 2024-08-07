@@ -5,8 +5,7 @@ import ICPCTag from "../assets/ICPC-Tag.avif";
 import USFLogo from "../assets/USF-Logo.avif";
 import Strawberry from "../assets/Strawberry.gif";
 import { Tooltip } from "react-tooltip";
-import { AppContext } from "../App.jsx";
-import { useContext } from "react";
+
 export const Education = () => {
 	// Define tooltip style object
 	const tooltipStype = {
@@ -19,14 +18,9 @@ export const Education = () => {
 		fontSize: "16pt",
 		maxWidth: "300px",
 	};
-	const { MemoizedAeroBubbles } = useContext(AppContext);
+	// const { MemoizedAeroBubbles } = useContext(AppContext);
 	return (
 		<div className="Education">
-			<MemoizedAeroBubbles
-				background="006c43"
-				node="#d0c695"
-				links="#ffffff"
-			/>
 			<div className="Education-Header-Wrapper">
 				<img className="Strawberry" src={Strawberry} />
 

@@ -5,8 +5,7 @@
 	position: absolute;
 	top: 24vh;
 	left: 24vw;
-	background-color: #ebf2e4;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: #e6d6ebb3;
 	padding: 10px;
 	text-align: left;
 }
@@ -49,7 +48,7 @@
 	box-shadow: #192424 2px 6px 10px 2px;
 	border: solid 6px #08a973;
 	border-radius: 70% 60% 80% 55%;
-	width: 400px;
+	width: 460px;
 }
 
 .Cherries-3D {

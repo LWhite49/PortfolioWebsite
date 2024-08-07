@@ -2,7 +2,7 @@ import "./Home.css";
 import { useContext } from "react";
 import { AppContext } from "../App.jsx";
 import { Tooltip } from "react-tooltip";
-import LWImg from "../assets/LWImg.avif";
+import LWImg from "../assets/LWIMG (2).avif";
 import FrutArrowCurve from "../assets/FrutigerAeroArrow.png";
 import AltArrowCurve from "../assets/AeroArrow2.png";
 import Cherries3D from "../assets/Cherries.gif";
@@ -21,7 +21,7 @@ export const Home = () => {
 		borderStyle: "solid",
 		borderWidth: "2px",
 	};
-	const { isMenuDisplayed, MemoizedAeroBubbles } = useContext(AppContext);
+	const { isMenuDisplayed } = useContext(AppContext);
 	return (
 		<div className="Home">
 			<div className="Home-Intro-Text-Wrap">
@@ -115,11 +115,6 @@ export const Home = () => {
 					isMenuDisplayed ? "Alt-Aero-Arrow-Invis" : "Alt-Aero-Arrow"
 				}
 				src={AltArrowCurve}
-			/>
-			<MemoizedAeroBubbles
-				background="#ebf2e4"
-				node="#08A973"
-				links="#EF3D3D"
 			/>
 		</div>
 	);
