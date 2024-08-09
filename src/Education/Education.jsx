@@ -1,4 +1,6 @@
 import "./Education.css";
+import { useContext } from "react";
+import { AppContext } from "../App.jsx";
 import USFBull from "../assets/USFBull.avif";
 import ICPCLogo from "../assets/ICPC-Group.avif";
 import ICPCTag from "../assets/ICPC-Tag.avif";
@@ -7,6 +9,8 @@ import Strawberry from "../assets/Strawberry.gif";
 import { Tooltip } from "react-tooltip";
 
 export const Education = () => {
+	const { MemoizedAeroBubbles } = useContext(AppContext);
+
 	// Define tooltip style object
 	const tooltipStype = {
 		backgroundColor: "rgba(0, 0, 0, 0.7)",
@@ -21,6 +25,11 @@ export const Education = () => {
 	// const { MemoizedAeroBubbles } = useContext(AppContext);
 	return (
 		<div className="Education">
+			<MemoizedAeroBubbles
+				background="#006c43"
+				node="#d0c695"
+				links="#D0FCD0"
+			/>
 			<div className="Education-Header-Wrapper">
 				<img className="Strawberry" src={Strawberry} />
 

@@ -21,9 +21,14 @@ export const Home = () => {
 		borderStyle: "solid",
 		borderWidth: "2px",
 	};
-	const { isMenuDisplayed } = useContext(AppContext);
+	const { isMenuDisplayed, MemoizedAeroBubbles } = useContext(AppContext);
 	return (
 		<div className="Home">
+			<MemoizedAeroBubbles
+				background="#E6D6EB"
+				node="#7E6B8F"
+				links="#8DC97E"
+			/>
 			<div className="Home-Intro-Text-Wrap">
 				<h1 className="Home-Hook">Nice to meet you!</h1>
 				<h1 className="Home-Intro-Personal-Name">{"I'm Logan 💫"}</h1>

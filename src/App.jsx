@@ -36,41 +36,10 @@ function UnroutedApp() {
 		return "Home";
 	});
 
-	// Assign bubble state based on subpage
-	const [bubbleState, setBubbleState] = useState(() => {
-		if (currSubpage === "Home") {
-			return { bg: "#E6D6EB", node: "#7E6B8F", links: "#8DC97E" };
-		} else if (currSubpage === "Education") {
-			return { bg: "#006c43", node: "#d0c695", links: "#D0FCD0" };
-		} else if (currSubpage === "Projects") {
-			return { bg: "#B47EAB", node: "#000000", links: "#000000" };
-		}
-	});
-
 	// Create a useEffect that stores the subpage in local storage when it changes, and updates lastLoad on page closing
 	useEffect(() => {
 		localStorage.setItem("subPage", currSubpage);
 		localStorage.setItem("lastLoad", Date.now());
-		// Assign bubble state based on subpage
-		if (currSubpage === "Home") {
-			setBubbleState({
-				bg: "#E6D6EB",
-				node: "#7E6B8F",
-				links: "#8DC97E",
-			});
-		} else if (currSubpage === "Education") {
-			setBubbleState({
-				bg: "#006c43",
-				node: "#d0c695",
-				links: "#D0FCD0",
-			});
-		} else if (currSubpage === "Projects") {
-			setBubbleState({
-				bg: "#B47EAB",
-				node: "#000000",
-				links: "#000000",
-			});
-		}
 	}, [currSubpage]);
 
 	return (
@@ -149,11 +118,6 @@ function UnroutedApp() {
 					<hr className="Top-Menu-Line"></hr>
 					<hr className="Bottom-Menu-Line"></hr>
 				</button>
-				<MemoizedAeroBubbles
-					background={bubbleState.bg}
-					node={bubbleState.node}
-					links={bubbleState.links}
-				/>
 			</div>
 		</AppContext.Provider>
 	);
