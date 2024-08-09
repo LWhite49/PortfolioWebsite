@@ -4,8 +4,8 @@
 	flex-direction: column;
 	border: 4px double black;
 	border-radius: 40px;
-	background-color: rgb(115, 5, 205);
-	padding: 30px 40px;
+	background-color: rgba(115, 5, 205, 0.85);
+	padding: 20px 60px;
 	width: 1640px;
 }
 .Project-Display,
@@ -18,57 +18,34 @@
 
 .Invis-Project-Display {
 	opacity: 0;
-	animation: BounceOut 0.5s forwards;
-}
-.Bounce-Out-Up {
-	opacity: 0;
-	animation: BounceOutUp 0.5s forwards;
+	animation: BounceOut 0.7s forwards;
 }
 
 @keyframes BounceIn {
 	0% {
-		transform: translateY(-50vh) translateX(6vw); /* Start off-screen above with rotation */
+		transform: translateY(-30vh) translateX(0vw) rotate(2deg); /* Start off-screen above with rotation */
 		opacity: 0;
 	}
 	50% {
-		transform: translateY(-20px) translateX(3vw); /* Slight bounce with rotation */
+		transform: translateY(-30px) translateX(-2.5vw); /* Slight bounce with rotation */
 		opacity: 1;
 	}
 	100% {
-		transform: translateY(0) rotate(0deg); /* End at the final position with no rotation */
+		transform: translateY(0) rotate(0deg) translateX(-4vw) rotate(0deg); /* End at the final position with no rotation */
 	}
 }
 
 @keyframes BounceOut {
 	0% {
-		transform: translateY(0) rotate(0deg); /* Start at the final position with no rotation */
+		transform: translateY(0) rotate(0deg) translateX(-4vw); /* Start at the final position with no rotation */
 		opacity: 1;
 	}
 	50% {
-		transform: translateY(20vh) translateX(3vw) rotate(-1deg); /* Slight bounce with rotation */
+		transform: translateY(360px) translateX(-1vw) rotate(-1deg); /* Slight bounce with rotation */
 		opacity: 1;
 	}
 	100% {
-		transform: translateY(30vh) translateX(6vw) rotate(-4deg); /* Move off-screen below with rotation */
-		opacity: 0;
-		margin: 0px;
-		padding: 0px;
-		width: 0px;
-		height: 0px;
-	}
-}
-
-@keyframes BounceOutUp {
-	0% {
-		transform: translateY(-40vh) rotate(0deg); /* Start at the final position with no rotation */
-		opacity: 1;
-	}
-	50% {
-		transform: translateY(-20vh) translateX(3vw) rotate(-1deg); /* Slight bounce with rotation */
-		opacity: 1;
-	}
-	100% {
-		transform: translateY(-10vh) translateX(6vw) rotate(-4deg); /* Move off-screen below with rotation */
+		transform: translateY(30vh) translateX(0vw) rotate(-4deg); /* Move off-screen below with rotation */
 		opacity: 0;
 		margin: 0px;
 		padding: 0px;
@@ -83,48 +60,53 @@
 	justify-content: flex-start;
 	align-items: start;
 	padding: 0px;
-	width: 780px;
+	width: 820px;
 }
 .Project-Name {
+	cursor: default;
 	margin: 0px;
 	padding: 10px 20px 40px 20px;
-	width: 740px;
+	width: 820px;
 	color: rgb(221, 169, 221);
-	font-size: 48pt;
+	font-size: 58pt;
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
 		sans-serif;
 	text-align: start;
 	text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 .Feature-Wrapper {
+	margin-bottom: 30px;
 	border: black 4px double;
 	border-radius: 20px;
 	background-color: #550994;
-}
-.Feature-Header {
-	margin: 0px;
-	padding-left: 26px;
-	color: rgb(149, 235, 165);
-	font-size: 28pt;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-		sans-serif;
-	text-align: start;
-	text-shadow: 2px 2px 4px rgb(0, 0, 0);
+	width: 820px;
 }
 .Bullet-Point {
+	transition: all 0.3s;
+	cursor: default;
 	margin: 0px;
 	margin-top: 38px;
 	margin-bottom: 38px;
 	margin-left: 50px;
-	width: 740px;
+	width: 720px;
 	color: rgb(233, 139, 249);
-	font-size: 18pt;
+	font-size: 16pt;
 	line-height: 29px;
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
 		sans-serif;
 	text-align: start;
 	text-indent: -31px;
 	text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+.Bullet-Point:hover {
+	transition: all 0.3s;
+	color: #ec5edb;
+	font-size: 18pt;
+}
+.Bullet-Point:hover .Bullet {
+	transition: all 0.3s;
+	color: #ec5edb;
+	font-size: 30pt;
 }
 .Bullet {
 	position: relative;
@@ -134,7 +116,20 @@
 	font-size: 28pt;
 	text-shadow: none;
 }
+.Clock-Wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0px;
+	width: 820px;
+}
+.ClockSvg {
+	margin-left: 20px;
+	width: 80px;
+}
 .Completed-At {
+	cursor: default;
 	margin: 0px;
 	padding: 10px 20px;
 	width: 740px;
@@ -144,4 +139,10 @@
 		sans-serif;
 	text-align: start;
 	text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+.Completed-At-Emph {
+	margin-bottom: 2px;
+	margin-left: 4px;
+	color: #ecd45e;
+	font-size: 24pt;
 }

@@ -36,29 +36,22 @@
 .Slider {
 	display: inline-block;
 }
-
-.Slider-Prev {
-	position: absolute;
-	top: 50%;
-	left: 100px;
-	transform: translateY(-50%);
-	border: none;
-	background-color: rgb(0, 0, 0, 0);
-}
-.Slider-Next {
+.Slider-Nav-Wrapper {
+	display: flex;
 	position: absolute;
 	top: 50%;
 	right: 100px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	transform: translateY(-50%);
+}
+.Slider-Next {
 	border: none;
 	background-color: rgb(0, 0, 0, 0);
 }
-.Slider-Prev:hover,
 .Slider-Next:hover {
 	border: none;
-}
-.Left-Arrow {
-	width: 100px;
 }
 .Right-Arrow {
 	width: 100px;

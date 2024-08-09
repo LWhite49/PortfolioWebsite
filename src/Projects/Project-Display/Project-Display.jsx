@@ -1,11 +1,14 @@
 import "./Project-Display.css";
 import PropTypes from "prop-types";
+import clockWIP from "../../assets/clockWIP.svg";
+import clockFIN from "../../assets/clockFIN.svg";
 
 export const ProjectDisplay = ({
 	projectName,
 	completedAt,
 	bulletPoints,
 	bounceStage,
+	clockSVG,
 }) => {
 	// Assign className based on bounceStage state prop
 	let bounceClass = "";
@@ -18,12 +21,16 @@ export const ProjectDisplay = ({
 			bounceClass = "Project-Display";
 			break;
 		case 2:
-			bounceClass = "Bounce-Out-Up";
+			bounceClass = "Invis-Project-Display";
 			break;
 	}
 
+	const style = {
+		transform: "translateY(-30vh)",
+	};
+
 	return (
-		<div className={bounceClass}>
+		<div className={bounceClass} style={bounceStage === 2 ? style : {}}>
 			<div className="Project-Display-Internal">
 				<div className="First-Column">
 					<p className={"Project-Name"}>{projectName}</p>
@@ -35,15 +42,29 @@ export const ProjectDisplay = ({
 							</p>
 						))}
 					</div>
-					<p className="Completed-At">Completed: {completedAt}</p>
+					<div className="Clock-Wrapper">
+						<img
+							className="ClockSvg"
+							src={clockSVG === 1 ? clockFIN : clockWIP}
+							alt="Clock"
+						/>
+						<p className="Completed-At">
+							Completed:{" "}
+							<span className="Completed-At-Emph">
+								{completedAt}
+							</span>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	);
 };
+
 ProjectDisplay.propTypes = {
 	projectName: PropTypes.string.isRequired,
 	completedAt: PropTypes.string.isRequired,
 	bulletPoints: PropTypes.arrayOf(PropTypes.string).isRequired,
-	bounceStage: PropTypes.string.isRequired,
+	bounceStage: PropTypes.number.isRequired,
+	clockSVG: PropTypes.number.isRequired,
 };
