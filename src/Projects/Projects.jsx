@@ -23,14 +23,25 @@ export const Projects = () => {
 		setProjectVisibility((prev) => {
 			// Find the index of the current visible project
 			const currentIndex = prev.indexOf(1);
-			// Identify the next project index
-			const nextIndex = (currentIndex + 1) % projectVisibility.length;
-			// Construct new state
-			const newState = prev.map((_, index) => {
-				if (index === nextIndex) return 1;
-				return 0;
-			});
-			return newState;
+			// Check for shuffle edge case
+			if (currentIndex === projectVisibility.length - 1) {
+				return prev.map((_, index) => {
+					if (index === 0) return 1;
+					if (index === projectVisibility.length - 1) return 2;
+					return 0;
+				});
+			}
+			// Otherwise
+			else {
+				// Identify the next project index
+				const nextIndex = (currentIndex + 1) % projectVisibility.length;
+				// Construct new state
+				const newState = prev.map((_, index) => {
+					if (index === nextIndex) return 1;
+					return 0;
+				});
+				return newState;
+			}
 		});
 	};
 
@@ -39,18 +50,23 @@ export const Projects = () => {
 		setProjectVisibility((prev) => {
 			// Find the index of the current visible project
 			const currentIndex = prev.indexOf(1);
-			// Identify the next project index
-			const nextIndex =
-				currentIndex === 0
-					? projectVisibility.length - 1
-					: currentIndex - 1;
-
-			// Construct new state
-			const newState = prev.map((_, index) => {
-				if (index === nextIndex) return 1;
-				return 0;
-			});
-			return newState;
+			// Check for shuffle edge case
+			if (currentIndex === 0) {
+				return prev.map((_, index) => {
+					if (index === projectVisibility.length - 1) return 1;
+					return 0;
+				});
+			} else {
+				// Identify the next project index
+				const nextIndex = currentIndex - 1;
+				// Construct new state
+				const newState = prev.map((_, index) => {
+					if (index === nextIndex) return 1;
+					if (index === currentIndex) return 2;
+					return 0;
+				});
+				return newState;
+			}
 		});
 	};
 	return (

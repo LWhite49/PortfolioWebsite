@@ -17,6 +17,9 @@ export const ProjectDisplay = ({
 		case 1:
 			bounceClass = "Project-Display";
 			break;
+		case 2:
+			bounceClass = "Bounce-Out-Up";
+			break;
 	}
 
 	return (
