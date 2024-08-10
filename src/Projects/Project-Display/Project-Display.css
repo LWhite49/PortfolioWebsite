@@ -1,11 +1,11 @@
 .Project-Display-Internal {
 	display: flex;
 	position: relative;
-	flex-direction: column;
+	flex-direction: row;
 	border: 4px double black;
 	border-radius: 40px;
 	background-color: rgba(115, 5, 205, 0.85);
-	padding: 20px 60px;
+	padding: 30px 60px;
 	width: 1640px;
 }
 .Project-Display,
@@ -59,34 +59,46 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: start;
+	border-right: 4px ridge #b47eab;
 	padding: 0px;
+	padding-right: 30px;
 	width: 820px;
 }
 .Project-Name {
+	transition: font-size 0.2s linear, color 0.2s linear;
+
 	cursor: default;
+	cursor: pointer;
 	margin: 0px;
 	padding: 10px 20px 40px 20px;
 	width: 820px;
 	color: rgb(221, 169, 221);
-	font-size: 58pt;
+	font-size: 54pt;
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
 		sans-serif;
 	text-align: start;
 	text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
+.Project-Name:hover {
+	color: #ec5edb;
+	font-size: 58pt;
+	text-decoration: underline;
+}
 .Feature-Wrapper {
+	margin-top: 20px;
 	margin-bottom: 30px;
 	border: black 4px double;
 	border-radius: 20px;
 	background-color: #550994;
-	width: 820px;
+	padding-right: 0px;
+	width: 800px;
 }
 .Bullet-Point {
 	transition: all 0.3s;
 	cursor: default;
 	margin: 0px;
-	margin-top: 38px;
-	margin-bottom: 38px;
+	margin-top: 44px;
+	margin-bottom: 44px;
 	margin-left: 50px;
 	width: 720px;
 	color: rgb(233, 139, 249);
@@ -121,6 +133,7 @@
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
+	margin-top: 30px;
 	padding: 0px;
 	width: 820px;
 }
@@ -145,4 +158,54 @@
 	margin-left: 4px;
 	color: #ecd45e;
 	font-size: 24pt;
+}
+.Second-Column {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0px;
+	padding-left: 30px;
+	width: 820px;
+}
+.Project-Img {
+	cursor: pointer;
+	margin-top: 80px;
+	border: 4px double black;
+	border-radius: 20px;
+	width: 640px;
+	height: 330px;
+}
+.Project-Skills-Wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 18px;
+	margin-top: 20px;
+	padding: 0px;
+	width: 720px;
+	max-width: 720px;
+	overflow-x: visible;
+}
+.Project-Skill {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+}
+.Skill-Img {
+	width: 40px;
+}
+.Skill-Name {
+	cursor: default;
+	margin: 0px;
+	padding: 10px 20px;
+	width: 720px;
+	color: rgb(221, 169, 221);
+	font-size: 18pt;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+	text-align: start;
+	text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }

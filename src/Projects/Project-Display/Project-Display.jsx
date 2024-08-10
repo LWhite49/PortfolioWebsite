@@ -9,6 +9,9 @@ export const ProjectDisplay = ({
 	bulletPoints,
 	bounceStage,
 	clockSVG,
+	demonstrationLink,
+	projectImg,
+	projectSkills = [],
 }) => {
 	// Assign className based on bounceStage state prop
 	let bounceClass = "";
@@ -33,7 +36,13 @@ export const ProjectDisplay = ({
 		<div className={bounceClass} style={bounceStage === 2 ? style : {}}>
 			<div className="Project-Display-Internal">
 				<div className="First-Column">
-					<p className={"Project-Name"}>{projectName}</p>
+					<p
+						className={"Project-Name"}
+						onClick={() => {
+							window.open(demonstrationLink, "_blank");
+						}}>
+						{projectName}
+					</p>
 					<div className="Feature-Wrapper">
 						{bulletPoints.map((bulletPoint, index) => (
 							<p key={index} className="Bullet-Point">
@@ -56,6 +65,32 @@ export const ProjectDisplay = ({
 						</p>
 					</div>
 				</div>
+				<div className="Second-Column">
+					<img
+						className="Project-Img"
+						src={projectImg}
+						alt="Project-Img"
+						onClick={() => {
+							window.open(demonstrationLink, "_blank");
+						}}
+					/>
+					<div className="Project-Skills-Wrapper">
+						{projectSkills.map((skill, index) => {
+							return (
+								<div key={index} className="Project-Skill">
+									<img
+										className="Skill-Img"
+										src={skill.svg}
+										alt="skill"
+									/>
+									<p key={index} className="Skill-Name">
+										{skill.name}
+									</p>
+								</div>
+							);
+						})}
+					</div>
+				</div>
 			</div>
 		</div>
 	);
@@ -67,4 +102,7 @@ ProjectDisplay.propTypes = {
 	bulletPoints: PropTypes.arrayOf(PropTypes.string).isRequired,
 	bounceStage: PropTypes.number.isRequired,
 	clockSVG: PropTypes.number.isRequired,
+	demonstrationLink: PropTypes.string.isRequired,
+	projectImg: PropTypes.isRequired,
+	projectSkills: PropTypes,
 };

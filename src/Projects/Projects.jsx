@@ -8,6 +8,11 @@ import { Tooltip } from "react-tooltip";
 import { useState } from "react";
 import Banana from "../assets/Banana.gif";
 import { ProjectDisplay } from "./Project-Display/Project-Display.jsx";
+import OGImg from "../assets/OGImg.png";
+import PPImg from "../assets/PPImg.png";
+import ACImg from "../assets/ACImg.png";
+import CNCImg from "../assets/CNCImg.png";
+import RBImg from "../assets/RBImg.png";
 
 export const Projects = () => {
 	const { MemoizedAeroBubbles } = useContext(AppContext);
@@ -74,6 +79,8 @@ export const Projects = () => {
 					]}
 					bounceStage={projectVisibility[0]}
 					clockSVG={0}
+					demonstrationLink="https://github.com/LWhite49/Outfit-Generator"
+					projectImg={OGImg}
 				/>
 				<ProjectDisplay
 					projectName="Personal Portfolio"
@@ -85,6 +92,8 @@ export const Projects = () => {
 					]}
 					bounceStage={projectVisibility[1]}
 					clockSVG={1}
+					demonstrationLink="https://github.com/LWhite49/PortfolioWebsite"
+					projectImg={PPImg}
 				/>
 				<ProjectDisplay
 					projectName="Album Chart Server"
@@ -96,6 +105,8 @@ export const Projects = () => {
 					]}
 					bounceStage={projectVisibility[2]}
 					clockSVG={1}
+					demonstrationLink="https://www.linkedin.com/posts/lwhite49_for-a-while-i-viewed-nodejs-as-something-activity-7143681848290848768-n405?utm_source=share&utm_medium=member_desktop"
+					projectImg={ACImg}
 				/>
 				<ProjectDisplay
 					projectName="Custom News Client"
@@ -107,6 +118,8 @@ export const Projects = () => {
 					]}
 					bounceStage={projectVisibility[3]}
 					clockSVG={1}
+					demonstrationLink="https://www.linkedin.com/posts/lwhite49_as-i-am-preparing-to-build-my-personal-portfolio-activity-7199450197100228608-qYfz?utm_source=share&utm_medium=member_desktop"
+					projectImg={CNCImg}
 				/>
 				<ProjectDisplay
 					projectName="Music Benchmark"
@@ -118,6 +131,8 @@ export const Projects = () => {
 					]}
 					bounceStage={projectVisibility[4]}
 					clockSVG={1}
+					demonstrationLink="https://www.linkedin.com/posts/lwhite49_as-i-am-preparing-to-build-my-personal-portfolio-activity-7198762368783241216-x3MT?utm_source=share&utm_medium=member_desktop"
+					projectImg={RBImg}
 				/>
 			</div>
 			<div className="Slider-Nav-Wrapper">
