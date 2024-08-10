@@ -2,6 +2,9 @@ import "./Projects.css";
 import { useContext } from "react";
 import { AppContext } from "../App.jsx";
 import rightArrow from "../assets/rightArrow.svg";
+import fillCircle from "../assets/circleFill.svg";
+import emptyCircle from "../assets/circleEmpty.svg";
+import { Tooltip } from "react-tooltip";
 import { useState } from "react";
 import Banana from "../assets/Banana.gif";
 import { ProjectDisplay } from "./Project-Display/Project-Display.jsx";
@@ -15,6 +18,7 @@ export const Projects = () => {
 	// 2 = Bounce Out High / Invis Reshuffle
 	// 3 = Bounce Out / Invis No Reshuffle
 
+	const [sliderIndex, setSliderIndex] = useState(0);
 	const [projectVisibility, setProjectVisibility] = useState([1, 0, 0, 0, 0]);
 
 	// Increment Slider Index
@@ -24,6 +28,7 @@ export const Projects = () => {
 			const currentIndex = prev.indexOf(1);
 			// Check for shuffle edge case
 			if (currentIndex === projectVisibility.length - 1) {
+				setSliderIndex(0);
 				return prev.map((_, index) => {
 					if (index === 0) return 1;
 					if (index === projectVisibility.length - 1) return 2;
@@ -35,6 +40,7 @@ export const Projects = () => {
 				// Identify the next project index
 				const nextIndex = (currentIndex + 1) % projectVisibility.length;
 				// Construct new state
+				setSliderIndex(nextIndex);
 				const newState = prev.map((_, index) => {
 					if (index === nextIndex) return 1;
 					return 0;
@@ -115,14 +121,55 @@ export const Projects = () => {
 				/>
 			</div>
 			<div className="Slider-Nav-Wrapper">
+				<div
+					className="Slider-Nav-Indicators"
+					data-tooltip-id="slider-indicator">
+					<img
+						className="Slider-Indicator"
+						src={sliderIndex === 0 ? fillCircle : emptyCircle}
+					/>
+					<img
+						className="Slider-Indicator"
+						src={sliderIndex === 1 ? fillCircle : emptyCircle}
+					/>
+					<img
+						className="Slider-Indicator"
+						src={sliderIndex === 2 ? fillCircle : emptyCircle}
+					/>
+					<img
+						className="Slider-Indicator"
+						src={sliderIndex === 3 ? fillCircle : emptyCircle}
+					/>
+					<img
+						className="Slider-Indicator"
+						src={sliderIndex === 4 ? fillCircle : emptyCircle}
+					/>
+				</div>
 				<button
 					className="Slider-Next"
+					data-tooltip-id="next-arrow"
 					onClick={() => {
 						incrementSliderIndex();
 					}}>
 					<img className="Right-Arrow" src={rightArrow} />
 				</button>
 			</div>
+			<Tooltip
+				id="next-arrow"
+				place="top"
+				effect="solid"
+				content="See Next Project"
+				style={{ backgroundColor: "#550994" }}
+			/>
+			<Tooltip
+				id="slider-indicator"
+				place="top"
+				effect="solid"
+				content={`Project ${sliderIndex + 1} of ${
+					projectVisibility.length
+				}`}
+				style={{ backgroundColor: "#550994" }}
+			/>
 		</div>
 	);
 };

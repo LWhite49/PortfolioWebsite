@@ -46,6 +46,16 @@
 	align-items: center;
 	transform: translateY(-50%);
 }
+.Slider-Nav-Indicators {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+.Slider-Indicator {
+	width: 12px;
+}
 .Slider-Next {
 	border: none;
 	background-color: rgb(0, 0, 0, 0);
@@ -53,6 +63,21 @@
 .Slider-Next:hover {
 	border: none;
 }
+@keyframes jiggle {
+	0% {
+		transform: translateY(10px) rotate(90deg);
+	}
+	50% {
+		transform: translateY(0px) rotate(90deg);
+	}
+	100% {
+		transform: translateY(10px) rotate(90deg);
+	}
+}
 .Right-Arrow {
+	transform: rotate(90deg);
 	width: 100px;
+}
+.Right-Arrow:hover {
+	animation: jiggle 1.5s infinite;
 }
