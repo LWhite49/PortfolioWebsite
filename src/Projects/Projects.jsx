@@ -99,18 +99,47 @@ export const Projects = () => {
 					demonstrationLink="https://github.com/LWhite49/Outfit-Generator"
 					projectImg={OGImg}
 					projectSkills={[
-						{ name: "React", svg: reactSkill },
+						{
+							name: "React",
+							svg: reactSkill,
+							use: "Frontend Applicaiton Website is built with React",
+						},
 						{
 							name: "Feed Management",
 							svg: feedManagementSkill,
+							use: "Sourcing and Managing a Content Feed from the Frontend",
 						},
-						{ name: "UI Design", svg: uiDesignSkill },
-						{ name: "Node.js", svg: nodeSkill },
-						{ name: "Database Management", svg: databaseSkill },
-						{ name: "Web Scraping", svg: webScrapeSkill },
+						{
+							name: "UI Design",
+							svg: uiDesignSkill,
+							use: "Informed Design to ensure Stylish, Funcitonal User Experience",
+						},
+						{
+							name: "Node.js",
+							svg: nodeSkill,
+							use: "Backend Application is built with Node as a REST API",
+						},
+						{
+							name: "Database Management",
+							svg: databaseSkill,
+							use: "Data Storage and Management with MongoDB and MongooseJS",
+						},
+						{
+							name: "Web Scraping",
+							svg: webScrapeSkill,
+							use: "Database sources new clothing with Node Puppeteer Web Scraper",
+						},
 
-						{ name: "Colaborative", svg: colaborativeSkill },
-						{ name: "Machine Learning", svg: machineLearningSkill },
+						{
+							name: "Colaborative",
+							svg: colaborativeSkill,
+							use: "Team of Three Undergraduate Developers working on the Project",
+						},
+						{
+							name: "Machine Learning",
+							svg: machineLearningSkill,
+							use: "Content Algorithm is trained by User Ratings with Scikit-Learn",
+						},
 					]}
 				/>
 				<ProjectDisplay
@@ -126,13 +155,30 @@ export const Projects = () => {
 					demonstrationLink="https://github.com/LWhite49/PortfolioWebsite"
 					projectImg={PPImg}
 					projectSkills={[
-						{ name: "React", svg: reactSkill },
-						{ name: "CSS", svg: cssSkill },
-						{ name: "Keyframe Animation", svg: keyframeSkill },
-						{ name: "UI Design", svg: uiDesignSkill },
+						{
+							name: "React",
+							svg: reactSkill,
+							use: "Portfolio Website is built with React and Vite Tooling",
+						},
+						{
+							name: "CSS",
+							svg: cssSkill,
+							use: "Component Styling done with vanilla CSS",
+						},
+						{
+							name: "Keyframe Animation",
+							svg: keyframeSkill,
+							use: "Custom Animations for Components with CSS Keyframes",
+						},
+						{
+							name: "UI Design",
+							svg: uiDesignSkill,
+							use: "Informed Design to ensure Stylish Presentation and User Interface",
+						},
 						{
 							name: "Modular Design",
 							svg: homemadeComponentSkill,
+							use: "Modular Design enables easy updates to Portfolio or Tech Stack",
 						},
 					]}
 				/>
@@ -149,12 +195,36 @@ export const Projects = () => {
 					demonstrationLink="https://www.linkedin.com/posts/lwhite49_for-a-while-i-viewed-nodejs-as-something-activity-7143681848290848768-n405?utm_source=share&utm_medium=member_desktop"
 					projectImg={ACImg}
 					projectSkills={[
-						{ name: "Node.js", svg: nodeSkill },
-						{ name: "Rest API", svg: restAPISkill },
-						{ name: "Web Scraping", svg: webScrapeSkill },
-						{ name: "Database Management", svg: databaseSkill },
-						{ name: "User Authorization", svg: userSkill },
-						{ name: "Express Sessions", svg: sessionsSkill },
+						{
+							name: "Node.js",
+							svg: nodeSkill,
+							use: "Backend Application is built with Node as a Complex Server",
+						},
+						{
+							name: "Rest API",
+							svg: restAPISkill,
+							use: "Rest API Services User Logins and Database Updates",
+						},
+						{
+							name: "Web Scraping",
+							svg: webScrapeSkill,
+							use: "Database sources new albums with Node Puppeteer Web Scraper",
+						},
+						{
+							name: "Database Management",
+							svg: databaseSkill,
+							use: "User and Data Management through MongoDB and MongooseJS",
+						},
+						{
+							name: "User Authorization",
+							svg: userSkill,
+							use: "Server can Create and Delete Users with MongooseJS Schemas",
+						},
+						{
+							name: "Express Sessions",
+							svg: sessionsSkill,
+							use: "Express Sessions allow for Clients to Synchronously Modify Data ",
+						},
 					]}
 				/>
 				<ProjectDisplay
@@ -170,10 +240,26 @@ export const Projects = () => {
 					demonstrationLink="https://www.linkedin.com/posts/lwhite49_as-i-am-preparing-to-build-my-personal-portfolio-activity-7199450197100228608-qYfz?utm_source=share&utm_medium=member_desktop"
 					projectImg={CNCImg}
 					projectSkills={[
-						{ name: "Vanilla JavaScript", svg: javascriptSkill },
-						{ name: "CSS", svg: cssSkill },
-						{ name: "Axios", svg: restAPISkill },
-						{ name: "Local Storage", svg: sessionsSkill },
+						{
+							name: "Vanilla JavaScript",
+							svg: javascriptSkill,
+							use: "Frontend built by Vanilla Javascript",
+						},
+						{
+							name: "CSS",
+							svg: cssSkill,
+							use: "Element Styling done with Vanilla CSS",
+						},
+						{
+							name: "Axios",
+							svg: restAPISkill,
+							use: "Communication with News API done by Axios",
+						},
+						{
+							name: "Local Storage",
+							svg: sessionsSkill,
+							use: "Local Storage for Client Preferences between sessions",
+						},
 					]}
 				/>
 				<ProjectDisplay
@@ -189,14 +275,35 @@ export const Projects = () => {
 					demonstrationLink="https://www.linkedin.com/posts/lwhite49_as-i-am-preparing-to-build-my-personal-portfolio-activity-7198762368783241216-x3MT?utm_source=share&utm_medium=member_desktop"
 					projectImg={RBImg}
 					projectSkills={[
-						{ name: "Vanilla JavaScript", svg: javascriptSkill },
-						{ name: "CSS", svg: cssSkill },
-						{ name: "JS Audio", svg: jsAudioSkill },
-						{ name: " JS Time", svg: jsTimeSkill },
-						{ name: "UI Design", svg: uiDesignSkill },
+						{
+							name: "Vanilla JavaScript",
+							svg: javascriptSkill,
+							use: "Frontend built by Vanilla Javascript",
+						},
+						{
+							name: "CSS",
+							svg: cssSkill,
+							use: "Element Styling done with Vanilla CSS",
+						},
+						{
+							name: "JS Audio",
+							svg: jsAudioSkill,
+							use: "Playable Piano utilizes JavaScript Audio Module",
+						},
+						{
+							name: " JS Time",
+							svg: jsTimeSkill,
+							use: "Tempo Training utilizes JavaScript Time Module",
+						},
+						{
+							name: "UI Design",
+							svg: uiDesignSkill,
+							use: "Informed Design to ensure a Functional User Experience",
+						},
 						{
 							name: "Custom Components",
 							svg: homemadeComponentSkill,
+							use: "Custom Components for a Unique User Experience",
 						},
 					]}
 				/>

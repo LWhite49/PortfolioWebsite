@@ -2,6 +2,7 @@ import "./Project-Display.css";
 import PropTypes from "prop-types";
 import clockWIP from "../../assets/clockWIP.svg";
 import clockFIN from "../../assets/clockFIN.svg";
+import { Tooltip } from "react-tooltip";
 
 export const ProjectDisplay = ({
 	projectName,
@@ -77,7 +78,10 @@ export const ProjectDisplay = ({
 					<div className="Project-Skills-Wrapper">
 						{projectSkills.map((skill, index) => {
 							return (
-								<div key={index} className="Project-Skill">
+								<div
+									key={index}
+									className="Project-Skill"
+									data-tooltip-id={`Project-Skill-${index}`}>
 									<p key={index} className="Skill-Name">
 										{skill.name}
 									</p>
@@ -85,6 +89,19 @@ export const ProjectDisplay = ({
 										className="Skill-Img"
 										src={skill.svg}
 										alt="skill"
+									/>
+									<Tooltip
+										id={`Project-Skill-${index}`}
+										place="top"
+										effect="solid"
+										content={skill.use}
+										style={{
+											backgroundColor: "#550994",
+											fontSize: "10pt",
+											borderRadius: "10px",
+											width: "220px",
+											textShadow: "black 2px 2px 2px",
+										}}
 									/>
 								</div>
 							);
