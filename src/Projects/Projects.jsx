@@ -13,6 +13,23 @@ import PPImg from "../assets/PPImg.png";
 import ACImg from "../assets/ACImg.png";
 import CNCImg from "../assets/CNCImg.png";
 import RBImg from "../assets/RBImg.png";
+import colaborativeSkill from "../assets/colaborativeSkill.svg";
+import cssSkill from "../assets/cssSkill.svg";
+import databaseSkill from "../assets/databaseSkill.svg";
+import feedManagementSkill from "../assets/feedManagementSkill.svg";
+import machineLearningSkill from "../assets/machineLearningSkill.svg";
+import reactSkill from "../assets/reactSkill.svg";
+import nodeSkill from "../assets/nodeSkill.svg";
+import webScrapeSkill from "../assets/webScrapeSkill.svg";
+import restAPISkill from "../assets/restAPISkill.svg";
+import javascriptSkill from "../assets/javascriptSkill.svg";
+import jsAudioSkill from "../assets/jsAudioSkill.svg";
+import jsTimeSkill from "../assets/jsTimeSkill.svg";
+import keyframeSkill from "../assets/keyframeSkill.svg";
+import uiDesignSkill from "../assets/uiDesignSkill.svg";
+import userSkill from "../assets/userSkill.svg";
+import homemadeComponentSkill from "../assets/customComponents.svg";
+import sessionsSkill from "../assets/sessionsSkill.svg";
 
 export const Projects = () => {
 	const { MemoizedAeroBubbles } = useContext(AppContext);
@@ -81,6 +98,20 @@ export const Projects = () => {
 					clockSVG={0}
 					demonstrationLink="https://github.com/LWhite49/Outfit-Generator"
 					projectImg={OGImg}
+					projectSkills={[
+						{ name: "React", svg: reactSkill },
+						{
+							name: "Feed Management",
+							svg: feedManagementSkill,
+						},
+						{ name: "UI Design", svg: uiDesignSkill },
+						{ name: "Node.js", svg: nodeSkill },
+						{ name: "Database Management", svg: databaseSkill },
+						{ name: "Web Scraping", svg: webScrapeSkill },
+
+						{ name: "Colaborative", svg: colaborativeSkill },
+						{ name: "Machine Learning", svg: machineLearningSkill },
+					]}
 				/>
 				<ProjectDisplay
 					projectName="Personal Portfolio"
@@ -94,6 +125,16 @@ export const Projects = () => {
 					clockSVG={1}
 					demonstrationLink="https://github.com/LWhite49/PortfolioWebsite"
 					projectImg={PPImg}
+					projectSkills={[
+						{ name: "React", svg: reactSkill },
+						{ name: "CSS", svg: cssSkill },
+						{ name: "Keyframe Animation", svg: keyframeSkill },
+						{ name: "UI Design", svg: uiDesignSkill },
+						{
+							name: "Modular Design",
+							svg: homemadeComponentSkill,
+						},
+					]}
 				/>
 				<ProjectDisplay
 					projectName="Album Chart Server"
@@ -107,6 +148,14 @@ export const Projects = () => {
 					clockSVG={1}
 					demonstrationLink="https://www.linkedin.com/posts/lwhite49_for-a-while-i-viewed-nodejs-as-something-activity-7143681848290848768-n405?utm_source=share&utm_medium=member_desktop"
 					projectImg={ACImg}
+					projectSkills={[
+						{ name: "Node.js", svg: nodeSkill },
+						{ name: "Rest API", svg: restAPISkill },
+						{ name: "Web Scraping", svg: webScrapeSkill },
+						{ name: "Database Management", svg: databaseSkill },
+						{ name: "User Authorization", svg: userSkill },
+						{ name: "Express Sessions", svg: sessionsSkill },
+					]}
 				/>
 				<ProjectDisplay
 					projectName="Custom News Client"
@@ -120,6 +169,12 @@ export const Projects = () => {
 					clockSVG={1}
 					demonstrationLink="https://www.linkedin.com/posts/lwhite49_as-i-am-preparing-to-build-my-personal-portfolio-activity-7199450197100228608-qYfz?utm_source=share&utm_medium=member_desktop"
 					projectImg={CNCImg}
+					projectSkills={[
+						{ name: "Vanilla JavaScript", svg: javascriptSkill },
+						{ name: "CSS", svg: cssSkill },
+						{ name: "Axios", svg: restAPISkill },
+						{ name: "Local Storage", svg: sessionsSkill },
+					]}
 				/>
 				<ProjectDisplay
 					projectName="Music Benchmark"
@@ -133,6 +188,17 @@ export const Projects = () => {
 					clockSVG={1}
 					demonstrationLink="https://www.linkedin.com/posts/lwhite49_as-i-am-preparing-to-build-my-personal-portfolio-activity-7198762368783241216-x3MT?utm_source=share&utm_medium=member_desktop"
 					projectImg={RBImg}
+					projectSkills={[
+						{ name: "Vanilla JavaScript", svg: javascriptSkill },
+						{ name: "CSS", svg: cssSkill },
+						{ name: "JS Audio", svg: jsAudioSkill },
+						{ name: " JS Time", svg: jsTimeSkill },
+						{ name: "UI Design", svg: uiDesignSkill },
+						{
+							name: "Custom Components",
+							svg: homemadeComponentSkill,
+						},
+					]}
 				/>
 			</div>
 			<div className="Slider-Nav-Wrapper">

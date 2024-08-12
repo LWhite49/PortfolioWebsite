@@ -100,10 +100,10 @@ html {
 	animation: NavbarSlideIn 0.3s;
 }
 .Navbar-Link {
-	color: #78d253;
+	color: #54a833;
 	font-weight: 600;
 	font-size: 24px;
-	text-shadow: rgb(238, 182, 78) 1px 1px 1px;
+	text-shadow: rgb(238, 182, 78) 2px 2px 1px;
 }
 .Navbar-Link-Active {
 	color: #d27d53;

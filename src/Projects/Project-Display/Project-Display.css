@@ -171,6 +171,7 @@
 .Project-Img {
 	cursor: pointer;
 	margin-top: 80px;
+	margin-bottom: 40px;
 	border: 4px double black;
 	border-radius: 20px;
 	width: 640px;
@@ -178,21 +179,49 @@
 }
 .Project-Skills-Wrapper {
 	display: flex;
+	column-gap: 30px;
+	row-gap: 22px;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: center;
-	gap: 18px;
+
 	margin-top: 20px;
+	margin-left: 30px;
 	padding: 0px;
-	width: 720px;
-	max-width: 720px;
-	overflow-x: visible;
+	width: 740px;
+	max-width: 740px;
 }
 .Project-Skill {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
 	align-items: center;
-	gap: 10px;
+	gap: 6px;
+	transition: transform 0.2s linear;
+	margin: 0px;
+	border: 4px double black;
+	border-radius: 20px;
+	background-color: #550994;
+	padding: 6px;
+	width: 200px;
+	height: 50px;
+}
+@keyframes shadowSway {
+	0% {
+		box-shadow: 0px 0px 0px 0px #550994;
+	}
+	50% {
+		box-shadow: 0px 0px 10px 5px #550994;
+	}
+	100% {
+		box-shadow: 0px 0px 0px 0px #550994;
+	}
+}
+.Project-Skill:hover {
+	transform: scale(1.15);
+	animation: shadowSway 0.8s infinite;
+	cursor: pointer;
 }
 .Skill-Img {
 	width: 40px;
@@ -200,12 +229,16 @@
 .Skill-Name {
 	cursor: default;
 	margin: 0px;
-	padding: 10px 20px;
-	width: 720px;
+	width: 120px;
+	max-width: 80px;
 	color: rgb(221, 169, 221);
-	font-size: 18pt;
+	font-size: 13pt;
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
 		sans-serif;
 	text-align: start;
+	text-align: center;
 	text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+.Project-Skill:hover .Skill-Name {
+	color: #b516e1;
 }

@@ -78,14 +78,14 @@ export const ProjectDisplay = ({
 						{projectSkills.map((skill, index) => {
 							return (
 								<div key={index} className="Project-Skill">
+									<p key={index} className="Skill-Name">
+										{skill.name}
+									</p>
 									<img
 										className="Skill-Img"
 										src={skill.svg}
 										alt="skill"
 									/>
-									<p key={index} className="Skill-Name">
-										{skill.name}
-									</p>
 								</div>
 							);
 						})}
