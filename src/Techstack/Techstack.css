@@ -1,0 +1,27 @@
+.Techstack {
+	width: 100vw;
+	height: 100vh;
+}
+.Techstack-Header-Wrapper {
+	display: flex;
+	position: absolute;
+	top: 30px;
+	left: 200px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+.Techstack-Header {
+	display: inline-block;
+	margin: 0px;
+	color: rgb(75, 117, 66);
+	font-size: 52pt;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+.Apple {
+	position: relative;
+	top: 0px;
+	width: 120px;
+}
