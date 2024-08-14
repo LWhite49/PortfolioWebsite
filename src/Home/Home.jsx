@@ -7,9 +7,11 @@ import FrutArrowCurve from "../assets/FrutigerAeroArrow.png";
 import AltArrowCurve from "../assets/AeroArrow2.png";
 import Cherries3D from "../assets/Cherries.gif";
 import Grapes3D from "../assets/Grapesgif.gif";
+import ResumeSvg from "../assets/ResumeSvg.svg";
 import EmailSvg from "../assets/EmailSvg.svg";
 import LinkedInSvg from "../assets/LinkedInSvg.svg";
 import GithubSvg from "../assets/GithubSvg.svg";
+import Resume from "../assets/Resume.pdf";
 
 export const Home = () => {
 	// Create style object for Tooltips
@@ -53,6 +55,26 @@ export const Home = () => {
 				<img className="Frut-Aero-Arrow" src={FrutArrowCurve} />
 				<div className="Home-Contact-Icons">
 					<img className="Grapes-3D" src={Grapes3D} alt="Grapes3D" />
+					<img
+						onClick={() => {
+							window.open(
+								Resume,
+								"_blank",
+								"noopener,noreferrer"
+							);
+						}}
+						className="Resume-Svg"
+						data-tooltip-id="resume"
+						src={ResumeSvg}
+						alt="ResumeSvg"
+					/>
+					<Tooltip
+						id="resume"
+						place="top"
+						effect="solid"
+						content="View Resume"
+						style={tooltipStype}
+					/>
 					<img
 						className="Email-Svg"
 						data-tooltip-id="email"
