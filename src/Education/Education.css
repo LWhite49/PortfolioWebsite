@@ -138,7 +138,7 @@
 	align-items: start;
 	gap: 10px;
 	transform: translate(-48%, -48%);
-	animation: AmbientJiggle 7s infinite;
+	animation: AmbientJiggle 11s infinite;
 
 	box-shadow: black 2px 2px 4px 6px;
 	border: solid 6px white;
