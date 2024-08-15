@@ -10,6 +10,10 @@ import { AeroBubbles } from "./AeroBubbles/AeroBubbles.jsx";
 export const AppContext = createContext();
 
 const MemoizedAeroBubbles = memo(AeroBubbles);
+const MemoizedHome = memo(Home);
+const MemoizedEducation = memo(Education);
+const MemoizedProjects = memo(Projects);
+const MemoizedTechstack = memo(Techstack);
 
 function UnroutedApp() {
 	// Create a windowWidth state
@@ -47,10 +51,10 @@ function UnroutedApp() {
 			value={{ windowWidth, isMenuDisplayed, MemoizedAeroBubbles }}>
 			<div className="App">
 				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/education" element={<Education />} />
-					<Route path="/projects" element={<Projects />} />
-					<Route path="/techstack" element={<Techstack />} />
+					<Route path="/" element={<MemoizedHome />} />
+					<Route path="/education" element={<MemoizedEducation />} />
+					<Route path="/projects" element={<MemoizedProjects />} />
+					<Route path="/techstack" element={<MemoizedTechstack />} />
 				</Routes>
 				<button
 					className="Navbar-Expand-Button"

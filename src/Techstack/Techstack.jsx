@@ -14,9 +14,22 @@ export const Techstack = () => {
 			/>
 			<div className="Techstack-Header-Wrapper">
 				<img className="Apple" src={Apple} />
-
 				<h1 className="Techstack-Header">Techstack</h1>
 				<img className="Bowl" src={Bowl} />
+			</div>
+			<div className="Techstack-Content">
+				<div className="Techstack-Segment">
+					<p className="Techstack-Segment-Header">Front-end Skills</p>
+				</div>
+				<div className="Techstack-Segment">
+					<p className="Techstack-Segment-Header">Back-end Skills</p>
+				</div>
+				<div className="Techstack-Segment">
+					<p className="Techstack-Segment-Header">Data Skills</p>
+				</div>
+				<div className="Techstack-Segment">
+					<p className="Techstack-Segment-Header">Soft Skills</p>
+				</div>
 			</div>
 		</div>
 	);
