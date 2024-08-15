@@ -2,26 +2,47 @@
 	width: 100vw;
 	height: 100vh;
 }
+@keyframes TechstackHeaderSlideIn {
+	0% {
+		left: -400px;
+	}
+	100% {
+		left: -120px;
+	}
+}
 .Techstack-Header-Wrapper {
 	display: flex;
 	position: absolute;
-	top: 30px;
-	left: 200px;
-	flex-direction: row;
+	top: 30vh;
+	left: -120px;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
+	transform: translateY(-50%);
+	animation: TechstackHeaderSlideIn 0.5s ease-out;
 }
 .Techstack-Header {
 	display: inline-block;
+	position: relative;
+	top: 220px;
+	transform: rotate(270deg);
 	margin: 0px;
-	color: rgb(75, 117, 66);
-	font-size: 52pt;
+	color: #a23e20;
+	font-size: 58pt;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: black 1px 1px 1px;
 	text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 .Apple {
 	position: relative;
-	top: 0px;
+	top: 32px;
+	right: -20px;
+	width: 120px;
+}
+.Bowl {
+	position: relative;
+	top: 400px;
+	right: -10px;
 	width: 120px;
 }

@@ -103,13 +103,15 @@ html {
 	color: #54a833;
 	font-weight: 600;
 	font-size: 24px;
-	text-shadow: rgb(238, 182, 78) 2px 2px 1px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: black 1px 1px 1px;
 }
 .Navbar-Link-Active {
 	color: #d27d53;
 	font-weight: 600;
 	font-size: 24px;
-	text-shadow: rgb(238, 182, 78) 1px 1px 1px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: black 1px 1px 1px;
 }
 .Navbar-Link:hover {
 	color: #3fab14;
