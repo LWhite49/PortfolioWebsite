@@ -92,3 +92,51 @@
 .Right-Arrow:hover {
 	animation: jiggle 1.5s infinite;
 }
+
+@media (max-width: 2000px) {
+	.Projects-Header-Wrapper {
+		top: 20px;
+		left: 80px;
+	}
+	.Projects-Header {
+		font-size: 42pt;
+	}
+	.Banana {
+		width: 100px;
+	}
+	.Slider-Wrap {
+		top: 70px;
+		left: 32vw;
+		transform: scale(0.75) translateX(-50%);
+	}
+	.Slider-Nav-Wrapper {
+		right: 50px;
+	}
+}
+@media (max-width: 1580px) {
+	.Slider-Wrap {
+		top: 50px;
+		left: 28vw;
+		transform: scale(0.7) translateX(-50%);
+	}
+	.Slider-Nav-Wrapper {
+		right: 50px;
+	}
+}
+
+@media (max-width: 1480px) {
+	.Projects-Header {
+		font-size: 36pt;
+	}
+	.Banana {
+		width: 80px;
+	}
+	.Slider-Wrap {
+		top: 20px;
+		left: 20vw;
+		transform: scale(0.6) translateX(-50%);
+	}
+	.Slider-Nav-Wrapper {
+		right: 0px;
+	}
+}
