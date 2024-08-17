@@ -100,6 +100,7 @@ html {
 	animation: NavbarSlideIn 0.3s;
 }
 .Navbar-Link {
+	transition: color 0.15s;
 	color: #54a833;
 	font-weight: 600;
 	font-size: 24px;
@@ -114,7 +115,7 @@ html {
 	text-shadow: black 1px 1px 1px;
 }
 .Navbar-Link:hover {
-	color: #3fab14;
+	color: #54e01c;
 }
 .Navbar-Link-Active:hover {
 	color: #d27d53;
@@ -163,4 +164,15 @@ html {
 
 .read-the-docs {
 	color: #888;
+}
+
+@media (max-height: 9000px) {
+	.Navbar-Container,
+	.Navbar-Invis {
+		height: 100px;
+	}
+	.Navbar-Text {
+		margin-top: 14px;
+		margin-bottom: 14px;
+	}
 }
