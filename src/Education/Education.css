@@ -46,7 +46,7 @@
 		transform: rotate(60deg) scale(0.7);
 	}
 	100% {
-		bottom: 240px;
+		bottom: 120px;
 		left: 10px;
 		transform: rotate(0deg) scale(1);
 	}
@@ -229,8 +229,104 @@
 	top: 130px;
 	left: 7vw;
 }
-.Education-Graduate {
-	position: relative;
-	top: 136px;
-	left: 10vw;
+@media (max-height: 900px) {
+	.Education-Content-Main {
+		height: 550px;
+	}
+}
+@media (max-width: 2000px) {
+	.Education-Header {
+		margin-top: -20px;
+		font-size: 36pt;
+	}
+	.Strawberry {
+		margin-top: -14px;
+		width: 80px;
+	}
+	.Education-Bullets {
+		top: 20px;
+		left: -10px;
+	}
+	.Education-Major,
+	.Education-Honors,
+	.Education-GPA,
+	.Education-Hackathon,
+	.Education-Programming,
+	.Education-ICPC,
+	.Education-Bullet-Emph {
+		font-size: 20pt;
+	}
+}
+
+@media (max-width: 1600px) {
+	.USF-Bull {
+		width: 180px;
+	}
+	.ICPC-Logo {
+		width: 180px;
+	}
+	.ICPC-Tag {
+		width: 160px;
+	}
+	.USF-Logo {
+		width: 180px;
+	}
+	.Education-Bullets {
+		top: -10px;
+		left: -20px;
+	}
+	.Education-Major,
+	.Education-Honors,
+	.Education-GPA,
+	.Education-Hackathon,
+	.Education-Programming,
+	.Education-ICPC,
+	.Education-Bullet-Emph {
+		font-size: 18pt;
+	}
+}
+
+@media (max-width: 1440px) {
+	.Education-Bullets {
+		top: -30px;
+		left: -20px;
+	}
+	.Education-Major,
+	.Education-Honors,
+	.Education-GPA,
+	.Education-Hackathon,
+	.Education-Programming,
+	.Education-ICPC,
+	.Education-Bullet-Emph {
+		font-size: 16pt;
+	}
+}
+
+@media (max-width: 1340px) {
+	.Education-Header {
+		font-size: 28pt;
+	}
+	.Strawberry {
+		margin-top: -10px;
+		width: 60px;
+	}
+	.ICPC-Tag {
+		bottom: 120px;
+	}
+}
+
+@media (max-width: 1250px) {
+	.Education-Bullets {
+		top: -30px;
+		left: -20px;
+	}
+	.Education-Major,
+	.Education-Honors,
+	.Education-GPA,
+	.Education-Hackathon,
+	.Education-Programming,
+	.Education-ICPC,
+	.Education-Bullet-Emph {
+		font-size: 14pt;
+	}
 }
