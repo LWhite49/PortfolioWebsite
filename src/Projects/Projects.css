@@ -93,7 +93,14 @@
 	animation: jiggle 1.5s infinite;
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 2200px) {
+	.Slider-Wrap {
+		top: 160px;
+		left: 42vw;
+		transform: scale(0.9) translateX(-50%);
+	}
+}
+@media (max-width: 1960px) {
 	.Projects-Header-Wrapper {
 		top: 20px;
 		left: 80px;
@@ -106,14 +113,34 @@
 	}
 	.Slider-Wrap {
 		top: 70px;
-		left: 32vw;
+		left: 37vw;
+		transform: scale(0.8) translateX(-50%);
+	}
+	.Slider-Nav-Wrapper {
+		right: 50px;
+	}
+}
+@media (max-width: 1730px) {
+	.Projects-Header-Wrapper {
+		top: 20px;
+		left: 80px;
+	}
+	.Projects-Header {
+		font-size: 42pt;
+	}
+	.Banana {
+		width: 100px;
+	}
+	.Slider-Wrap {
+		top: 70px;
+		left: 36vw;
 		transform: scale(0.75) translateX(-50%);
 	}
 	.Slider-Nav-Wrapper {
 		right: 50px;
 	}
 }
-@media (max-width: 1580px) {
+@media (max-width: 1640px) {
 	.Slider-Wrap {
 		top: 50px;
 		left: 28vw;

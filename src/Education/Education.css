@@ -192,7 +192,7 @@
 	margin: 0px;
 	color: #197556;
 	font-weight: 500;
-	font-size: 26pt;
+	font-size: 24pt;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	text-shadow: 2px 2px 2px #08a973;
 }
@@ -201,7 +201,7 @@
 }
 .Education-Bullet-Emph {
 	color: #ffffff;
-	font-size: 26pt;
+	font-size: 24pt;
 	text-shadow: 2px 2px 2px #08a973;
 }
 .Education-GPA {
@@ -234,10 +234,13 @@
 		height: 550px;
 	}
 }
-@media (max-width: 2000px) {
+@media (max-width: 1900px) {
 	.Education-Header {
 		margin-top: -20px;
 		font-size: 36pt;
+	}
+	.Education-Content-Main {
+		height: 550px;
 	}
 	.Strawberry {
 		margin-top: -14px;
@@ -258,7 +261,7 @@
 	}
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1640px) {
 	.USF-Bull {
 		width: 180px;
 	}
