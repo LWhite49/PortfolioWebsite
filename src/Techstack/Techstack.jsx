@@ -1,8 +1,10 @@
 import "./Techstack.css";
 import { useContext } from "react";
 import { AppContext } from "../App.jsx";
+import { Tooltip } from "react-tooltip";
 import Apple from "../assets/Apple.gif";
 import Bowl from "../assets/Bowl.gif";
+import reactSVG from "../assets/reactSkill.svg";
 export const Techstack = () => {
 	const { MemoizedAeroBubbles } = useContext(AppContext);
 	return (
@@ -19,7 +21,7 @@ export const Techstack = () => {
 			</div>
 			<div className="Techstack-Content">
 				<div className="Techstack-Segment">
-					<div className="Segment-Text_Wrap">
+					<div className="Segment-Text-Wrap">
 						<p className="Techstack-Segment-Header">
 							Front-end Skills
 						</p>
@@ -27,6 +29,24 @@ export const Techstack = () => {
 							Designing stylish, modern websites and user
 							interfaces
 						</p>
+					</div>
+					<div className="Techstack-Skills-Wrapper">
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="react">
+							<p className="Techstack-Skill-Name">React</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={reactSVG}
+								alt="React"
+							/>
+						</div>
+						<Tooltip
+							id="react"
+							place="top"
+							effect="solid"
+							content="Frontend Framework that prioritizes modular design with a vast developer ecosystem"
+						/>
 					</div>
 				</div>
 				<div className="Techstack-Segment">
@@ -39,6 +59,7 @@ export const Techstack = () => {
 							and tools
 						</p>
 					</div>
+					<div className="Techstack-Skills-Wrapper"></div>
 				</div>
 				<div className="Techstack-Segment">
 					<div className="Segment-Text_Wrap">
@@ -48,6 +69,7 @@ export const Techstack = () => {
 							architecture
 						</p>
 					</div>
+					<div className="Techstack-Skills-Wrapper"></div>
 				</div>
 				<div className="Techstack-Segment">
 					<div className="Segment-Text_Wrap">
@@ -57,6 +79,7 @@ export const Techstack = () => {
 							essential skills{" "}
 						</p>
 					</div>
+					<div className="Techstack-Skills-Wrapper"></div>
 				</div>
 			</div>
 		</div>
