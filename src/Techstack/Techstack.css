@@ -58,22 +58,44 @@
 	background-color: #ffc2ad84;
 }
 .Techstack-Segment {
+	display: flex;
 	position: relative;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: left;
 	border: double #540552 4px;
 	border-radius: 30px;
 	background-color: #fdb0b084;
 	padding: 20px 20px;
 }
+.Segment-Text-Wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 10px;
+}
 .Techstack-Segment-Header {
-	display: inline-block;
-	position: relative;
-	top: 0px;
 	margin: 0px;
+	padding: 10px;
+	padding-bottom: 4px;
 	width: 540px;
 	color: rgb(72, 9, 17);
-	font-size: 52pt;
+	font-size: 44pt;
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
 	text-align: left;
+	text-decoration: underline 2px;
 	text-shadow: 1px 1px 4px rgb(237, 206, 28);
+}
+.Techstack-Segment-Subtitle {
+	margin: 0px;
+	padding: 10px;
+	padding-top: 4px;
+	width: 540px;
+	color: rgb(0, 0, 0);
+	font-size: 20pt;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	text-align: left;
 }

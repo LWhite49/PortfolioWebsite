@@ -19,16 +19,44 @@ export const Techstack = () => {
 			</div>
 			<div className="Techstack-Content">
 				<div className="Techstack-Segment">
-					<p className="Techstack-Segment-Header">Front-end Skills</p>
+					<div className="Segment-Text_Wrap">
+						<p className="Techstack-Segment-Header">
+							Front-end Skills
+						</p>
+						<p className="Techstack-Segment-Subtitle">
+							Designing stylish, modern websites and user
+							interfaces
+						</p>
+					</div>
 				</div>
 				<div className="Techstack-Segment">
-					<p className="Techstack-Segment-Header">Back-end Skills</p>
+					<div className="Segment-Text_Wrap">
+						<p className="Techstack-Segment-Header">
+							Back-end Skills
+						</p>
+						<p className="Techstack-Segment-Subtitle">
+							Building flexible and efficient server-side systems
+							and tools
+						</p>
+					</div>
 				</div>
 				<div className="Techstack-Segment">
-					<p className="Techstack-Segment-Header">Data Skills</p>
+					<div className="Segment-Text_Wrap">
+						<p className="Techstack-Segment-Header">Data Skills</p>
+						<p className="Techstack-Segment-Subtitle">
+							Organizing data into scalable structures for website
+							architecture
+						</p>
+					</div>
 				</div>
 				<div className="Techstack-Segment">
-					<p className="Techstack-Segment-Header">Soft Skills</p>
+					<div className="Segment-Text_Wrap">
+						<p className="Techstack-Segment-Header">Soft Skills</p>
+						<p className="Techstack-Segment-Subtitle">
+							Passively moving towards project success with
+							essential skills{" "}
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
