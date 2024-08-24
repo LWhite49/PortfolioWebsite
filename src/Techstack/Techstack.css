@@ -92,7 +92,7 @@
 	margin: 0px;
 	padding: 10px;
 	padding-top: 4px;
-	width: 540px;
+	width: 490px;
 	color: rgb(0, 0, 0);
 	font-size: 20pt;
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -120,12 +120,13 @@
 	align-items: center;
 	gap: 6px;
 	transition: transform 0.2s linear;
+	cursor: pointer;
 	margin: 0px;
 	border: 4px double black;
 	border-radius: 20px;
 	background-color: #945809;
 	padding: 6px;
-	width: 200px;
+	width: 170px;
 	height: 50px;
 }
 .Techstack-Skill-Name {
@@ -133,7 +134,7 @@
 	margin: 0px;
 	width: 120px;
 	max-width: 80px;
-	color: rgb(255, 255, 255);
+	color: #fffd9a;
 	font-size: 13pt;
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
 		sans-serif;
@@ -142,5 +143,6 @@
 	text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 .Techstack-Skill-Img {
+	margin-right: 8px;
 	width: 44px;
 }

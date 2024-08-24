@@ -4,9 +4,21 @@ import { AppContext } from "../App.jsx";
 import { Tooltip } from "react-tooltip";
 import Apple from "../assets/Apple.gif";
 import Bowl from "../assets/Bowl.gif";
-import reactSVG from "../assets/reactSkill.svg";
+import reactStack from "../assets/reactStack.svg";
 export const Techstack = () => {
 	const { MemoizedAeroBubbles } = useContext(AppContext);
+	const tooltipStyle = {
+		backgroundColor: "#FF855C",
+		color: "#000000",
+		width: "320px",
+		fontSize: "11pt",
+		borderRadius: "18px",
+		border: "2px solid #540552",
+		fontWeight: "bold",
+		borderColor: "#945809",
+		borderWidth: "2px",
+		borderStyle: "solid",
+	};
 	return (
 		<div className="Techstack">
 			<MemoizedAeroBubbles
@@ -37,15 +49,37 @@ export const Techstack = () => {
 							<p className="Techstack-Skill-Name">React</p>
 							<img
 								className="Techstack-Skill-Img"
-								src={reactSVG}
+								src={reactStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="react">
+							<p className="Techstack-Skill-Name">React</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={reactStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="react">
+							<p className="Techstack-Skill-Name">React</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={reactStack}
 								alt="React"
 							/>
 						</div>
 						<Tooltip
 							id="react"
 							place="top"
+							className="Techstack-Skill-Tooltip"
 							effect="solid"
 							content="Frontend Framework that prioritizes modular design with a vast developer ecosystem"
+							style={tooltipStyle}
 						/>
 					</div>
 				</div>
@@ -59,7 +93,36 @@ export const Techstack = () => {
 							and tools
 						</p>
 					</div>
-					<div className="Techstack-Skills-Wrapper"></div>
+					<div className="Techstack-Skills-Wrapper">
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="react">
+							<p className="Techstack-Skill-Name">React</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={reactStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="react">
+							<p className="Techstack-Skill-Name">React</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={reactStack}
+								alt="React"
+							/>
+						</div>
+						<Tooltip
+							id="react"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Frontend Framework that prioritizes modular design with a vast developer ecosystem"
+							style={tooltipStyle}
+						/>
+					</div>
 				</div>
 				<div className="Techstack-Segment">
 					<div className="Segment-Text_Wrap">
