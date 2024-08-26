@@ -5,6 +5,19 @@ import { Tooltip } from "react-tooltip";
 import Apple from "../assets/Apple.gif";
 import Bowl from "../assets/Bowl.gif";
 import reactStack from "../assets/reactStack.svg";
+import tailwindStack from "../assets/tailwindStack.svg";
+import UXStack from "../assets/UXStack.svg";
+import contentLayoutStack from "../assets/contentLayoutStack.svg";
+import feedManagementStack from "../assets/feedManagementStack.svg";
+import responsiveStack from "../assets/responsiveStack.svg";
+import nodeStack from "../assets/nodeStack.svg";
+import scraperStack from "../assets/scraperStack.svg";
+import APIStack from "../assets/APIStack.svg";
+import pythonStack from "../assets/pythonStack.svg";
+import cppStack from "../assets/cppStack.svg";
+import cookiesStack from "../assets/cookiesStack.svg";
+import loginStack from "../assets/loginStack.svg";
+
 export const Techstack = () => {
 	const { MemoizedAeroBubbles } = useContext(AppContext);
 	const tooltipStyle = {
@@ -55,21 +68,54 @@ export const Techstack = () => {
 						</div>
 						<div
 							className="Techstack-Skill"
-							data-tooltip-id="react">
-							<p className="Techstack-Skill-Name">React</p>
+							data-tooltip-id="tailwind">
+							<p className="Techstack-Skill-Name">Tailwind</p>
 							<img
 								className="Techstack-Skill-Img"
-								src={reactStack}
+								src={tailwindStack}
+								alt="Tailwind"
+							/>
+						</div>
+						<div className="Techstack-Skill" data-tooltip-id="ux">
+							<p className="Techstack-Skill-Name">UX Design</p>
+							<img
+								className="Techstack-Skill-Img-Small"
+								src={UXStack}
 								alt="React"
 							/>
 						</div>
 						<div
 							className="Techstack-Skill"
-							data-tooltip-id="react">
-							<p className="Techstack-Skill-Name">React</p>
+							data-tooltip-id="responsive">
+							<p className="Techstack-Skill-Name">
+								Responsive Design
+							</p>
+							<img
+								className="Techstack-Skill-Img-Small"
+								src={responsiveStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="content">
+							<p className="Techstack-Skill-Name">
+								Content Layout
+							</p>
 							<img
 								className="Techstack-Skill-Img"
-								src={reactStack}
+								src={contentLayoutStack}
+								alt="React"
+							/>
+						</div>
+
+						<div className="Techstack-Skill" data-tooltip-id="feed">
+							<p className="Techstack-Skill-Name">
+								Feed Management
+							</p>
+							<img
+								className="Techstack-Skill-Img-Small"
+								src={feedManagementStack}
 								alt="React"
 							/>
 						</div>
@@ -79,6 +125,46 @@ export const Techstack = () => {
 							className="Techstack-Skill-Tooltip"
 							effect="solid"
 							content="Frontend Framework that prioritizes modular design with a vast developer ecosystem"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="tailwind"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="CSS Framework that allows for rapid development with predefined utility classes"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="ux"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Design process that ensures a seamless and satisfying experience for users"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="content"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Displaying web content in a visually appealing and organized manner"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="feed"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Design pattern for managing and displaying dynamic content from a server"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="responsive"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Utilizing CSS media queries to ensure a consistent user experience across devices"
 							style={tooltipStyle}
 						/>
 					</div>
@@ -94,32 +180,128 @@ export const Techstack = () => {
 						</p>
 					</div>
 					<div className="Techstack-Skills-Wrapper">
-						<div
-							className="Techstack-Skill"
-							data-tooltip-id="react">
-							<p className="Techstack-Skill-Name">React</p>
+						<div className="Techstack-Skill" data-tooltip-id="node">
+							<p className="Techstack-Skill-Name">Node.js</p>
 							<img
 								className="Techstack-Skill-Img"
-								src={reactStack}
+								src={nodeStack}
+								alt="React"
+							/>
+						</div>
+						<div className="Techstack-Skill" data-tooltip-id="api">
+							<p className="Techstack-Skill-Name">Restful APIs</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={APIStack}
 								alt="React"
 							/>
 						</div>
 						<div
 							className="Techstack-Skill"
-							data-tooltip-id="react">
-							<p className="Techstack-Skill-Name">React</p>
+							data-tooltip-id="python">
+							<p className="Techstack-Skill-Name">Python</p>
 							<img
 								className="Techstack-Skill-Img"
-								src={reactStack}
+								src={pythonStack}
+								alt="React"
+							/>
+						</div>
+						<div className="Techstack-Skill" data-tooltip-id="cpp">
+							<p className="Techstack-Skill-Name">C++</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={cppStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="scraping">
+							<p className="Techstack-Skill-Name">Web Scraping</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={scraperStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="login">
+							<p className="Techstack-Skill-Name">
+								User Security
+							</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={loginStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="sessions">
+							<p className="Techstack-Skill-Name">
+								User Sessions
+							</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={cookiesStack}
 								alt="React"
 							/>
 						</div>
 						<Tooltip
-							id="react"
+							id="node"
 							place="top"
 							className="Techstack-Skill-Tooltip"
 							effect="solid"
-							content="Frontend Framework that prioritizes modular design with a vast developer ecosystem"
+							content="JavaScript runtime environment that allows for the execution of server-side code"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="api"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Creating scalable and efficient server-side applications with Express.js"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="python"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Incorperation of Python processes and libraries with child process modules"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="cpp"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Implementing data structures and algorithms in C++ for efficient operations"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="scraping"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Extracting data from websites and storing it in a structured format with Puppeteer Module"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="login"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Implementing secure user authentication and authorization with Bcrypt Module"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="sessions"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Design pattern for differentiating concurrent users with express sessions"
 							style={tooltipStyle}
 						/>
 					</div>

@@ -136,6 +136,7 @@
 	max-width: 80px;
 	color: #fffd9a;
 	font-size: 13pt;
+	line-height: 20px;
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
 		sans-serif;
 	text-align: start;
@@ -145,4 +146,8 @@
 .Techstack-Skill-Img {
 	margin-right: 8px;
 	width: 44px;
+}
+.Techstack-Skill-Img-Small {
+	margin-right: 8px;
+	width: 36px;
 }
