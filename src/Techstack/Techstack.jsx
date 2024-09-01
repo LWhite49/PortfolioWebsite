@@ -17,14 +17,25 @@ import pythonStack from "../assets/pythonStack.svg";
 import cppStack from "../assets/cppStack.svg";
 import cookiesStack from "../assets/cookiesStack.svg";
 import loginStack from "../assets/loginStack.svg";
+import mongoStack from "../assets/mongoStack.svg";
+import mongooseStack from "../assets/mongooseStack.svg";
+import pipelineStack from "../assets/pipelineStack.svg";
+import tllStack from "../assets/ttlStack.svg";
+import envStack from "../assets/envStack.svg";
+import projectStack from "../assets/projectStack.svg";
+import teamStack from "../assets/teamStack.svg";
+import documentationStack from "../assets/documentationStack.svg";
+import solvingStack from "../assets/solvingStack.svg";
+import creativityStack from "../assets/creativityStack.svg";
+import detailStack from "../assets/detailStack.svg";
 
 export const Techstack = () => {
-	const { MemoizedAeroBubbles } = useContext(AppContext);
+	const { MemoizedAeroBubbles, windowWidth } = useContext(AppContext);
 	const tooltipStyle = {
 		backgroundColor: "#FF855C",
 		color: "#000000",
-		width: "320px",
-		fontSize: "11pt",
+		width: "360px",
+		fontSize: windowWidth > 2000 ? "11pt" : "12pt",
 		borderRadius: "18px",
 		border: "2px solid #540552",
 		fontWeight: "bold",
@@ -314,7 +325,96 @@ export const Techstack = () => {
 							architecture
 						</p>
 					</div>
-					<div className="Techstack-Skills-Wrapper"></div>
+					<div className="Techstack-Skills-Wrapper">
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="mongo">
+							<p className="Techstack-Skill-Name">MongoDB</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={mongoStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="mongoose">
+							<p className="Techstack-Skill-Name">Mongoose</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={mongooseStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="pipeline">
+							<p className="Techstack-Skill-Name">
+								Pipeline Aggregation
+							</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={pipelineStack}
+								alt="React"
+							/>
+						</div>
+						<div className="Techstack-Skill" data-tooltip-id="ttl">
+							<p className="Techstack-Skill-Name">TTL Indexing</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={tllStack}
+								alt="React"
+							/>
+						</div>
+						<div className="Techstack-Skill" data-tooltip-id="env">
+							<p className="Techstack-Skill-Name">ENV Files</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={envStack}
+								alt="React"
+							/>
+						</div>
+						<Tooltip
+							id="mongo"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Designing and implementing flexible NoSQL databases for efficient data storage"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="mongoose"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Node module that interacts with MongoDB to create schemas and complete data operations"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="pipeline"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Data processing pipeline for MongoDB that allows for complex data operations"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="ttl"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Special indexing method to keep data fresh via document expiration"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="env"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Enviornmental variables for secure and flexible configuration of server-side applications"
+							style={tooltipStyle}
+						/>
+					</div>
 				</div>
 				<div className="Techstack-Segment">
 					<div className="Segment-Text_Wrap">
@@ -324,7 +424,122 @@ export const Techstack = () => {
 							essential skills{" "}
 						</p>
 					</div>
-					<div className="Techstack-Skills-Wrapper"></div>
+					<div className="Techstack-Skills-Wrapper">
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="project">
+							<p className="Techstack-Skill-Name">
+								Project Management
+							</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={projectStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="solving">
+							<p className="Techstack-Skill-Name">
+								Problem Solving
+							</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={solvingStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="teamwork">
+							<p className="Techstack-Skill-Name">Teamwork</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={teamStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="creativity">
+							<p className="Techstack-Skill-Name">Creativity</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={creativityStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="documentation">
+							<p className="Techstack-Skill-Name">Note Taking</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={documentationStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="detail">
+							<p className="Techstack-Skill-Name">
+								Detail Oriented
+							</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={detailStack}
+								alt="React"
+							/>
+						</div>
+						<Tooltip
+							id="project"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Planning, organizing, and executing projects to meet specific goals and success criteria"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="solving"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Developing creative solutions to programming problems in innovative ways"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="teamwork"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Collaborative development to combine individual strengths across programming"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="creativity"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Creative thinking for unique and inspired web design and development"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="documentation"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Documenting projects and boiler plate code for continual improvement and reference"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="detail"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Detail oriented design and development for high quality and efficient code"
+							style={tooltipStyle}
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
