@@ -151,3 +151,27 @@
 	margin-right: 8px;
 	width: 36px;
 }
+
+@media (max-width: 2000px) {
+	.Techstack-Header-Wrapper {
+		top: 20vh;
+		left: -100px;
+	}
+	.Apple {
+		top: 80px;
+		width: 100px;
+	}
+	.Bowl {
+		top: 370px;
+		width: 100px;
+	}
+	.Techstack-Header {
+		font-size: 48pt;
+	}
+	.Techstack-Content {
+		top: -80px;
+		left: -40px;
+		gap: 10px;
+		transform: scale(0.75);
+	}
+}

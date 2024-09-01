@@ -97,7 +97,7 @@ export const ProjectDisplay = ({
 										content={skill.use}
 										style={{
 											backgroundColor: "#550994",
-											fontSize: "10pt",
+											fontSize: "12pt",
 											borderRadius: "10px",
 											width: "220px",
 											textShadow: "black 2px 2px 2px",
