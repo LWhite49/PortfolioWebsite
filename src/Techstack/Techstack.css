@@ -47,6 +47,14 @@
 	right: -10px;
 	width: 120px;
 }
+@keyframes TechstackContentSlideIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 .Techstack-Content {
 	display: flex;
 	position: absolute;
@@ -54,6 +62,7 @@
 	left: 200px;
 	flex-direction: column;
 	gap: 35px;
+	animation: TechstackContentSlideIn 0.8s ease-out;
 	border-radius: 20px;
 	background-color: #ffc2ad84;
 }
