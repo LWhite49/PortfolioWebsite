@@ -1,19 +1,39 @@
 import "./App.css";
 import { useState, useEffect, createContext, memo } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+// Import subpages
 import { Home } from "./Home/Home";
 import { Education } from "./Education/Education";
 import { Projects } from "./Projects/Projects";
 import { Techstack } from "./Techstack/Techstack";
+
+// Import background components
 import { AeroBubbles } from "./AeroBubbles/AeroBubbles.jsx";
 
+// Home Images
+import LWImg from "./assets/homeVital/LWIMG.avif";
+import FrutArrowCurve from "./assets/homeVital/FrutigerAeroArrow.png";
+import AltArrowCurve from "./assets/homeVital/AeroArrow2.png";
+import Cherries3D from "./assets/homeVital/Cherries.gif";
+import Grapes3D from "./assets/homeVital/Grapesgif.gif";
+
+// Create app context
 export const AppContext = createContext();
 
+// Memoize components
 const MemoizedAeroBubbles = memo(AeroBubbles);
 const MemoizedHome = memo(Home);
 const MemoizedEducation = memo(Education);
 const MemoizedProjects = memo(Projects);
 const MemoizedTechstack = memo(Techstack);
+
+// Create arrays for each subpage vital images for load balancing
+
+let homeImages = [AltArrowCurve, Cherries3D, FrutArrowCurve, Grapes3D, LWImg];
+let educationImages = [];
+let projectsImages = [];
+let techstackImages = [];
 
 function UnroutedApp() {
 	// Create a windowWidth state
@@ -48,7 +68,12 @@ function UnroutedApp() {
 
 	return (
 		<AppContext.Provider
-			value={{ windowWidth, isMenuDisplayed, MemoizedAeroBubbles }}>
+			value={{
+				windowWidth,
+				isMenuDisplayed,
+				MemoizedAeroBubbles,
+				homeImages,
+			}}>
 			<div className="App">
 				<Routes>
 					<Route path="/" element={<MemoizedHome />} />

@@ -179,7 +179,7 @@
 		font-size: 48pt;
 	}
 	.Techstack-Content {
-		top: 0px;
+		top: -30px;
 		left: 40px;
 		gap: 18px;
 		transform: scale(0.85) scaleY(1);
@@ -188,7 +188,7 @@
 
 @media (max-width: 1750px) {
 	.Techstack-Content {
-		top: -50px;
+		top: -90px;
 		left: -50px;
 		gap: 14px;
 		transform: scale(0.75) scaleY(1);
@@ -197,7 +197,7 @@
 
 @media (max-width: 1580px) {
 	.Techstack-Content {
-		top: -110px;
+		top: -130px;
 		left: -110px;
 		gap: 14px;
 		transform: scale(0.68) scaleY(1);
@@ -223,7 +223,7 @@
 
 @media (max-width: 1470px) {
 	.Techstack-Content {
-		top: -160px;
+		top: -180px;
 		left: -210px;
 		gap: 14px;
 		transform: scale(0.6) scaleY(1);

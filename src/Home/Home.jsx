@@ -2,11 +2,6 @@ import "./Home.css";
 import { useContext } from "react";
 import { AppContext } from "../App.jsx";
 import { Tooltip } from "react-tooltip";
-import LWImg from "../assets/LWIMG (2).avif";
-import FrutArrowCurve from "../assets/FrutigerAeroArrow.png";
-import AltArrowCurve from "../assets/AeroArrow2.png";
-import Cherries3D from "../assets/Cherries.gif";
-import Grapes3D from "../assets/Grapesgif.gif";
 import ResumeSvg from "../assets/ResumeSvg.svg";
 import EmailSvg from "../assets/EmailSvg.svg";
 import LinkedInSvg from "../assets/LinkedInSvg.svg";
@@ -23,7 +18,14 @@ export const Home = () => {
 		borderStyle: "solid",
 		borderWidth: "2px",
 	};
-	const { isMenuDisplayed, MemoizedAeroBubbles } = useContext(AppContext);
+	const { isMenuDisplayed, MemoizedAeroBubbles, homeImages } =
+		useContext(AppContext);
+	// Source Images from MemoizedHomeImages
+	const AltArrowCurve = homeImages[0];
+	const Cherries3D = homeImages[1];
+	const FrutArrowCurve = homeImages[2];
+	const Grapes3D = homeImages[3];
+	const LWImg = homeImages[4];
 	return (
 		<div className="Home">
 			<MemoizedAeroBubbles
