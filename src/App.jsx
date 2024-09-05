@@ -18,6 +18,13 @@ import AltArrowCurve from "./assets/homeVital/AeroArrow2.png";
 import Cherries3D from "./assets/homeVital/Cherries.gif";
 import Grapes3D from "./assets/homeVital/Grapesgif.gif";
 
+// Education Images
+import USFBull from "./assets/educationVital/USFBull.avif";
+import ICPCLogo from "./assets/educationVital/ICPC-Group.avif";
+import ICPCTag from "./assets/educationVital/ICPC-Tag.avif";
+import USFLogo from "./assets/educationVital/USF-Logo.avif";
+import Strawberry from "./assets/educationVital/Strawberry.gif";
+
 // Create app context
 export const AppContext = createContext();
 
@@ -31,7 +38,7 @@ const MemoizedTechstack = memo(Techstack);
 // Create arrays for each subpage vital images for load balancing
 
 let homeImages = [AltArrowCurve, Cherries3D, FrutArrowCurve, Grapes3D, LWImg];
-let educationImages = [];
+let educationImages = [USFBull, ICPCLogo, ICPCTag, USFLogo, Strawberry];
 let projectsImages = [];
 let techstackImages = [];
 
@@ -73,6 +80,7 @@ function UnroutedApp() {
 				isMenuDisplayed,
 				MemoizedAeroBubbles,
 				homeImages,
+				educationImages,
 			}}>
 			<div className="App">
 				<Routes>

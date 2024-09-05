@@ -1,15 +1,10 @@
 import "./Education.css";
 import { useContext } from "react";
 import { AppContext } from "../App.jsx";
-import USFBull from "../assets/USFBull.avif";
-import ICPCLogo from "../assets/ICPC-Group.avif";
-import ICPCTag from "../assets/ICPC-Tag.avif";
-import USFLogo from "../assets/USF-Logo.avif";
-import Strawberry from "../assets/Strawberry.gif";
 import { Tooltip } from "react-tooltip";
 
 export const Education = () => {
-	const { MemoizedAeroBubbles } = useContext(AppContext);
+	const { MemoizedAeroBubbles, educationImages } = useContext(AppContext);
 
 	// Define tooltip style object
 	const tooltipStype = {
@@ -22,6 +17,12 @@ export const Education = () => {
 		fontSize: "16pt",
 		maxWidth: "300px",
 	};
+	// Source images
+	const USFBull = educationImages[0];
+	const ICPCLogo = educationImages[1];
+	const ICPCTag = educationImages[2];
+	const USFLogo = educationImages[3];
+	const Strawberry = educationImages[4];
 	// const { MemoizedAeroBubbles } = useContext(AppContext);
 	return (
 		<div className="Education">
