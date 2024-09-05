@@ -7,6 +7,7 @@ import { Home } from "./Home/Home";
 import { Education } from "./Education/Education";
 import { Projects } from "./Projects/Projects";
 import { Techstack } from "./Techstack/Techstack";
+import { Loading } from "./Loading/Loading";
 
 // Import background components
 import { AeroBubbles } from "./AeroBubbles/AeroBubbles.jsx";
@@ -89,7 +90,7 @@ function UnroutedApp() {
 		setTimeout(() => {
 			setIsLoading(false);
 			clearTimeout();
-		}, 1000);
+		}, 500);
 	}, []);
 
 	// Create a windowWidth state
@@ -109,7 +110,7 @@ function UnroutedApp() {
 	const [currSubpage, setCurrSubpage] = useState(() => {
 		if (
 			localStorage.getItem("subPage") &&
-			Date.now() - localStorage.getItem("lastLoad") < 60000
+			Date.now() - localStorage.getItem("lastLoad") < 600000
 		) {
 			return localStorage.getItem("subPage");
 		}
@@ -133,80 +134,93 @@ function UnroutedApp() {
 				projectsImages,
 				techstackImages,
 			}}>
-			<div className="App">
-				<Routes>
-					<Route path="/" element={<MemoizedHome />} />
-					<Route path="/education" element={<MemoizedEducation />} />
-					<Route path="/projects" element={<MemoizedProjects />} />
-					<Route path="/techstack" element={<MemoizedTechstack />} />
-				</Routes>
-				<button
-					className="Navbar-Expand-Button"
-					onMouseEnter={() => {
-						setIsMenuDisplayed(true);
-					}}
-					onMouseLeave={() => {
-						setIsMenuDisplayed(false);
-					}}>
-					<div
-						className={
-							isMenuDisplayed
-								? "Navbar-Container"
-								: "Navbar-Invis"
-						}>
-						<Link
+			{isLoading ? (
+				<Loading />
+			) : (
+				<div className="App">
+					<Routes>
+						<Route path="/" element={<MemoizedHome />} />
+						<Route
+							path="/education"
+							element={<MemoizedEducation />}
+						/>
+						<Route
+							path="/projects"
+							element={<MemoizedProjects />}
+						/>
+						<Route
+							path="/techstack"
+							element={<MemoizedTechstack />}
+						/>
+					</Routes>
+					<button
+						className="Navbar-Expand-Button"
+						onMouseEnter={() => {
+							setIsMenuDisplayed(true);
+						}}
+						onMouseLeave={() => {
+							setIsMenuDisplayed(false);
+						}}>
+						<div
 							className={
-								currSubpage === "Home"
-									? "Navbar-Link-Active"
-									: "Navbar-Link"
-							}
-							to="/"
-							onClick={() => {
-								setCurrSubpage("Home");
-							}}>
-							<p className={"Navbar-Text"}>Home</p>
-						</Link>
-						<Link
-							className={
-								currSubpage === "Education"
-									? "Navbar-Link-Active"
-									: "Navbar-Link"
-							}
-							to="/education"
-							onClick={() => {
-								setCurrSubpage("Education");
-							}}>
-							<p className="Navbar-Text">Education</p>
-						</Link>
-						<Link
-							className={
-								currSubpage === "Projects"
-									? "Navbar-Link-Active"
-									: "Navbar-Link"
-							}
-							to="/projects"
-							onClick={() => {
-								setCurrSubpage("Projects");
-							}}>
-							<p className="Navbar-Text">Projects</p>
-						</Link>
-						<Link
-							className={
-								currSubpage === "Techstack"
-									? "Navbar-Link-Active"
-									: "Navbar-Link"
-							}
-							to="/techstack"
-							onClick={() => {
-								setCurrSubpage("Techstack");
-							}}>
-							<p className="Navbar-Text">Techstack</p>
-						</Link>
-					</div>
-					<hr className="Top-Menu-Line"></hr>
-					<hr className="Bottom-Menu-Line"></hr>
-				</button>
-			</div>
+								isMenuDisplayed
+									? "Navbar-Container"
+									: "Navbar-Invis"
+							}>
+							<Link
+								className={
+									currSubpage === "Home"
+										? "Navbar-Link-Active"
+										: "Navbar-Link"
+								}
+								to="/"
+								onClick={() => {
+									setCurrSubpage("Home");
+								}}>
+								<p className={"Navbar-Text"}>Home</p>
+							</Link>
+							<Link
+								className={
+									currSubpage === "Education"
+										? "Navbar-Link-Active"
+										: "Navbar-Link"
+								}
+								to="/education"
+								onClick={() => {
+									setCurrSubpage("Education");
+								}}>
+								<p className="Navbar-Text">Education</p>
+							</Link>
+							<Link
+								className={
+									currSubpage === "Projects"
+										? "Navbar-Link-Active"
+										: "Navbar-Link"
+								}
+								to="/projects"
+								onClick={() => {
+									setCurrSubpage("Projects");
+								}}>
+								<p className="Navbar-Text">Projects</p>
+							</Link>
+							<Link
+								className={
+									currSubpage === "Techstack"
+										? "Navbar-Link-Active"
+										: "Navbar-Link"
+								}
+								to="/techstack"
+								onClick={() => {
+									setCurrSubpage("Techstack");
+								}}>
+								<p className="Navbar-Text">Techstack</p>
+							</Link>
+						</div>
+						<hr className="Top-Menu-Line"></hr>
+						<hr className="Bottom-Menu-Line"></hr>
+					</button>
+				</div>
+			)}
 		</AppContext.Provider>
 	);
 }
