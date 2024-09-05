@@ -6,13 +6,8 @@ import fillCircle from "../assets/circleFill.svg";
 import emptyCircle from "../assets/circleEmpty.svg";
 import { Tooltip } from "react-tooltip";
 import { useState } from "react";
-import Banana from "../assets/Banana.gif";
 import { ProjectDisplay } from "./Project-Display/Project-Display.jsx";
-import OGImg from "../assets/OGImg.png";
-import PPImg from "../assets/PPImg.png";
-import ACImg from "../assets/ACImg.png";
-import CNCImg from "../assets/CNCImg.png";
-import RBImg from "../assets/RBImg.png";
+
 import colaborativeSkill from "../assets/colaborativeSkill.svg";
 import cssSkill from "../assets/cssSkill.svg";
 import databaseSkill from "../assets/databaseSkill.svg";
@@ -32,7 +27,15 @@ import homemadeComponentSkill from "../assets/customComponents.svg";
 import sessionsSkill from "../assets/sessionsSkill.svg";
 
 export const Projects = () => {
-	const { MemoizedAeroBubbles } = useContext(AppContext);
+	const { MemoizedAeroBubbles, projectsImages } = useContext(AppContext);
+
+	// Source Images
+	const OGImg = projectsImages[0];
+	const PPImg = projectsImages[1];
+	const ACImg = projectsImages[2];
+	const CNCImg = projectsImages[3];
+	const RBImg = projectsImages[4];
+	const Banana = projectsImages[5];
 
 	// Initialize Slider Indexs:
 	// 0 = Invis / No Animation after 2 or 3

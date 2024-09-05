@@ -2,8 +2,6 @@ import "./Techstack.css";
 import { useContext } from "react";
 import { AppContext } from "../App.jsx";
 import { Tooltip } from "react-tooltip";
-import Apple from "../assets/Apple.gif";
-import Bowl from "../assets/Bowl.gif";
 import reactStack from "../assets/reactStack.svg";
 import tailwindStack from "../assets/tailwindStack.svg";
 import UXStack from "../assets/UXStack.svg";
@@ -30,7 +28,8 @@ import creativityStack from "../assets/creativityStack.svg";
 import detailStack from "../assets/detailStack.svg";
 
 export const Techstack = () => {
-	const { MemoizedAeroBubbles, windowWidth } = useContext(AppContext);
+	const { MemoizedAeroBubbles, windowWidth, techstackImages } =
+		useContext(AppContext);
 	const tooltipStyle = {
 		backgroundColor: "#FF855C",
 		color: "#000000",
@@ -43,6 +42,9 @@ export const Techstack = () => {
 		borderWidth: "2px",
 		borderStyle: "solid",
 	};
+	// Source Images
+	const Apple = techstackImages[0];
+	const Bowl = techstackImages[1];
 	return (
 		<div className="Techstack">
 			<MemoizedAeroBubbles

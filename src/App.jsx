@@ -25,6 +25,17 @@ import ICPCTag from "./assets/educationVital/ICPC-Tag.avif";
 import USFLogo from "./assets/educationVital/USF-Logo.avif";
 import Strawberry from "./assets/educationVital/Strawberry.gif";
 
+// Project Images
+import OGImg from "./assets/projectsVital/OGImg.png";
+import PPImg from "./assets/projectsVital/PPImg.png";
+import ACImg from "./assets/projectsVital/ACImg.png";
+import CNCImg from "./assets/projectsVital/CNCImg.png";
+import RBImg from "./assets/projectsVital/RBImg.png";
+import Banana from "./assets/projectsVital/Banana.gif";
+
+// Techstack Images
+import Apple from "./assets/techstackVital/Apple.gif";
+import Bowl from "./assets/techstackVital/Bowl.gif";
 // Create app context
 export const AppContext = createContext();
 
@@ -39,8 +50,8 @@ const MemoizedTechstack = memo(Techstack);
 
 let homeImages = [AltArrowCurve, Cherries3D, FrutArrowCurve, Grapes3D, LWImg];
 let educationImages = [USFBull, ICPCLogo, ICPCTag, USFLogo, Strawberry];
-let projectsImages = [];
-let techstackImages = [];
+let projectsImages = [OGImg, PPImg, ACImg, CNCImg, RBImg, Banana];
+let techstackImages = [Apple, Bowl];
 
 function UnroutedApp() {
 	// Create a windowWidth state
@@ -81,6 +92,8 @@ function UnroutedApp() {
 				MemoizedAeroBubbles,
 				homeImages,
 				educationImages,
+				projectsImages,
+				techstackImages,
 			}}>
 			<div className="App">
 				<Routes>
