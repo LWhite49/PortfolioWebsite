@@ -50,13 +50,17 @@ export const Home = () => {
 				</h1>
 				<img
 					className="Cherries-3D"
-					src={Cherries3D}
+					src={Cherries3D.src}
 					alt="Cherries3D"
 				/>
-				<img className="Personal-Image" src={LWImg} alt="LWImg" />
-				<img className="Frut-Aero-Arrow" src={FrutArrowCurve} />
+				<img className="Personal-Image" src={LWImg.src} alt="LWImg" />
+				<img className="Frut-Aero-Arrow" src={FrutArrowCurve.src} />
 				<div className="Home-Contact-Icons">
-					<img className="Grapes-3D" src={Grapes3D} alt="Grapes3D" />
+					<img
+						className="Grapes-3D"
+						src={Grapes3D.src}
+						alt="Grapes3D"
+					/>
 					<img
 						onClick={() => {
 							window.open(
@@ -143,7 +147,7 @@ export const Home = () => {
 				className={
 					isMenuDisplayed ? "Alt-Aero-Arrow-Invis" : "Alt-Aero-Arrow"
 				}
-				src={AltArrowCurve}
+				src={AltArrowCurve.src}
 			/>
 		</div>
 	);

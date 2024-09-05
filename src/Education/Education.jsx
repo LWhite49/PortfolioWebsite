@@ -32,7 +32,7 @@ export const Education = () => {
 				links="#D0FCD0"
 			/>
 			<div className="Education-Header-Wrapper">
-				<img className="Strawberry" src={Strawberry} />
+				<img className="Strawberry" src={Strawberry.src} />
 
 				<h1 className="Education-Header">
 					University of South Florida
@@ -96,7 +96,7 @@ export const Education = () => {
 			<img
 				className="USF-Bull"
 				data-tooltip-id="usf-bull"
-				src={USFBull}
+				src={USFBull.src}
 			/>
 			<Tooltip
 				id="usf-bull"
@@ -108,7 +108,7 @@ export const Education = () => {
 			<img
 				className="ICPC-Logo"
 				data-tooltip-id="icpc-logo"
-				src={ICPCLogo}
+				src={ICPCLogo.src}
 			/>
 			<Tooltip
 				id="icpc-logo"
@@ -120,7 +120,7 @@ export const Education = () => {
 			<img
 				className="ICPC-Tag"
 				data-tooltip-id="icpc-tag"
-				src={ICPCTag}
+				src={ICPCTag.src}
 			/>
 			<Tooltip
 				id="icpc-tag"
@@ -132,7 +132,7 @@ export const Education = () => {
 			<img
 				className="USF-Logo"
 				data-tooltip-id="usf-logo"
-				src={USFLogo}
+				src={USFLogo.src}
 			/>
 			<Tooltip
 				id="usf-logo"

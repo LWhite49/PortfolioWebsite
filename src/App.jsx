@@ -48,12 +48,50 @@ const MemoizedTechstack = memo(Techstack);
 
 // Create arrays for each subpage vital images for load balancing
 
-let homeImages = [AltArrowCurve, Cherries3D, FrutArrowCurve, Grapes3D, LWImg];
-let educationImages = [USFBull, ICPCLogo, ICPCTag, USFLogo, Strawberry];
-let projectsImages = [OGImg, PPImg, ACImg, CNCImg, RBImg, Banana];
-let techstackImages = [Apple, Bowl];
+let homeImagesImp = [
+	AltArrowCurve,
+	Cherries3D,
+	FrutArrowCurve,
+	Grapes3D,
+	LWImg,
+];
+let educationImagesImp = [USFBull, ICPCLogo, ICPCTag, USFLogo, Strawberry];
+let projectsImagesImp = [OGImg, PPImg, ACImg, CNCImg, RBImg, Banana];
+let techstackImagesImp = [Apple, Bowl];
+
+// Map each array to an array of image objects
+let homeImages = homeImagesImp.map((img) => {
+	const image = new Image();
+	image.src = img;
+	return image;
+});
+let educationImages = educationImagesImp.map((img) => {
+	const image = new Image();
+	image.src = img;
+	return image;
+});
+let projectsImages = projectsImagesImp.map((img) => {
+	const image = new Image();
+	image.src = img;
+	return image;
+});
+let techstackImages = techstackImagesImp.map((img) => {
+	const image = new Image();
+	image.src = img;
+	return image;
+});
 
 function UnroutedApp() {
+	// Create an isLoading state, which becomes false in 1 second
+	const [isLoading, setIsLoading] = useState(true);
+
+	useEffect(() => {
+		setTimeout(() => {
+			setIsLoading(false);
+			clearTimeout();
+		}, 1000);
+	}, []);
+
 	// Create a windowWidth state
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 

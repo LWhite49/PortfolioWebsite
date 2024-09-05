@@ -53,9 +53,9 @@ export const Techstack = () => {
 				links="#540552"
 			/>
 			<div className="Techstack-Header-Wrapper">
-				<img className="Apple" src={Apple} />
+				<img className="Apple" src={Apple.src} />
 				<h1 className="Techstack-Header">Techstack</h1>
-				<img className="Bowl" src={Bowl} />
+				<img className="Bowl" src={Bowl.src} />
 			</div>
 			<div className="Techstack-Content">
 				<div className="Techstack-Segment">

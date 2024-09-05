@@ -83,7 +83,7 @@ export const Projects = () => {
 				links="#000000"
 			/>
 			<div className="Projects-Header-Wrapper">
-				<img className="Banana" src={Banana} />
+				<img className="Banana" src={Banana.src} />
 
 				<h1 className="Projects-Header">Project Hall</h1>
 			</div>
@@ -100,7 +100,7 @@ export const Projects = () => {
 					bounceStage={projectVisibility[0]}
 					clockSVG={0}
 					demonstrationLink="https://github.com/LWhite49/Outfit-Generator"
-					projectImg={OGImg}
+					projectImg={OGImg.src}
 					projectSkills={[
 						{
 							name: "React",
@@ -156,7 +156,7 @@ export const Projects = () => {
 					bounceStage={projectVisibility[1]}
 					clockSVG={1}
 					demonstrationLink="https://github.com/LWhite49/PortfolioWebsite"
-					projectImg={PPImg}
+					projectImg={PPImg.src}
 					projectSkills={[
 						{
 							name: "React",
@@ -196,7 +196,7 @@ export const Projects = () => {
 					bounceStage={projectVisibility[2]}
 					clockSVG={1}
 					demonstrationLink="https://www.linkedin.com/posts/lwhite49_for-a-while-i-viewed-nodejs-as-something-activity-7143681848290848768-n405?utm_source=share&utm_medium=member_desktop"
-					projectImg={ACImg}
+					projectImg={ACImg.src}
 					projectSkills={[
 						{
 							name: "Node.js",
@@ -241,7 +241,7 @@ export const Projects = () => {
 					bounceStage={projectVisibility[3]}
 					clockSVG={1}
 					demonstrationLink="https://www.linkedin.com/posts/lwhite49_as-i-am-preparing-to-build-my-personal-portfolio-activity-7199450197100228608-qYfz?utm_source=share&utm_medium=member_desktop"
-					projectImg={CNCImg}
+					projectImg={CNCImg.src}
 					projectSkills={[
 						{
 							name: "Vanilla JavaScript",
@@ -276,7 +276,7 @@ export const Projects = () => {
 					bounceStage={projectVisibility[4]}
 					clockSVG={1}
 					demonstrationLink="https://www.linkedin.com/posts/lwhite49_as-i-am-preparing-to-build-my-personal-portfolio-activity-7198762368783241216-x3MT?utm_source=share&utm_medium=member_desktop"
-					projectImg={RBImg}
+					projectImg={RBImg.src}
 					projectSkills={[
 						{
 							name: "Vanilla JavaScript",
