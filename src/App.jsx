@@ -90,7 +90,7 @@ function UnroutedApp() {
 		setTimeout(() => {
 			setIsLoading(false);
 			clearTimeout();
-		}, 500);
+		}, 1000);
 	}, []);
 
 	// Create a windowWidth state
