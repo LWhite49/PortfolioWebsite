@@ -1,0 +1,20 @@
+@keyframes SpinnerSpin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.Loading-Spinner {
+	animation: SpinnerSpin 1.4s linear infinite;
+	width: 100px;
+}
+.Loading-Text {
+	margin-top: 20px;
+	color: #134600;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: 1px 1px 1px #3cc947;
+}
