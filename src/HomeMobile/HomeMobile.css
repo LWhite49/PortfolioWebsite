@@ -1,0 +1,11 @@
+.Personal-Image-Mobile {
+	position: absolute;
+	top: 4vh;
+	left: 2vw;
+	z-index: 10;
+	box-shadow: #192424 2px 6px 10px 2px;
+	border: solid 6px #08a973;
+	border-radius: 70% 60% 80% 55%;
+	width: 180px;
+	height: 180px;
+}

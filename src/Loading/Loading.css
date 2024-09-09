@@ -18,3 +18,12 @@
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	text-shadow: 1px 1px 1px #3cc947;
 }
+
+@media (max-width: 900px) {
+	.Loading-Spinner {
+		width: 80px;
+	}
+	.Loading-Text {
+		font-size: 18px;
+	}
+}

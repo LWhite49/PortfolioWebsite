@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 // Import subpages
 import { Home } from "./Home/Home";
+import { HomeMobile } from "./HomeMobile/HomeMobile";
 import { Education } from "./Education/Education";
 import { Projects } from "./Projects/Projects";
 import { Techstack } from "./Techstack/Techstack";
@@ -43,6 +44,7 @@ export const AppContext = createContext();
 // Memoize components
 const MemoizedAeroBubbles = memo(AeroBubbles);
 const MemoizedHome = memo(Home);
+const MemoizedHomeMobile = memo(HomeMobile);
 const MemoizedEducation = memo(Education);
 const MemoizedProjects = memo(Projects);
 const MemoizedTechstack = memo(Techstack);
@@ -139,7 +141,16 @@ function UnroutedApp() {
 			) : (
 				<div className="App">
 					<Routes>
-						<Route path="/" element={<MemoizedHome />} />
+						<Route
+							path="/"
+							element={
+								windowWidth > 939 ? (
+									<MemoizedHome />
+								) : (
+									<MemoizedHomeMobile />
+								)
+							}
+						/>
 						<Route
 							path="/education"
 							element={<MemoizedEducation />}
