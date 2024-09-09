@@ -20,7 +20,7 @@
 	align-items: center;
 	gap: 20px;
 	transform: translateY(-50%);
-	animation: TechstackHeaderSlideIn 0.85s linear;
+	animation: TechstackHeaderSlideIn 0.5s linear;
 }
 .Techstack-Header {
 	display: inline-block;
