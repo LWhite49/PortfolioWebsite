@@ -4,23 +4,23 @@
 }
 @keyframes TechstackHeaderSlideIn {
 	0% {
-		left: -400px;
+		left: -16vw;
 	}
 	100% {
-		left: -120px;
+		left: -6vw;
 	}
 }
 .Techstack-Header-Wrapper {
 	display: flex;
 	position: absolute;
 	top: 30vh;
-	left: -120px;
+	left: -6vw;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
 	transform: translateY(-50%);
-	animation: TechstackHeaderSlideIn 0.5s ease-out;
+	animation: TechstackHeaderSlideIn 0.85s linear;
 }
 .Techstack-Header {
 	display: inline-block;
@@ -162,10 +162,10 @@
 	width: 36px;
 }
 
-@media (max-width: 2020px) {
+@media (max-width: 2120px) {
 	.Techstack-Header-Wrapper {
 		top: 20vh;
-		left: -100px;
+		left: -6vw;
 	}
 	.Apple {
 		top: 80px;
@@ -204,7 +204,7 @@
 	}
 	.Techstack-Header-Wrapper {
 		top: 16vh;
-		left: -84px;
+		left: -6vw;
 	}
 	.Techstack-Header {
 		font-size: 42pt;

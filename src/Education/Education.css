@@ -41,13 +41,13 @@
 
 @keyframes ICPCTagSlideIn {
 	0% {
-		bottom: -100px;
-		left: -100px;
+		bottom: -8vh;
+		left: -6vw;
 		transform: rotate(60deg) scale(0.7);
 	}
 	100% {
-		bottom: 120px;
-		left: 10px;
+		bottom: 24vh;
+		left: 1vw;
 		transform: rotate(0deg) scale(1);
 	}
 }
@@ -111,8 +111,8 @@
 }
 .ICPC-Tag {
 	position: absolute;
-	bottom: 240px;
-	left: 10px;
+	bottom: 24vh;
+	left: 1vw;
 	animation: ICPCTagSlideIn 0.5s;
 	box-shadow: black -1px 0px 2px 6px;
 	border: solid 6px white;
@@ -145,7 +145,7 @@
 	border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
 	background-color: rgba(210, 199, 149, 0.8);
 	width: min(76vw, 1800px);
-	height: 76vh;
+	height: 68vh;
 }
 
 .Education-Header-Wrapper {
@@ -162,7 +162,7 @@
 .Education-Bullets {
 	display: flex;
 	position: absolute;
-	top: 54px;
+	top: 0px;
 	left: 0px;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -192,7 +192,7 @@
 	margin: 0px;
 	color: #197556;
 	font-weight: 500;
-	font-size: 24pt;
+	font-size: 23pt;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	text-shadow: 2px 2px 2px #08a973;
 }
@@ -229,18 +229,24 @@
 	top: 130px;
 	left: 7vw;
 }
-@media (max-height: 900px) {
-	.Education-Content-Main {
-		height: 550px;
+@media (max-height: 970px) {
+	.Education-Major,
+	.Education-Honors,
+	.Education-GPA,
+	.Education-Hackathon,
+	.Education-Programming,
+	.Education-ICPC,
+	.Education-Graduate {
+		font-size: 20pt;
+	}
+	.Education-Bullet-Emph {
+		font-size: 20pt;
 	}
 }
 @media (max-width: 1900px) {
 	.Education-Header {
 		margin-top: -20px;
 		font-size: 36pt;
-	}
-	.Education-Content-Main {
-		height: 550px;
 	}
 	.Strawberry {
 		margin-top: -14px;
@@ -261,7 +267,7 @@
 	}
 }
 
-@media (max-width: 1640px) {
+@media (max-width: 1730px) {
 	.USF-Bull {
 		width: 180px;
 	}
@@ -275,7 +281,7 @@
 		width: 180px;
 	}
 	.Education-Bullets {
-		top: -20px;
+		top: -30px;
 		left: -20px;
 	}
 	.Education-Major,
@@ -289,10 +295,10 @@
 	}
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1520px) {
 	.Education-Bullets {
-		top: -30px;
-		left: -20px;
+		top: -38px;
+		left: -22px;
 	}
 	.Education-Major,
 	.Education-Honors,
@@ -301,7 +307,7 @@
 	.Education-Programming,
 	.Education-ICPC,
 	.Education-Bullet-Emph {
-		font-size: 16pt;
+		font-size: 15pt;
 	}
 }
 
@@ -313,15 +319,12 @@
 		margin-top: -10px;
 		width: 60px;
 	}
-	.ICPC-Tag {
-		bottom: 120px;
-	}
 }
 
 @media (max-width: 1250px) {
 	.Education-Bullets {
 		top: -30px;
-		left: -20px;
+		left: -16px;
 	}
 	.Education-Major,
 	.Education-Honors,
