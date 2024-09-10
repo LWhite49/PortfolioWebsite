@@ -24,7 +24,7 @@ export const HomeMobile = () => {
 	const Grapes3D = homeImages[3];
 
 	return (
-		<>
+		<div className="HomeMobile">
 			<MemoizedAeroBubbles
 				background="#E6D6EB"
 				node="#7E6B8F"
@@ -113,6 +113,6 @@ export const HomeMobile = () => {
 					style={tooltipStyle}
 				/>
 			</div>
-		</>
+		</div>
 	);
 };

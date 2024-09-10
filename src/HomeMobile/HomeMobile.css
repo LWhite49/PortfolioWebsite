@@ -1,3 +1,7 @@
+.HomeMobile {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
 .Personal-Image-Mobile {
 	position: absolute;
 	top: 2vh;
@@ -19,7 +23,7 @@
 }
 .Home-Hook-Mobile {
 	opacity: default;
-	margin: 0px 0px 6px 0px;
+	margin: 0px 0px 12px 0px;
 	color: #134600;
 	font-size: 22pt;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -34,7 +38,7 @@
 }
 .Home-Intro-Text-Mobile {
 	opacity: 1;
-	margin: 6px 0px 6px 16px;
+	margin: 12px 0px 12px 16px;
 	max-width: 320px;
 	color: #78d253;
 	font-size: 16pt;
