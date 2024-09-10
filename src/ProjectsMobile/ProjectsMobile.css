@@ -1,0 +1,32 @@
+.ProjectsMobile {
+	max-width: 100%;
+	max-height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.Projects-Header-Wrapper-Mobile {
+	display: flex;
+	position: absolute;
+	top: 2vh;
+	left: 3vw;
+	flex-direction: row;
+	gap: 4px;
+}
+.Banana-Mobile {
+	position: relative;
+	top: 6px;
+	width: 60px;
+}
+.Projects-Header-Mobile {
+	color: rgb(221, 169, 221);
+	font-size: 20pt;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+.Slider-Wrap-Mobile {
+	position: absolute;
+	top: 0px;
+	left: -400px;
+	transform: scale(0.5);
+}

@@ -8,6 +8,7 @@ import { HomeMobile } from "./HomeMobile/HomeMobile";
 import { Education } from "./Education/Education";
 import { EducationMobile } from "./EducationMobile/EducationMobile";
 import { Projects } from "./Projects/Projects";
+import { ProjectsMobile } from "./ProjectsMobile/ProjectsMobile";
 import { Techstack } from "./Techstack/Techstack";
 import { Loading } from "./Loading/Loading";
 
@@ -49,6 +50,7 @@ const MemoizedHomeMobile = memo(HomeMobile);
 const MemoizedEducation = memo(Education);
 const MemoizedEducationMobile = memo(EducationMobile);
 const MemoizedProjects = memo(Projects);
+const MemoizedProjectsMobile = memo(ProjectsMobile);
 const MemoizedTechstack = memo(Techstack);
 
 // Create arrays for each subpage vital images for load balancing
@@ -165,7 +167,13 @@ function UnroutedApp() {
 						/>
 						<Route
 							path="/projects"
-							element={<MemoizedProjects />}
+							element={
+								windowWidth > 839 ? (
+									<MemoizedProjects />
+								) : (
+									<MemoizedProjectsMobile />
+								)
+							}
 						/>
 						<Route
 							path="/techstack"
