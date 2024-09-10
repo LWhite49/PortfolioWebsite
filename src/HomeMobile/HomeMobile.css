@@ -11,7 +11,7 @@
 }
 .Home-Intro-Text-Wrap-Mobile {
 	position: absolute;
-	top: calc(2vh + 160px + 18px);
+	top: calc(2vh + 160px + 44px);
 	left: 10vw;
 	background-color: #e6d6ebb3;
 	padding: 10px;
@@ -35,7 +35,7 @@
 .Home-Intro-Text-Mobile {
 	opacity: 1;
 	margin: 6px 0px 6px 16px;
-	max-width: 220px;
+	max-width: 320px;
 	color: #78d253;
 	font-size: 16pt;
 	line-height: 24px;
