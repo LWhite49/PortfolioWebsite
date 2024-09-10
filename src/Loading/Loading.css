@@ -20,15 +20,11 @@
 }
 
 @media (max-width: 700px) {
-	.Loading {
-		position: relative;
-		left: -30px;
-	}
 	.Loading-Spinner {
 		width: 80px;
 	}
 	.Loading-Text {
-		max-width: 120px;
+		max-width: 220px;
 		font-size: 18px;
 	}
 }

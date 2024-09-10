@@ -168,10 +168,10 @@ html {
 
 @media (max-width: 740px) {
 	.Navbar-Link {
-		font-size: 16px;
+		font-size: 18px;
 	}
 	.Navbar-Link-Active {
-		font-size: 16px;
+		font-size: 18px;
 	}
 	.Navbar-Link:hover {
 		color: #54e01c;
@@ -200,6 +200,6 @@ html {
 		height: 100px;
 	}
 	.Navbar-Text {
-		margin: 2px;
+		margin: 5px;
 	}
 }
