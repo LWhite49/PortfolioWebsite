@@ -144,7 +144,7 @@ function UnroutedApp() {
 						<Route
 							path="/"
 							element={
-								windowWidth > 939 ? (
+								windowWidth > 839 ? (
 									<MemoizedHome />
 								) : (
 									<MemoizedHomeMobile />

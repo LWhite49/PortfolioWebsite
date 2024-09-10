@@ -1,11 +1,70 @@
 .Personal-Image-Mobile {
 	position: absolute;
-	top: 4vh;
-	left: 2vw;
+	top: 2vh;
+	left: 4vw;
 	z-index: 10;
 	box-shadow: #192424 2px 6px 10px 2px;
 	border: solid 6px #08a973;
 	border-radius: 70% 60% 80% 55%;
-	width: 180px;
-	height: 180px;
+	width: 110px;
+	height: 110px;
+}
+.Home-Intro-Text-Wrap-Mobile {
+	position: absolute;
+	top: calc(2vh + 110px + 26px);
+	left: 2vw;
+	background-color: #e6d6ebb3;
+	padding: 10px;
+	text-align: left;
+}
+.Home-Hook-Mobile {
+	opacity: default;
+	margin: 0px 0px 4px 0px;
+	color: #134600;
+	font-size: 17pt;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: 1px 1px 2px #78d253;
+}
+.Home-Intro-Personal-Name-Mobile {
+	margin: 0px;
+	margin-left: 6px;
+	color: #08a973;
+	font-size: 16pt;
+	text-shadow: 2px 2px 0px hsl(180, 18%, 12%);
+}
+.Home-Intro-Text-Mobile {
+	opacity: 1;
+	margin: 4px 0px 4px 8px;
+	max-width: 220px;
+	color: #78d253;
+	font-size: 13pt;
+	line-height: 20px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: 2px 2px 0px hsl(180, 18%, 12%);
+}
+.Home-Intro-Text-Last-Mobile {
+	margin: 4px 0px 10px 12px;
+	width: 220px;
+	color: #53a231;
+	font-size: 11pt;
+	line-height: 20px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: 1px 1px 0px hsl(180, 13%, 6%);
+}
+.Home-Contact-Icons-Mobile {
+	display: flex;
+	position: absolute;
+	bottom: 10px;
+	left: 6vw;
+	gap: 10px;
+	border: #75ffca 4px solid;
+	border-radius: 20px;
+	background-color: #08a973;
+	padding: 10px 24px 10px 12px;
+	width: 176px;
+}
+.Grapes-3D-Mobile {
+	margin: 0px;
+	padding: 0px;
+	width: 40px;
 }

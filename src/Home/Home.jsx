@@ -10,7 +10,7 @@ import Resume from "../assets/LW-Resume.pdf";
 
 export const Home = () => {
 	// Create style object for Tooltips
-	const tooltipStype = {
+	const tooltipStyle = {
 		backgroundColor: "rgba(0, 0, 0, 0.7)",
 		color: "#75ffca",
 		borderColor: "black",
@@ -79,7 +79,7 @@ export const Home = () => {
 						place="top"
 						effect="solid"
 						content="View Resume"
-						style={tooltipStype}
+						style={tooltipStyle}
 					/>
 					<img
 						className="Email-Svg"
@@ -99,7 +99,7 @@ export const Home = () => {
 						place="top"
 						effect="solid"
 						content="Email: lwhite4965@outlook.com"
-						style={tooltipStype}
+						style={tooltipStyle}
 					/>
 					<img
 						onClick={() => {
@@ -119,7 +119,7 @@ export const Home = () => {
 						place="top"
 						effect="solid"
 						content="LinkedIn: lwhite49"
-						style={tooltipStype}
+						style={tooltipStyle}
 					/>
 					<img
 						onClick={() => {
@@ -139,7 +139,7 @@ export const Home = () => {
 						place="top"
 						effect="solid"
 						content="Github: LWhite49"
-						style={tooltipStype}
+						style={tooltipStyle}
 					/>
 				</div>
 			</div>
