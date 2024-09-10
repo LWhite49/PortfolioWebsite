@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Home } from "./Home/Home";
 import { HomeMobile } from "./HomeMobile/HomeMobile";
 import { Education } from "./Education/Education";
+import { EducationMobile } from "./EducationMobile/EducationMobile";
 import { Projects } from "./Projects/Projects";
 import { Techstack } from "./Techstack/Techstack";
 import { Loading } from "./Loading/Loading";
@@ -46,6 +47,7 @@ const MemoizedAeroBubbles = memo(AeroBubbles);
 const MemoizedHome = memo(Home);
 const MemoizedHomeMobile = memo(HomeMobile);
 const MemoizedEducation = memo(Education);
+const MemoizedEducationMobile = memo(EducationMobile);
 const MemoizedProjects = memo(Projects);
 const MemoizedTechstack = memo(Techstack);
 
@@ -153,7 +155,13 @@ function UnroutedApp() {
 						/>
 						<Route
 							path="/education"
-							element={<MemoizedEducation />}
+							element={
+								windowWidth > 839 ? (
+									<MemoizedEducation />
+								) : (
+									<MemoizedEducationMobile />
+								)
+							}
 						/>
 						<Route
 							path="/projects"

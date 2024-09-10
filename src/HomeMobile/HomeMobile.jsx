@@ -8,7 +8,8 @@ import LinkedInSvg from "../assets/LinkedInSvg.svg";
 import Resume from "../assets/LW-Resume.pdf";
 
 export const HomeMobile = () => {
-	const { homeImages, MemoizedAeroBubbles } = useContext(AppContext);
+	const { homeImages, MemoizedAeroBubbles, isMenuDisplayed } =
+		useContext(AppContext);
 
 	const tooltipStyle = {
 		backgroundColor: "rgba(0, 0, 0, 0.7)",
@@ -22,6 +23,7 @@ export const HomeMobile = () => {
 	// Source Images
 	const personalImg = homeImages[4];
 	const Grapes3D = homeImages[3];
+	const AltArrowCurve = homeImages[0];
 
 	return (
 		<div className="HomeMobile">
@@ -113,6 +115,14 @@ export const HomeMobile = () => {
 					style={tooltipStyle}
 				/>
 			</div>
+			<img
+				className={
+					isMenuDisplayed
+						? "Alt-Aero-Arrow-Invis-Mobile"
+						: "Alt-Aero-Arrow-Mobile"
+				}
+				src={AltArrowCurve.src}
+			/>
 		</div>
 	);
 };

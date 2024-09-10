@@ -1,0 +1,98 @@
+.EducationMobile {
+	max-width: 100%;
+	max-height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+@keyframes MobileTitleSlide {
+	0% {
+		top: -100px;
+		left: -100px;
+		transform: rotate(60deg) scale(0.7);
+	}
+	100% {
+		top: 1vh;
+		left: 4vw;
+		transform: rotate(0deg) scale(1);
+	}
+}
+.Mobile-Bull {
+	position: absolute;
+	top: 70px;
+	left: 20px;
+	border: white solid 1px;
+	border-radius: 44% 60%;
+	width: 140px;
+}
+.Education-Hook-Wrap-Mobile {
+	display: flex;
+	position: absolute;
+	top: 1vh;
+	left: 4vw;
+	flex-direction: row;
+	gap: 0px;
+	animation: MobileTitleSlide 0.5s;
+}
+.Education-Hook-Mobile {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 16px;
+	max-width: 200px;
+	color: #ffffff;
+	font-size: 14pt;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: 2px 2px 4px rgb(242, 65, 65);
+}
+.Strawberry-Img-Mobile {
+	position: relative;
+	top: 10px;
+	width: 50px;
+}
+.Education-Content-Main-Mobile {
+	position: relative;
+	top: 86px;
+	border: #ffffff 1px solid;
+	background-color: rgba(210, 199, 149, 0.8);
+	width: 80vw;
+	height: 450px;
+}
+.Education-Bullets-Mobile {
+	display: flex;
+	position: absolute;
+	top: -80px;
+	left: 0px;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: start;
+	gap: 16px;
+}
+.Education-Major-Mobile,
+.Education-Honors-Mobile,
+.Education-GPA-Mobile,
+.Education-Hackathon-Mobile,
+.Education-Programming-Mobile,
+.Education-ICPC-Mobile,
+.Education-Graduate-Mobile {
+	position: relative;
+	top: 106px;
+	left: 8vw;
+	margin: 0px;
+	max-width: 68vw;
+	color: #197556;
+	font-weight: 500;
+	font-size: 11pt;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-align: left;
+	text-indent: -14px;
+	text-shadow: 2px 2px 2px #08a973;
+}
+.Education-Bullet-Emph-Mobile {
+	color: #ffffff;
+	font-size: 11pt;
+	text-shadow: 2px 2px 2px #08a973;
+}
+.Education-Bullet-Mobile {
+	margin-right: 4px;
+	color: black;
+}
