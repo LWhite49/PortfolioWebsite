@@ -18,7 +18,7 @@
 }
 .Mobile-Bull {
 	position: absolute;
-	top: 70px;
+	top: 90px;
 	left: 20px;
 	border: white solid 1px;
 	border-radius: 44% 60%;
@@ -38,7 +38,7 @@
 	margin: 0px;
 	padding: 0px;
 	padding-top: 16px;
-	max-width: 200px;
+	max-width: 260px;
 	color: #ffffff;
 	font-size: 14pt;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -84,7 +84,7 @@
 	font-size: 11pt;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	text-align: left;
-	text-indent: -14px;
+	text-indent: -16px;
 	text-shadow: 2px 2px 2px #08a973;
 }
 .Education-Bullet-Emph-Mobile {
