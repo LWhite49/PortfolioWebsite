@@ -8,7 +8,7 @@
 	0% {
 		top: -100px;
 		left: -100px;
-		transform: rotate(60deg) scale(0.7);
+		transform: rotate(30deg) scale(0.7);
 	}
 	100% {
 		top: 1vh;
@@ -20,6 +20,7 @@
 	position: absolute;
 	top: 90px;
 	left: 20px;
+	animation: BullSlideIn 0.5s linear;
 	border: white solid 1px;
 	border-radius: 44% 60%;
 	width: 140px;
@@ -49,13 +50,34 @@
 	top: 10px;
 	width: 50px;
 }
+@keyframes MainFadeIn {
+	0% {
+		top: 400px;
+	}
+	100% {
+		top: 86px;
+	}
+}
+@keyframes BullSlideIn {
+	0% {
+		top: -10px;
+		left: -90px;
+		transform: rotate(20deg);
+	}
+	100% {
+		top: 90px;
+		left: 20px;
+		transform: rotate(0deg);
+	}
+}
 .Education-Content-Main-Mobile {
 	position: relative;
 	top: 86px;
+	animation: MainFadeIn 0.5s linear;
 	border: #ffffff 1px solid;
 	background-color: rgba(210, 199, 149, 0.8);
 	width: 80vw;
-	height: 450px;
+	height: 460px;
 }
 .Education-Bullets-Mobile {
 	display: flex;
@@ -84,7 +106,7 @@
 	font-size: 11pt;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	text-align: left;
-	text-indent: -16px;
+	text-indent: -17px;
 	text-shadow: 2px 2px 2px #08a973;
 }
 .Education-Bullet-Emph-Mobile {
