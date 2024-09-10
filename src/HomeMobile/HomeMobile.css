@@ -4,8 +4,8 @@
 }
 .Personal-Image-Mobile {
 	position: absolute;
-	top: 2vh;
-	left: 4vw;
+	top: 6vh;
+	left: 8vw;
 	z-index: 10;
 	box-shadow: #192424 2px 6px 10px 2px;
 	border: solid 6px #08a973;
@@ -15,7 +15,7 @@
 }
 .Home-Intro-Text-Wrap-Mobile {
 	position: absolute;
-	top: calc(2vh + 160px + 44px);
+	top: calc(2vh + 160px + 74px);
 	left: 10vw;
 	background-color: #e6d6ebb3;
 	padding: 10px;
