@@ -2,7 +2,9 @@ import "./ProjectsMobile.css";
 import { useContext, useState } from "react";
 import { AppContext } from "../App.jsx";
 import { ProjectDisplay } from "../Projects/Project-Display/Project-Display.jsx";
-
+import rightArrow from "../assets/rightArrow.svg";
+import fillCircle from "../assets/circleFill.svg";
+import emptyCircle from "../assets/circleEmpty.svg";
 import colaborativeSkill from "../assets/colaborativeSkill.svg";
 import cssSkill from "../assets/cssSkill.svg";
 import databaseSkill from "../assets/databaseSkill.svg";
@@ -143,9 +145,9 @@ export const ProjectsMobile = () => {
 					projectName="Personal Portfolio"
 					completedAt="August 2024"
 					bulletPoints={[
-						"Frontend Application that showcases my technical skills and personal projects as an Undergraduate Software Developer",
-						"Stylish Animations and Responsive Design through React and CSS for a engaging modern User Experience",
-						"Modular Design allows for easy updates and additions to the Portfolio as new projects are completed or as my techstack evolves",
+						"Frontend Application that showcases my work as an Undergraduate Software Developer",
+						"Stylish Animations and Responsive Design through React and CSS",
+						"Modular Design allows for easy updates and additions to the Portfolio as new projects are completed",
 					]}
 					bounceStage={projectVisibility[1]}
 					clockSVG={1}
@@ -183,9 +185,9 @@ export const ProjectsMobile = () => {
 					projectName="Album Chart Server"
 					completedAt="January 2024"
 					bulletPoints={[
-						"Backend Application that allows users to create and manage their own Album Charts by interacting with a REST API",
-						"User Authentication and Authorization with Express Sessions allow for synchronous and secure modification of Data",
-						"NoSQL Mongo Database stores Album Data obtained by Web Scraping, as well as User Data and Encrypted Passwords",
+						"Backend Application that allows users to create and manage their own Album Charts",
+						"User Authentication and Authorization with Express Sessions allow for synchronous data updates",
+						"NoSQL Mongo Database stores User Data, Album Data, and Encrypted Passwords",
 					]}
 					bounceStage={projectVisibility[2]}
 					clockSVG={1}
@@ -228,8 +230,8 @@ export const ProjectsMobile = () => {
 					projectName="Custom News Client"
 					completedAt="November 2023"
 					bulletPoints={[
-						"Frontend Application that uses Vanilla JavaScript to make a News Client that allows users to store favorite topics",
-						"News Feed is sourced from News API, where Axios is used to manage API requests reflecting User Preferences",
+						"Frontend Application that uses Vanilla JavaScript to make an interactive News Client",
+						"News Feed is sourced from News API, where Axios is used to manage API requests",
 						"User Interface is rendered dynamically based on the favorite topics stored in Local Storage",
 					]}
 					bounceStage={projectVisibility[3]}
@@ -264,8 +266,8 @@ export const ProjectsMobile = () => {
 					completedAt="September 2023"
 					bulletPoints={[
 						"Frontend Application that uses Vanilla JavaScript to host tools for training user musical skills",
-						"Playable Piano made from scratch uses JavaScript Audio to test user's ability to identify pitch intervals",
-						"Tempo Trainer utilizes JavaScript Time and Math to grade a user accuracy and varaince while matching a variable tempo",
+						"Playable Piano made from scratch uses JavaScript Audio to create pitch intervals",
+						"Tempo Trainer utilizes JavaScript Time and Math to grade a user accuracy and varaince in tempo",
 					]}
 					bounceStage={projectVisibility[4]}
 					clockSVG={1}
@@ -304,6 +306,40 @@ export const ProjectsMobile = () => {
 						},
 					]}
 				/>
+			</div>
+			<div className="Slider-Nav-Wrapper-Mobile">
+				<div
+					className="Slider-Nav-Indicators-Mobile"
+					data-tooltip-id="slider-indicator-Mobile">
+					<img
+						className="Slider-Indicator-Mobile"
+						src={sliderIndex === 0 ? fillCircle : emptyCircle}
+					/>
+					<img
+						className="Slider-Indicator-Mobile"
+						src={sliderIndex === 1 ? fillCircle : emptyCircle}
+					/>
+					<img
+						className="Slider-Indicator-Mobile"
+						src={sliderIndex === 2 ? fillCircle : emptyCircle}
+					/>
+					<img
+						className="Slider-Indicator-Mobile"
+						src={sliderIndex === 3 ? fillCircle : emptyCircle}
+					/>
+					<img
+						className="Slider-Indicator-Mobile"
+						src={sliderIndex === 4 ? fillCircle : emptyCircle}
+					/>
+				</div>
+				<button
+					className="Slider-Next-Mobile"
+					data-tooltip-id="next-arrow"
+					onClick={() => {
+						incrementSliderIndex();
+					}}>
+					<img className="Right-Arrow-Mobile" src={rightArrow} />
+				</button>
 			</div>
 		</div>
 	);

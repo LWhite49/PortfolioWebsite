@@ -19,11 +19,11 @@
 .Mobile-Bull {
 	position: absolute;
 	top: 90px;
-	left: 20px;
+	left: 28px;
 	animation: BullSlideIn 0.5s linear;
 	border: white solid 1px;
 	border-radius: 44% 60%;
-	width: 140px;
+	width: 180px;
 }
 .Education-Hook-Wrap-Mobile {
 	display: flex;

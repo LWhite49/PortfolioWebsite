@@ -7,6 +7,7 @@
 	left: 24vw;
 	background-color: #e6d6ebb3;
 	padding: 10px;
+	pointer-events: none;
 	text-align: left;
 }
 .Home-Hook {

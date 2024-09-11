@@ -26,7 +26,38 @@
 }
 .Slider-Wrap-Mobile {
 	position: absolute;
-	top: 0px;
-	left: -400px;
-	transform: scale(0.5);
+	top: 20px;
+	left: -80px;
+	transform: scale(0.6);
+}
+.Slider-Nav-Wrapper-Mobile {
+	display: flex;
+	position: absolute;
+	top: 70px;
+	left: 0px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transform: scale(0.75);
+}
+.Slider-Nav-Indicators-Mobile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+.Slider-Indicator-Mobile {
+	width: 12px;
+}
+.Slider-Next-Mobile {
+	border: none;
+	background-color: rgb(0, 0, 0, 0);
+}
+.Slider-Next-Mobile:hover {
+	border: none;
+}
+.Right-Arrow-Mobile {
+	transform: rotate(90deg);
+	width: 100px;
 }
