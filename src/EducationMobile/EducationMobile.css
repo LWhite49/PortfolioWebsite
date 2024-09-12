@@ -8,7 +8,7 @@
 	0% {
 		top: -100px;
 		left: -100px;
-		transform: rotate(30deg) scale(0.7);
+		transform: rotate(30deg) scale(0.6);
 	}
 	100% {
 		top: 1vh;
@@ -78,7 +78,7 @@
 	border-radius: 20px;
 	background-color: rgba(210, 199, 149, 0.8);
 	width: 80vw;
-	height: 420px;
+	height: 480px;
 }
 .Education-Bullets-Mobile {
 	display: flex;

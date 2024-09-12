@@ -1,4 +1,13 @@
+@keyframes FadeInMobile {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 .HomeMobile {
+	animation: FadeInMobile 0.4s;
 	width: 100vw;
 	height: 100vh;
 	overflow-x: hidden;

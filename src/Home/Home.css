@@ -1,5 +1,14 @@
+@keyframes FadeInHome {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 .Home {
 	display: relative;
+	animation: FadeInHome 0.5s;
 }
 .Home-Intro-Text-Wrap {
 	position: absolute;

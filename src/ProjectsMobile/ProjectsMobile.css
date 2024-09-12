@@ -4,7 +4,19 @@
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
+@keyframes MobileTitleSlide {
+	0% {
+		top: -100px;
+		left: -100px;
+		transform: rotate(10deg) scale(0.6);
+	}
 
+	100% {
+		top: 2vh;
+		left: 3vw;
+		transform: rotate(0deg) scale(1);
+	}
+}
 .Projects-Header-Wrapper-Mobile {
 	display: flex;
 	position: absolute;
@@ -12,6 +24,7 @@
 	left: 3vw;
 	flex-direction: row;
 	gap: 4px;
+	animation: MobileTitleSlide 0.7s;
 }
 .Banana-Mobile {
 	position: relative;
@@ -26,19 +39,57 @@
 }
 .Slider-Wrap-Mobile {
 	position: absolute;
-	top: 20px;
+	top: 14px;
 	left: -80px;
 	transform: scale(0.6);
+}
+@keyframes NavSlideIn {
+	0% {
+		top: -30px;
+		opacity: 0;
+	}
+	80% {
+		top: 42px;
+		opacity: 1;
+	}
+	100% {
+		top: 58px;
+		opacity: 1;
+	}
+}
+@keyframes NavJiggle {
+	0% {
+		transform: scale(0.68);
+	}
+
+	50% {
+		transform: scale(0.55);
+	}
+
+	100% {
+		transform: scale(0.68);
+	}
 }
 .Slider-Nav-Wrapper-Mobile {
 	display: flex;
 	position: absolute;
-	top: 64px;
+	top: 58px;
 	left: 0px;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	transform: scale(0.65);
+	transform: scale(0.68);
+	animation: NavJiggle 2s infinite 2s forwards, NavSlideIn 0.45s linear;
+}
+.Slider-Nav-Wrapper-Mobile-NoJiggle {
+	display: flex;
+	position: absolute;
+	top: 58px;
+	left: 0px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transform: scale(0.68);
 }
 .Slider-Nav-Indicators-Mobile {
 	display: flex;

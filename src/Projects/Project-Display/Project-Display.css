@@ -260,7 +260,9 @@
 		font-size: 30pt;
 	}
 	.Project-Name:hover {
-		font-size: 32pt;
+		color: rgb(221, 169, 221);
+		font-size: 30pt;
+		text-decoration: none;
 	}
 	.Feature-Wrapper {
 		margin-top: 0px;

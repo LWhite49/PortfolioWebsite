@@ -42,9 +42,11 @@ export const ProjectsMobile = () => {
 
 	const [sliderIndex, setSliderIndex] = useState(0);
 	const [projectVisibility, setProjectVisibility] = useState([1, 0, 0, 0, 0]);
+	const [navJiggle, setNavJiggle] = useState(true);
 
 	// Increment Slider Index
 	const incrementSliderIndex = () => {
+		setNavJiggle(false);
 		setProjectVisibility((prev) => {
 			// Find the index of the current visible project
 			const currentIndex = prev.indexOf(1);
@@ -307,7 +309,12 @@ export const ProjectsMobile = () => {
 					]}
 				/>
 			</div>
-			<div className="Slider-Nav-Wrapper-Mobile">
+			<div
+				className={
+					navJiggle
+						? "Slider-Nav-Wrapper-Mobile"
+						: "Slider-Nav-Wrapper-Mobile-NoJiggle"
+				}>
 				<div
 					className="Slider-Nav-Indicators-Mobile"
 					data-tooltip-id="slider-indicator-Mobile">
