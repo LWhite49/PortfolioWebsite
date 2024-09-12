@@ -37,7 +37,7 @@
 }
 .Slider-Wrap-Mobile {
 	position: absolute;
-	top: 14px;
+	top: 32px;
 	left: -80px;
 	transform: scale(0.6);
 }
