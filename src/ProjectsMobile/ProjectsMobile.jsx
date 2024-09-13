@@ -1,5 +1,5 @@
 import "./ProjectsMobile.css";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { AppContext } from "../App.jsx";
 import { ProjectDisplay } from "../Projects/Project-Display/Project-Display.jsx";
 import rightArrow from "../assets/rightArrow.svg";
@@ -24,7 +24,12 @@ import homemadeComponentSkill from "../assets/customComponents.svg";
 import sessionsSkill from "../assets/sessionsSkill.svg";
 
 export const ProjectsMobile = () => {
-	const { projectsImages, MemoizedAeroBubbles } = useContext(AppContext);
+	const { projectsImages, MemoizedAeroBubbles, setThemeColor } =
+		useContext(AppContext);
+
+	useEffect(() => {
+		setThemeColor("#b47eab");
+	});
 
 	// Source Images
 	const OGImg = projectsImages[0];

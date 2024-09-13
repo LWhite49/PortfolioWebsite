@@ -91,14 +91,16 @@ let techstackImages = techstackImagesImp.map((img) => {
 });
 
 function UnroutedApp() {
+	console.log("App rendered");
 	// Create an isLoading state, which becomes false in 1 second
 	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
-		setTimeout(() => {
+		const timer = setTimeout(() => {
 			setIsLoading(false);
-			clearTimeout();
 		}, 1000);
+
+		return () => clearTimeout(timer);
 	}, []);
 
 	// Create a windowWidth state
@@ -118,7 +120,7 @@ function UnroutedApp() {
 	const [currSubpage, setCurrSubpage] = useState(() => {
 		if (
 			localStorage.getItem("subPage") &&
-			Date.now() - localStorage.getItem("lastLoad") < 600000
+			Date.now() - localStorage.getItem("lastLoad") < 6000
 		) {
 			return localStorage.getItem("subPage");
 		}
@@ -128,7 +130,9 @@ function UnroutedApp() {
 	// Create function that modifies the theme color meta tag
 	const setThemeColor = (color) => {
 		const metaThemeColor = document.querySelector("meta[name=theme-color]");
-		metaThemeColor.setAttribute("content", color);
+		if (metaThemeColor) {
+			metaThemeColor.setAttribute("content", color);
+		}
 	};
 
 	// Create a useEffect that stores the subpage in local storage when it changes, and updates lastLoad on page closing
@@ -147,6 +151,7 @@ function UnroutedApp() {
 				educationImages,
 				projectsImages,
 				techstackImages,
+				setThemeColor,
 			}}>
 			{isLoading ? (
 				<Loading />
@@ -217,7 +222,6 @@ function UnroutedApp() {
 								to="/"
 								onClick={() => {
 									setCurrSubpage("Home");
-									setThemeColor("#e6d6eb");
 								}}>
 								<p className={"Navbar-Text"}>Home</p>
 							</Link>
@@ -230,7 +234,6 @@ function UnroutedApp() {
 								to="/education"
 								onClick={() => {
 									setCurrSubpage("Education");
-									setThemeColor("#006c43");
 								}}>
 								<p className="Navbar-Text">Education</p>
 							</Link>
@@ -243,7 +246,6 @@ function UnroutedApp() {
 								to="/projects"
 								onClick={() => {
 									setCurrSubpage("Projects");
-									setThemeColor("#b47eab");
 								}}>
 								<p className="Navbar-Text">Projects</p>
 							</Link>
@@ -256,7 +258,6 @@ function UnroutedApp() {
 								to="/techstack"
 								onClick={() => {
 									setCurrSubpage("Techstack");
-									setThemeColor("#ffc2ad");
 								}}>
 								<p className="Navbar-Text">Techstack</p>
 							</Link>

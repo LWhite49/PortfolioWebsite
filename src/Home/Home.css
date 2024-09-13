@@ -9,6 +9,8 @@
 .Home {
 	display: relative;
 	animation: FadeInHome 0.5s;
+	width: 100vw;
+	height: 100vh;
 }
 .Home-Intro-Text-Wrap {
 	position: absolute;

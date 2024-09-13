@@ -4,6 +4,9 @@ html {
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
+body {
+	z-index: 0;
+}
 .Invis {
 	display: none;
 }
