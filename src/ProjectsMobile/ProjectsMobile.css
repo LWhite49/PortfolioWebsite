@@ -6,8 +6,8 @@
 }
 @keyframes MobileTitleSlide {
 	0% {
-		top: -100px;
-		left: -100px;
+		top: -40px;
+		left: -40px;
 	}
 
 	100% {

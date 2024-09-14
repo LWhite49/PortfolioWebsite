@@ -1,0 +1,171 @@
+.TechstackMobile {
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+@keyframes TechstackHeaderSlideInMobile {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.Techstack-Header-Wrapper-Mobile {
+	display: flex;
+	position: absolute;
+	top: 8px;
+	left: 20px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	animation: TechstackHeaderSlideInMobile 0.4s linear;
+}
+.Techstack-Header-Mobile {
+	display: inline-block;
+	position: relative;
+	margin: 0px;
+	color: #a23e20;
+	font-weight: bold;
+	font-size: 24pt;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	text-shadow: rgb(114, 113, 113) 1px 1px 1px;
+	text-shadow: 2px 2px 4px rgb(220, 118, 118);
+}
+.Apple-Mobile {
+	position: relative;
+	top: -4px;
+	left: 4px;
+	width: 60px;
+}
+.Bowl-Mobile {
+	position: relative;
+	left: 4px;
+	width: 60px;
+}
+.Techstack-Subtitle-Mobile {
+	position: absolute;
+	top: 60px;
+	left: 28px;
+	border: double #540552 4px;
+	border-radius: 10px;
+	background-color: #feb8ae;
+	padding: 6px;
+	width: 200px;
+	color: #540552;
+	font-weight: 700;
+	font-size: 14pt;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: #945809 2px 2px 1px;
+}
+.Techstack-Content-Mobile {
+	display: flex;
+	position: absolute;
+	top: 186px;
+	left: 6px;
+	flex-direction: column;
+	gap: 16px;
+	animation: TechstackContentSlideIn 0.8s ease-out;
+	border-radius: 20px;
+	background-color: #ffc2ad84;
+}
+
+.Techstack-Segment-Mobile {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	border: double #540552 4px;
+	border-radius: 30px;
+	background-color: #fdb0b084;
+	padding: 6px;
+}
+.Segment-Text-Wrap-Mobile {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 0px;
+}
+.Techstack-Segment-Header-Mobile {
+	margin: 0px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	margin-left: 8px;
+	width: 140px;
+	color: rgb(72, 9, 17);
+	font-size: 14pt;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	text-align: left;
+	text-decoration: underline 2px;
+	text-shadow: 1px 1px 4px rgb(237, 206, 28);
+}
+.Techstack-Segment-Subtitle-Mobile {
+	margin: 0px;
+	margin-left: 8px;
+	padding-top: 4px;
+	width: 130px;
+	color: rgb(0, 0, 0);
+	font-size: 11pt;
+	line-height: 20px;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	text-align: left;
+	text-shadow: #c57d8f 1px 1px 1px;
+}
+.Techstack-Skills-Wrapper-Mobile {
+	display: flex;
+	column-gap: 6px;
+	row-gap: 8px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 0px;
+	margin-left: 10px;
+	padding: 0px;
+	width: 168px;
+}
+.Techstack-Skill-Mobile {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	gap: 0px;
+	transition: transform 0.2s linear;
+	cursor: pointer;
+	margin: 0px;
+	border: 4px double black;
+	border-radius: 20px;
+	background-color: #945809;
+	padding: 0px 6px;
+	width: 60px;
+	height: 40px;
+}
+.Techstack-Skill-Name-Mobile {
+	cursor: default;
+	margin: 0px;
+	width: 68px;
+	max-width: 80px;
+	color: #fffd9a;
+	font-size: 6pt;
+	line-height: 10px;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+	text-align: start;
+	text-align: center;
+	text-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+.Techstack-Skill-Img-Mobile {
+	margin-right: 8px;
+	width: 20px;
+}
+.Techstack-Skill-Img-Small-Mobile {
+	margin-right: 8px;
+	width: 20px;
+}
