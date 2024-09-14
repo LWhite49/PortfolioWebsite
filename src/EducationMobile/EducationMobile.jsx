@@ -1,14 +1,10 @@
 import "./EducationMobile.css";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { AppContext } from "../App.jsx";
 
 export const EducationMobile = () => {
-	const { educationImages, MemoizedAeroBubbles, setThemeColor } =
-		useContext(AppContext);
+	const { educationImages, MemoizedAeroBubbles } = useContext(AppContext);
 
-	useEffect(() => {
-		setThemeColor("#006c43");
-	});
 	const strawberryImg = educationImages[4];
 	const USFBull = educationImages[0];
 

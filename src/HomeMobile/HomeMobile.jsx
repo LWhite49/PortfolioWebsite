@@ -1,5 +1,5 @@
 import "./HomeMobile.css";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { AppContext } from "../App.jsx";
 import { Tooltip } from "react-tooltip";
 import ResumeSvg from "../assets/ResumeSvg.svg";
@@ -8,12 +8,8 @@ import LinkedInSvg from "../assets/LinkedInSvg.svg";
 import Resume from "../assets/LW-Resume.pdf";
 
 export const HomeMobile = () => {
-	const { homeImages, MemoizedAeroBubbles, isMenuDisplayed, setThemeColor } =
+	const { homeImages, MemoizedAeroBubbles, isMenuDisplayed } =
 		useContext(AppContext);
-
-	useEffect(() => {
-		setThemeColor("#e6d6eb");
-	});
 
 	const tooltipStyle = {
 		backgroundColor: "rgba(0, 0, 0, 0.7)",

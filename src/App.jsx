@@ -126,14 +126,11 @@ function UnroutedApp() {
 		}
 		return "Home";
 	});
+	const [contentColor, setContentColor] = useState("#e6d6eb");
 
-	// Create function that modifies the theme color meta tag
-	const setThemeColor = (color) => {
-		const metaThemeColor = document.querySelector("meta[name=theme-color]");
-		if (metaThemeColor) {
-			metaThemeColor.setAttribute("content", color);
-		}
-	};
+	// Assign contentColor to the theme-color meta tag
+	const metaThemeColor = document.querySelector("meta[name=theme-color]");
+	metaThemeColor.setAttribute("content", contentColor);
 
 	// Create a useEffect that stores the subpage in local storage when it changes, and updates lastLoad on page closing
 	useEffect(() => {
@@ -151,7 +148,6 @@ function UnroutedApp() {
 				educationImages,
 				projectsImages,
 				techstackImages,
-				setThemeColor,
 			}}>
 			{isLoading ? (
 				<Loading />
@@ -222,6 +218,7 @@ function UnroutedApp() {
 								to="/"
 								onClick={() => {
 									setCurrSubpage("Home");
+									setContentColor("#e6d6eb");
 								}}>
 								<p className={"Navbar-Text"}>Home</p>
 							</Link>
@@ -234,6 +231,7 @@ function UnroutedApp() {
 								to="/education"
 								onClick={() => {
 									setCurrSubpage("Education");
+									setContentColor("#006c43");
 								}}>
 								<p className="Navbar-Text">Education</p>
 							</Link>
@@ -246,6 +244,7 @@ function UnroutedApp() {
 								to="/projects"
 								onClick={() => {
 									setCurrSubpage("Projects");
+									setContentColor("#b47eab");
 								}}>
 								<p className="Navbar-Text">Projects</p>
 							</Link>
@@ -258,6 +257,7 @@ function UnroutedApp() {
 								to="/techstack"
 								onClick={() => {
 									setCurrSubpage("Techstack");
+									setContentColor("#ffc2ad");
 								}}>
 								<p className="Navbar-Text">Techstack</p>
 							</Link>

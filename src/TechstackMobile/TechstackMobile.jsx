@@ -1,5 +1,5 @@
 import "./TechstackMobile.css";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { AppContext } from "../App.jsx";
 import { Tooltip } from "react-tooltip";
 import reactStack from "../assets/reactStack.svg";
@@ -28,12 +28,8 @@ import creativityStack from "../assets/creativityStack.svg";
 import detailStack from "../assets/detailStack.svg";
 
 export const TechstackMobile = () => {
-	const { techstackImages, MemoizedAeroBubbles, setThemeColor } =
-		useContext(AppContext);
+	const { techstackImages, MemoizedAeroBubbles } = useContext(AppContext);
 
-	useEffect(() => {
-		setThemeColor("#ffc2ad");
-	});
 	// Source Images
 	const Apple = techstackImages[0];
 	const Bowl = techstackImages[1];
