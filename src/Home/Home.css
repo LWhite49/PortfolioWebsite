@@ -7,7 +7,6 @@
 	}
 }
 .Home {
-	display: relative;
 	animation: FadeInHome 0.5s;
 	width: 100vw;
 	height: 100vh;
@@ -87,11 +86,13 @@
 	top: 50px;
 	right: -310px;
 	gap: 20px;
+	z-index: 10;
 	border: #75ffca 4px solid;
 	border-radius: 20px;
 	background-color: #08a973;
 	padding: 2px 16px 2px 16px;
 	width: fit-content;
+	pointer-events: all;
 }
 .Grapes-3D {
 	position: absolute;
@@ -99,6 +100,7 @@
 	left: -108px;
 	margin-right: 0px;
 	width: 90px;
+	pointer-events: none;
 }
 .Resume-Svg {
 	transition: transform 0.15s;

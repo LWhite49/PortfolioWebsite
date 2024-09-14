@@ -91,7 +91,6 @@ let techstackImages = techstackImagesImp.map((img) => {
 });
 
 function UnroutedApp() {
-	console.log("App rendered");
 	// Create an isLoading state, which becomes false in 1 second
 	const [isLoading, setIsLoading] = useState(true);
 
