@@ -7,14 +7,14 @@
 		left: -16vw;
 	}
 	100% {
-		left: -6vw;
+		left: -5vw;
 	}
 }
 .Techstack-Header-Wrapper {
 	display: flex;
 	position: absolute;
 	top: 30vh;
-	left: -6vw;
+	left: -5vw;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -165,7 +165,7 @@
 @media (max-width: 2120px) {
 	.Techstack-Header-Wrapper {
 		top: 20vh;
-		left: -6vw;
+		left: -5vw;
 	}
 	.Apple {
 		top: 80px;
@@ -204,7 +204,7 @@
 	}
 	.Techstack-Header-Wrapper {
 		top: 16vh;
-		left: -6vw;
+		left: -5vw;
 	}
 	.Techstack-Header {
 		font-size: 42pt;

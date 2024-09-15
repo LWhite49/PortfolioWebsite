@@ -44,9 +44,9 @@ export const Education = () => {
 						{" "}
 						<span className="Education-Bullet">&bull;</span>{" "}
 						<span className="Education-Bullet-Emph">
-							Junior GPA: 3.91
+							Junior GPA: 3.91,
 						</span>{" "}
-						={">"} Class of 2026
+						Class of 2026
 					</p>
 					<p className="Education-Major">
 						{" "}
@@ -61,7 +61,7 @@ export const Education = () => {
 						<span className="Education-Bullet-Emph">
 							National Merit Scholar
 						</span>{" "}
-						+ Judy Genshaft Honors Student
+						+ Judy Genshaft Honors College
 					</p>
 					<p className="Education-Hackathon">
 						{" "}

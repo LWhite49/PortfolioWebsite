@@ -34,9 +34,9 @@ export const EducationMobile = () => {
 							&bull;
 						</span>{" "}
 						<span className="Education-Bullet-Emph-Mobile">
-							Junior GPA: 3.91
+							Junior GPA: 3.91,
 						</span>{" "}
-						={">"} Class of 2026
+						Class of 2026
 					</p>
 					<p className="Education-Major-Mobile">
 						{" "}
@@ -57,7 +57,7 @@ export const EducationMobile = () => {
 						<span className="Education-Bullet-Emph-Mobile">
 							National Merit Scholar
 						</span>{" "}
-						+ Judy Genshaft Honors Student
+						+ Judy Genshaft Honors College
 					</p>
 					<p className="Education-Hackathon-Mobile">
 						{" "}
