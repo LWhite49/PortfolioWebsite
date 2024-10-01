@@ -39,7 +39,7 @@ export const Home = () => {
 				<h1 className="Home-Intro-Text">
 					An Aspiring{" "}
 					<span style={{ color: "#FFBA4B" }}>
-						Fullstack JavaScript developer,
+						Fullstack Software Developer,
 					</span>{" "}
 					studying{" "}
 					<span style={{ color: "#FFBA4B" }}>Computer Science</span>{" "}

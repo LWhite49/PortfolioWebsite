@@ -39,9 +39,7 @@ export const HomeMobile = () => {
 				</h1>
 				<h1 className="Home-Intro-Text-Mobile">
 					An Aspiring{" "}
-					<span style={{ color: "#FFBA4B" }}>
-						Fullstack JavaScript developer
-					</span>{" "}
+					<span style={{ color: "#FFBA4B" }}>Software Developer</span>{" "}
 				</h1>
 				<h1 className="Home-Intro-Text-Last-Mobile">
 					This is my undergraduate developer portfolio!
