@@ -5,7 +5,7 @@ import { Tooltip } from "react-tooltip";
 import reactStack from "../assets/reactStack.svg";
 
 import UXStack from "../assets/UXStack.svg";
-import contentLayoutStack from "../assets/contentLayoutStack.svg";
+import reactNativeStack from "../assets/reactNativeStack.svg";
 
 import responsiveStack from "../assets/responsiveStack.svg";
 import nodeStack from "../assets/nodeStack.svg";
@@ -14,10 +14,10 @@ import APIStack from "../assets/APIStack.svg";
 
 import cookiesStack from "../assets/cookiesStack.svg";
 
+import sqlStack from "../assets/sqlStack.svg";
 import mongoStack from "../assets/mongoStack.svg";
 import mongooseStack from "../assets/mongooseStack.svg";
 import pipelineStack from "../assets/pipelineStack.svg";
-import tllStack from "../assets/ttlStack.svg";
 
 export const TechstackMobile = () => {
 	const { techstackImages, MemoizedAeroBubbles } = useContext(AppContext);
@@ -78,6 +78,18 @@ export const TechstackMobile = () => {
 						</div>
 						<div
 							className="Techstack-Skill-Mobile"
+							data-tooltip-id="react-native">
+							<p className="Techstack-Skill-Name-Mobile">
+								React Native
+							</p>
+							<img
+								className="Techstack-Skill-Img-Mobile"
+								src={reactNativeStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill-Mobile"
 							data-tooltip-id="ux">
 							<p className="Techstack-Skill-Name-Mobile">
 								UX Design
@@ -100,18 +112,6 @@ export const TechstackMobile = () => {
 								alt="React"
 							/>
 						</div>
-						<div
-							className="Techstack-Skill-Mobile"
-							data-tooltip-id="content">
-							<p className="Techstack-Skill-Name-Mobile">
-								Content Layout
-							</p>
-							<img
-								className="Techstack-Skill-Img-Mobile"
-								src={contentLayoutStack}
-								alt="React"
-							/>
-						</div>
 
 						<Tooltip
 							id="react"
@@ -131,11 +131,11 @@ export const TechstackMobile = () => {
 							style={tooltipStyle}
 						/>
 						<Tooltip
-							id="content"
+							id="react-native"
 							place="top"
 							className="Techstack-Skill-Tooltip"
 							effect="solid"
-							content="Displaying web content in a visually appealing and organized manner"
+							content="Frontend Framework that enables the development of mobile applications with React"
 							style={tooltipStyle}
 						/>
 
@@ -257,6 +257,16 @@ export const TechstackMobile = () => {
 					<div className="Techstack-Skills-Wrapper-Mobile">
 						<div
 							className="Techstack-Skill-Mobile"
+							data-tooltip-id="sql">
+							<p className="Techstack-Skill-Name-Mobile">SQL</p>
+							<img
+								className="Techstack-Skill-Img-Mobile"
+								src={sqlStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill-Mobile"
 							data-tooltip-id="mongo">
 							<p className="Techstack-Skill-Name-Mobile">
 								MongoDB
@@ -291,18 +301,6 @@ export const TechstackMobile = () => {
 								alt="React"
 							/>
 						</div>
-						<div
-							className="Techstack-Skill-Mobile"
-							data-tooltip-id="ttl">
-							<p className="Techstack-Skill-Name-Mobile">
-								TTL Indexing
-							</p>
-							<img
-								className="Techstack-Skill-Img-Mobile"
-								src={tllStack}
-								alt="React"
-							/>
-						</div>
 
 						<Tooltip
 							id="mongo"
@@ -329,11 +327,11 @@ export const TechstackMobile = () => {
 							style={tooltipStyle}
 						/>
 						<Tooltip
-							id="ttl"
+							id="sql"
 							place="top"
 							className="Techstack-Skill-Tooltip"
 							effect="solid"
-							content="Special indexing method to keep data fresh via document expiration"
+							content="Language for managing relational databases and performing complex queries"
 							style={tooltipStyle}
 						/>
 					</div>

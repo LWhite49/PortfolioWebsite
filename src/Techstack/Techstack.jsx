@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { AppContext } from "../App.jsx";
 import { Tooltip } from "react-tooltip";
 import reactStack from "../assets/reactStack.svg";
+import reactNativeStack from "../assets/reactNativeStack.svg";
 import tailwindStack from "../assets/tailwindStack.svg";
 import UXStack from "../assets/UXStack.svg";
 import contentLayoutStack from "../assets/contentLayoutStack.svg";
@@ -16,6 +17,7 @@ import cppStack from "../assets/cppStack.svg";
 import cookiesStack from "../assets/cookiesStack.svg";
 import loginStack from "../assets/loginStack.svg";
 import mongoStack from "../assets/mongoStack.svg";
+import sqlStack from "../assets/sqlStack.svg";
 import mongooseStack from "../assets/mongooseStack.svg";
 import pipelineStack from "../assets/pipelineStack.svg";
 import tllStack from "../assets/ttlStack.svg";
@@ -81,6 +83,16 @@ export const Techstack = () => {
 						</div>
 						<div
 							className="Techstack-Skill"
+							data-tooltip-id="react-native">
+							<p className="Techstack-Skill-Name">React Native</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={reactNativeStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill"
 							data-tooltip-id="tailwind">
 							<p className="Techstack-Skill-Name">Tailwind</p>
 							<img
@@ -138,6 +150,14 @@ export const Techstack = () => {
 							className="Techstack-Skill-Tooltip"
 							effect="solid"
 							content="Frontend Framework that prioritizes modular design with a vast developer ecosystem"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="react-native"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Frontend Framework enables the development of mobile applications with React"
 							style={tooltipStyle}
 						/>
 						<Tooltip
@@ -328,6 +348,14 @@ export const Techstack = () => {
 						</p>
 					</div>
 					<div className="Techstack-Skills-Wrapper">
+						<div className="Techstack-Skill" data-tooltip-id="sql">
+							<p className="Techstack-Skill-Name">SQL</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={sqlStack}
+								alt="SQL"
+							/>
+						</div>
 						<div
 							className="Techstack-Skill"
 							data-tooltip-id="mongo">
@@ -376,6 +404,14 @@ export const Techstack = () => {
 								alt="React"
 							/>
 						</div>
+						<Tooltip
+							id="sql"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Language for managing relational databases and performing complex queries"
+							style={tooltipStyle}
+						/>
 						<Tooltip
 							id="mongo"
 							place="top"
