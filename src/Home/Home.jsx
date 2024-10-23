@@ -6,7 +6,7 @@ import ResumeSvg from "../assets/ResumeSvg.svg";
 import EmailSvg from "../assets/EmailSvg.svg";
 import LinkedInSvg from "../assets/LinkedInSvg.svg";
 import GithubSvg from "../assets/GithubSvg.svg";
-import Resume from "../assets/LW-Resume.pdf";
+import Resume from "../assets/Logan_White_resume.pdf";
 
 export const Home = () => {
 	// Create style object for Tooltips
