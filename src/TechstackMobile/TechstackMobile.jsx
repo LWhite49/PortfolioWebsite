@@ -3,16 +3,15 @@ import { useContext } from "react";
 import { AppContext } from "../App.jsx";
 import { Tooltip } from "react-tooltip";
 import reactStack from "../assets/reactStack.svg";
-
+import typescriptStack from "../assets/typescriptStack.svg";
 import UXStack from "../assets/UXStack.svg";
 import reactNativeStack from "../assets/reactNativeStack.svg";
 
-import responsiveStack from "../assets/responsiveStack.svg";
 import nodeStack from "../assets/nodeStack.svg";
 import scraperStack from "../assets/scraperStack.svg";
 import APIStack from "../assets/APIStack.svg";
 
-import cookiesStack from "../assets/cookiesStack.svg";
+import socketioStack from "../assets/socketioStack.svg";
 
 import sqlStack from "../assets/sqlStack.svg";
 import mongoStack from "../assets/mongoStack.svg";
@@ -68,6 +67,18 @@ export const TechstackMobile = () => {
 					<div className="Techstack-Skills-Wrapper-Mobile">
 						<div
 							className="Techstack-Skill-Mobile"
+							data-tooltip-id="typescript">
+							<p className="Techstack-Skill-Name-Mobile">
+								Type Script
+							</p>
+							<img
+								className="Techstack-Skill-Img-Small-Mobile"
+								src={typescriptStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill-Mobile"
 							data-tooltip-id="react">
 							<p className="Techstack-Skill-Name-Mobile">React</p>
 							<img
@@ -100,18 +111,6 @@ export const TechstackMobile = () => {
 								alt="React"
 							/>
 						</div>
-						<div
-							className="Techstack-Skill-Mobile"
-							data-tooltip-id="responsive">
-							<p className="Techstack-Skill-Name-Mobile">
-								Responsive Design
-							</p>
-							<img
-								className="Techstack-Skill-Img-Small-Mobile"
-								src={responsiveStack}
-								alt="React"
-							/>
-						</div>
 
 						<Tooltip
 							id="react"
@@ -140,11 +139,11 @@ export const TechstackMobile = () => {
 						/>
 
 						<Tooltip
-							id="responsive"
+							id="typescript"
 							place="top"
 							className="Techstack-Skill-Tooltip"
 							effect="solid"
-							content="Utilizing CSS media queries to ensure a consistent user experience across devices"
+							content="Writing cleaner and more maintainable code with TypeScript functionalities"
 							style={tooltipStyle}
 						/>
 					</div>
@@ -199,13 +198,13 @@ export const TechstackMobile = () => {
 
 						<div
 							className="Techstack-Skill-Mobile"
-							data-tooltip-id="sessions">
+							data-tooltip-id="socketio">
 							<p className="Techstack-Skill-Name-Mobile">
-								User Sessions
+								Socket.io
 							</p>
 							<img
 								className="Techstack-Skill-Img-Mobile"
-								src={cookiesStack}
+								src={socketioStack}
 								alt="React"
 							/>
 						</div>
@@ -236,11 +235,11 @@ export const TechstackMobile = () => {
 						/>
 
 						<Tooltip
-							id="sessions"
+							id="socketio"
 							place="top"
 							className="Techstack-Skill-Tooltip"
 							effect="solid"
-							content="Design pattern for differentiating concurrent users with express sessions"
+							content="Establishing real time communication between the client and server with WebSockets"
 							style={tooltipStyle}
 						/>
 					</div>

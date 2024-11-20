@@ -2,7 +2,9 @@ import "./Techstack.css";
 import { useContext } from "react";
 import { AppContext } from "../App.jsx";
 import { Tooltip } from "react-tooltip";
+import typescriptStack from "../assets/typescriptStack.svg";
 import reactStack from "../assets/reactStack.svg";
+import socketioStack from "../assets/socketioStack.svg";
 import reactNativeStack from "../assets/reactNativeStack.svg";
 import tailwindStack from "../assets/tailwindStack.svg";
 import UXStack from "../assets/UXStack.svg";
@@ -71,6 +73,16 @@ export const Techstack = () => {
 						</p>
 					</div>
 					<div className="Techstack-Skills-Wrapper">
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="typescript">
+							<p className="Techstack-Skill-Name">TypeScript</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={typescriptStack}
+								alt="React"
+							/>
+						</div>
 						<div
 							className="Techstack-Skill"
 							data-tooltip-id="react">
@@ -200,6 +212,14 @@ export const Techstack = () => {
 							content="Utilizing CSS media queries to ensure a consistent user experience across devices"
 							style={tooltipStyle}
 						/>
+						<Tooltip
+							id="typescript"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Writing higher quality code with static typing and modern JavaScript features"
+							style={tooltipStyle}
+						/>
 					</div>
 				</div>
 				<div className="Techstack-Segment">
@@ -226,6 +246,16 @@ export const Techstack = () => {
 							<img
 								className="Techstack-Skill-Img"
 								src={APIStack}
+								alt="React"
+							/>
+						</div>
+						<div
+							className="Techstack-Skill"
+							data-tooltip-id="socketio">
+							<p className="Techstack-Skill-Name">Socket.io</p>
+							<img
+								className="Techstack-Skill-Img"
+								src={socketioStack}
 								alt="React"
 							/>
 						</div>
@@ -335,6 +365,14 @@ export const Techstack = () => {
 							className="Techstack-Skill-Tooltip"
 							effect="solid"
 							content="Design pattern for differentiating concurrent users with express sessions"
+							style={tooltipStyle}
+						/>
+						<Tooltip
+							id="socketio"
+							place="top"
+							className="Techstack-Skill-Tooltip"
+							effect="solid"
+							content="Establishing real-time communication between client and server with WebSockets"
 							style={tooltipStyle}
 						/>
 					</div>
