@@ -36,18 +36,16 @@ export const EducationMobile = () => {
 						<span className="Education-Bullet-Emph-Mobile">
 							Junior GPA: 3.91,
 						</span>{" "}
-						Class of 2026
+						Graduating Spring 2026
 					</p>
 					<p className="Education-Major-Mobile">
 						{" "}
 						<span className="Education-Bullet-Mobile">
 							&bull;
 						</span>{" "}
-						Computer Science{" "}
-						<span className="Education-Bullet-Emph-Mobile">
-							and
-						</span>{" "}
-						Computer Engineering
+						B.S. in Computer Science{" "}
+						<span className="Education-Bullet-Emph-Mobile">+</span>{" "}
+						B.S. in Computer Engineering
 					</p>
 					<p className="Education-Honors-Mobile">
 						{" "}
@@ -55,16 +53,16 @@ export const EducationMobile = () => {
 							&bull;
 						</span>{" "}
 						<span className="Education-Bullet-Emph-Mobile">
-							National Merit Scholar
+							Coursework in
 						</span>{" "}
-						+ Judy Genshaft Honors College
+						Program Analysis, UX Design, Algorithms
 					</p>
 					<p className="Education-Hackathon-Mobile">
 						{" "}
 						<span className="Education-Bullet-Mobile">
 							&bull;
 						</span>{" "}
-						Frequent Webdev Hackathons with{" "}
+						Software Development Hackathons with{" "}
 						<span className="Education-Bullet-Emph-Mobile">
 							USF Google Student Developer Club
 						</span>{" "}

@@ -44,29 +44,30 @@ export const Education = () => {
 						{" "}
 						<span className="Education-Bullet">&bull;</span>{" "}
 						<span className="Education-Bullet-Emph">
-							Junior GPA: 3.91,
+							Junior GPA: 3.91 -
 						</span>{" "}
-						Class of 2026
+						Graduating Spring 2026
 					</p>
 					<p className="Education-Major">
 						{" "}
-						<span className="Education-Bullet">&bull;</span>{" "}
+						<span className="Education-Bullet">&bull;</span> B.S. in
 						Computer Science{" "}
-						<span className="Education-Bullet-Emph">and</span>{" "}
+						<span className="Education-Bullet-Emph">and</span> B.S.
 						Computer Engineering
 					</p>
 					<p className="Education-Honors">
 						{" "}
-						<span className="Education-Bullet">&bull;</span>{" "}
+						<span className="Education-Bullet">&bull; </span>{" "}
+						Coursework in{" "}
 						<span className="Education-Bullet-Emph">
-							National Merit Scholar
+							Program Analysis, UX Design, Data Structures, and
+							Algorithms
 						</span>{" "}
-						+ Judy Genshaft Honors College
 					</p>
 					<p className="Education-Hackathon">
 						{" "}
 						<span className="Education-Bullet">&bull;</span>{" "}
-						Frequent Webdev Hackathons with{" "}
+						Software Development Hackathons with{" "}
 						<span className="Education-Bullet-Emph">
 							USF Google Student Developer Club
 						</span>{" "}
