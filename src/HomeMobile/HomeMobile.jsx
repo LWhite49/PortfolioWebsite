@@ -38,7 +38,7 @@ export const HomeMobile = () => {
 					{"I'm Logan 💫"}
 				</h1>
 				<h1 className="Home-Intro-Text-Mobile">
-					An Aspiring{" "}
+					A Full Stack{" "}
 					<span style={{ color: "#FFBA4B" }}>Software Developer</span>{" "}
 				</h1>
 				<h1 className="Home-Intro-Text-Last-Mobile">
