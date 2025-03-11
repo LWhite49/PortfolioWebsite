@@ -13,8 +13,9 @@
 }
 .Home-Intro-Text-Wrap {
 	position: absolute;
-	top: 24vh;
-	left: 24vw;
+	top: 14vh;
+	left: 14vw;
+	transform: scale(0.85);
 	background-color: #e6d6ebb3;
 	padding: 10px;
 	pointer-events: none;
@@ -183,6 +184,74 @@
 	animation: RotateOut 0.3s;
 }
 
+@keyframes rotateBackAndForth {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(2deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(-2deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.Current-Work-Wrap {
+	display: flex;
+	position: absolute;
+	right: 160px;
+	bottom: 10vh;
+	flex-direction: column;
+	justify-content: flex-start;
+	animation: rotateBackAndForth 10s ease-in-out infinite;
+	border: solid 2px #08a973;
+	border-radius: 70% 60% 80% 55%;
+	background-color: #94fc3f;
+	padding: 30px;
+	width: 300px;
+	height: 140px;
+}
+.Current-Work-Text {
+	position: relative;
+	top: -26px;
+	color: #08a973;
+	font-size: 16pt;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: 1px 1px 0px hsl(180, 18%, 12%);
+}
+.Current-Work-Text-Instance {
+	position: relative;
+	top: -70px;
+	color: #53a231;
+	font-size: 16pt;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: 1px 1px 0px hsl(180, 18%, 12%);
+}
+
+.Current-Work-Stack-Prompt {
+	position: relative;
+	top: -108px;
+	left: -14px;
+	color: #08a973;
+	font-size: 16pt;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: 1px 1px 0px hsl(180, 18%, 12%);
+}
+.Current-Work-Stack {
+	position: relative;
+	top: -148px;
+	left: -14px;
+	color: #53a231;
+	font-size: 13pt;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: 1px 1px 0px hsl(180, 18%, 12%);
+}
 /* Width Scaling */
 
 @media (max-width: 1900px) {
@@ -249,6 +318,9 @@
 	.Personal-Image {
 		left: 720px;
 		width: 340px;
+	}
+	.Current-Work-Wrap {
+		right: 80px;
 	}
 }
 @media (max-width: 1530px) {
@@ -318,6 +390,11 @@
 	.Alt-Aero-Arrow-Invis {
 		width: 70px;
 	}
+	.Current-Work-Wrap {
+		right: 20px;
+		bottom: 20px;
+		transform: scale(0.8);
+	}
 }
 
 @media (max-width: 1250px) {
@@ -375,5 +452,8 @@
 		top: 10px;
 		left: 470px;
 		width: 300px;
+	}
+	.Current-Work-Wrap {
+		transform: scale(0.6);
 	}
 }

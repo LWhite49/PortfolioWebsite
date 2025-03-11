@@ -381,8 +381,8 @@ export const Techstack = () => {
 					<div className="Segment-Text_Wrap">
 						<p className="Techstack-Segment-Header">Data Skills</p>
 						<p className="Techstack-Segment-Subtitle">
-							Organizing data into scalable structures for website
-							architecture
+							Organizing data into scalable structures for
+							software architecture
 						</p>
 					</div>
 					<div className="Techstack-Skills-Wrapper">
@@ -496,8 +496,8 @@ export const Techstack = () => {
 					<div className="Segment-Text_Wrap">
 						<p className="Techstack-Segment-Header">Soft Skills</p>
 						<p className="Techstack-Segment-Subtitle">
-							Passively moving towards project success with
-							essential skills{" "}
+							Trending towards project success with essential
+							professional skills{" "}
 						</p>
 					</div>
 					<div className="Techstack-Skills-Wrapper">

@@ -90,7 +90,7 @@ export const Projects = () => {
 
 			<div className="Slider-Wrap">
 				<ProjectDisplay
-					projectName="Outfit Generator"
+					projectName="Wardrobe Wizard"
 					completedAt="October 2024"
 					bulletPoints={[
 						"Fullstack Application that generates outfits comprised of secondhand clothing by utilizing Machine Learning and Data Analysis",

@@ -88,7 +88,7 @@ export const ProjectsMobile = () => {
 			</div>
 			<div className="Slider-Wrap-Mobile">
 				<ProjectDisplay
-					projectName="Outfit Generator"
+					projectName="Wardrobe Wizard"
 					completedAt="October 2024"
 					bulletPoints={[
 						"Fullstack Application that generates outfits comprised of secondhand clothing with Data Analysis",

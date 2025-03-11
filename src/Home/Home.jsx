@@ -143,6 +143,37 @@ export const Home = () => {
 					/>
 				</div>
 			</div>
+			<div className="Current-Work-Wrap">
+				<p className="Current-Work-Text">
+					I&apos;m Currently Developing:
+				</p>
+				<a
+					target="_blank"
+					href="https://www.linkedin.com/posts/lwhite49_after-a-week-of-focused-css-work-im-thrilled-activity-7302115359614984192-k8o4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD63nAoBaF5UJ4Ky_9s_CMQtrLFQ93mvx_s">
+					<p className="Current-Work-Text-Instance">
+						<span
+							style={{
+								color: "#B65DD9FF",
+								textDecoration: "underline",
+								textUnderlineOffset: "3px",
+							}}>
+							{" "}
+							Wardrobe Wizard&#39;s Mobile App{" "}
+						</span>
+					</p>
+				</a>
+				<p className="Current-Work-Stack-Prompt">
+					Using These Technologies:
+				</p>
+				<p className="Current-Work-Stack">
+					<span
+						style={{
+							color: "#B65DD9FF",
+						}}>
+						React Native, Node.js, Azure, PyTorch
+					</span>
+				</p>
+			</div>
 			<img
 				className={
 					isMenuDisplayed ? "Alt-Aero-Arrow-Invis" : "Alt-Aero-Arrow"
